@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@jupyterlab/mermaid-extension": "^4.2.5"
+  }
+}

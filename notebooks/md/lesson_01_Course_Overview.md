@@ -82,68 +82,8 @@ AGI (hypothetical):
 
 This comparison highlights the vast difference between current AI capabilities and the aspirations of AGI.
 
-#### 4.1.3 Code: Simulating AGI Characteristics
 
-Let's create a simple Python class that simulates some characteristics of AGI:
-
-```python
-import random
-
-class SimulatedAGI:
-    def __init__(self):
-        self.knowledge_base = {}
-        self.learning_rate = 0.1
-
-    def learn(self, domain, information):
-        if domain not in self.knowledge_base:
-            self.knowledge_base[domain] = []
-        self.knowledge_base[domain].append(information)
-        print(f"Learned new information in {domain}: {information}")
-
-    def apply_knowledge(self, domain, problem):
-        if domain in self.knowledge_base:
-            relevant_info = random.choice(self.knowledge_base[domain])
-            solution = f"Applied knowledge from {domain}: {relevant_info} to solve: {problem}"
-        else:
-            solution = f"No knowledge in {domain}. Attempting to reason: {problem}"
-        return solution
-
-    def creative_output(self, domains):
-        combined_knowledge = []
-        for domain in domains:
-            if domain in self.knowledge_base:
-                combined_knowledge.extend(self.knowledge_base[domain])
-        if combined_knowledge:
-            return f"Creative output combining {', '.join(domains)}: {' '.join(random.sample(combined_knowledge, min(3, len(combined_knowledge))))}"
-        else:
-            return "Insufficient knowledge for creative output."
-
-    def adapt(self, new_domain):
-        self.learning_rate *= 1.1
-        print(f"Adapted to new domain: {new_domain}. Learning rate increased to {self.learning_rate:.2f}")
-
-# Example usage
-agi = SimulatedAGI()
-
-# Learning
-agi.learn("Mathematics", "Pythagorean theorem")
-agi.learn("History", "World War II ended in 1945")
-agi.learn("Biology", "DNA carries genetic information")
-
-# Applying knowledge
-print(agi.apply_knowledge("Mathematics", "Solve a triangle problem"))
-print(agi.apply_knowledge("Physics", "Explain quantum entanglement"))
-
-# Creative output
-print(agi.creative_output(["Mathematics", "Biology"]))
-
-# Adaptation
-agi.adapt("Quantum Computing")
-```
-
-This code provides a simplified simulation of some AGI characteristics, including learning across domains, applying knowledge, attempting creative outputs, and adaptation to new domains.
-
-#### 4.1.4 Visualization: AGI in Context
+#### 4.1.3 Visualization: AGI in Context
 
 ```mermaid
 graph TD
@@ -160,7 +100,7 @@ graph TD
 
 This diagram illustrates the relationship between different levels of AI, highlighting AGI's position as a bridge between narrow AI and hypothetical superintelligence.
 
-#### 4.1.5 Reflection
+#### 4.1.4 Reflection
 
 Understanding AGI is fundamental to grasping the potential and limitations of current AI systems. It helps in setting realistic expectations and guides research and development efforts in the field of AI. However, it's important to note that AGI remains a theoretical concept, and there are significant challenges to overcome before it can be realized. These challenges include:
 
@@ -201,58 +141,7 @@ Scenario: Developing an AGI-powered personal assistant for healthcare
    - Ethical AI Development: Implementing fairness, transparency, and privacy in the AI system
    - Continuous Learning: Staying updated with the latest advancements in AGI and healthcare AI
 
-#### 4.2.3 Code: Skill Assessment Tool
-
-Let's create a simple Python script that assesses an individual's skills for the AGI era:
-
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-
-class AGISkillAssessor:
-    def __init__(self):
-        self.roles = ['AI User', 'Product Manager', 'Engineer']
-        self.skills = {
-            'AI User': ['AI Literacy', 'Critical Thinking', 'Ethical Considerations', 'Adaptability'],
-            'Product Manager': ['AI Strategy', 'User-Centric Design', 'Ethical Leadership', 'Cross-Functional Collaboration'],
-            'Engineer': ['Advanced ML/DL', 'System Integration', 'Ethical AI Development', 'Continuous Learning']
-        }
-
-    def assess_skills(self, role):
-        if role not in self.roles:
-            raise ValueError("Invalid role. Choose from: AI User, Product Manager, Engineer")
-        
-        scores = []
-        for skill in self.skills[role]:
-            score = float(input(f"Rate your {skill} skill from 0 to 10: "))
-            scores.append(score)
-        return scores
-
-    def visualize_assessment(self, role, scores):
-        skills = self.skills[role]
-        angles = np.linspace(0, 2*np.pi, len(skills), endpoint=False)
-        scores = np.concatenate((scores, [scores[0]]))  # repeat the first value to close the polygon
-        angles = np.concatenate((angles, [angles[0]]))  # repeat the first angle to close the polygon
-
-        fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(projection='polar'))
-        ax.plot(angles, scores, 'o-', linewidth=2)
-        ax.fill(angles, scores, alpha=0.25)
-        ax.set_thetagrids(angles[:-1] * 180/np.pi, skills)
-        ax.set_ylim(0, 10)
-        ax.set_title(f"AGI Era Skill Assessment: {role}")
-        plt.tight_layout()
-        plt.show()
-
-# Example usage
-assessor = AGISkillAssessor()
-role = input("Enter your role (AI User, Product Manager, or Engineer): ")
-scores = assessor.assess_skills(role)
-assessor.visualize_assessment(role, scores)
-```
-
-This script allows users to assess their skills for a chosen role in the AGI era and visualizes the results using a radar chart.
-
-#### 4.2.4 Visualization: Key Skills for Different Roles in the AGI Era
+#### 4.2.3 Visualization: Key Skills for Different Roles in the AGI Era
 
 ```python
 import matplotlib.pyplot as plt
@@ -419,13 +308,13 @@ graph TD
     A --> D[Adaptability]
     A --> E[Reasoning]
     A --> F[Creativity]
-    
+
     G[LLM Capabilities] --> H[Few-shot Learning]
     G --> I[Multi-task Performance]
     G --> J[Language Understanding]
     G --> K[Text Generation]
     G --> L[Emergent Behaviors]
-    
+
     H -.-> B
     H -.-> C
     I -.-> B
@@ -434,7 +323,7 @@ graph TD
     K -.-> F
     L -.-> B
     L -.-> E
-    
+
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style G fill:#ccf,stroke:#333,stroke-width:2px
 ```
