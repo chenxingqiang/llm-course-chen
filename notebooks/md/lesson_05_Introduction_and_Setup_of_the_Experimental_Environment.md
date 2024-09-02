@@ -6,30 +6,32 @@ gantt
     dateFormat X
     axisFormat %d
     section Course Timeline
-    Course Overview                                     :a1, 0, 1d
-    NLP Fundamentals                                    :a2, after a1, 1d
-    Basic knowledge and architectural characteristics   :a3, after a2, 1d
-    LLM Development Fundamentals                        :a4, after a3, 1d
-    Experimental Environment Setup                      :active,a5, after a4, 1d
-    Gap                                                 :a6, after a5, 1d
-    Model Inference and Function calling                :a12, after a6, 1d
-    Prompt engineering - ChatGPT Prompt Engineering     :a13, after a12, 1d
-    Model Quantization Techniques                       :a14, after a13, 1d
+    Course Overview                                    :a1, 0, 1d
+    NLP Fundamentals                                   :a2, after a1, 1d
+    Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
+    LLM Development Fundamentals                       :a4, after a3, 1d
+    Introduction and Setup of the Experimental Environment :active,a5, after a4, 1d
+    The concept of the tokenizer and common types      :a6, after a5, 1d
+    Text data preprocessing and preparation            :a7, after a6, 1d
+    LLM training - Fine-tuning                         :a8, after a7, 1d
+    LLM training - Reward Modeling and Proximal Policy Optimization :a9, after a8, 1d
+    Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
     section Lessons
-    lesson 01 :l1, 0, 1d
-    lesson 02 :l2, after l1, 1d
-    lesson 03 :l3, after l2, 1d
-    lesson 04 :l4, after l3, 1d
-    lesson 05 :active,l5, after l4, 1d
-    Gap       :l6, after l5, 1d
-    lesson 12 :l12, after l6, 1d
-    lesson 13 :l13, after l12, 1d
-    lesson 14 :l14, after l13, 1d
+    lesson 1  :l1, 0, 1d
+    lesson 2  :l2, after l1, 1d
+    lesson 3  :l3, after l2, 1d
+    lesson 4  :l4, after l3, 1d
+    lesson 5  :active,l5, after l4, 1d
+    lesson 6  :l6, after l5, 1d
+    lesson 7  :l7, after l6, 1d
+    lesson 8  :l8, after l7, 1d
+    lesson 9  :l9, after l8, 1d
+    lesson 10 :l10, after l9, 1d
 ```
 
 Advanced Setup and Configuration of the LLM Experimental Environment
 
-## 2. Learning Objectives
+# 2. Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
@@ -40,7 +42,7 @@ By the end of this comprehensive lesson, students will be able to:
 - 2.5 Optimize the experimental environment for peak performance
 - 2.6 Implement version control and collaborative workflows in the LLM development process
 
-## 3. Overview
+# 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of the experimental environment setup for LLM development:
 
@@ -51,11 +53,11 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 - 3.5 Performance optimization strategies for the LLM development environment
 - 3.6 Integration of version control and collaborative tools in the LLM workflow
 
-## 4. Detailed Content
+# 4. Detailed Content
 
-### 4.1 Concept 1: Detailed Introduction to the Experimental Environment Components
+## 4.1 Concept 1: Detailed Introduction to the Experimental Environment Components
 
-#### 4.1.1 Explanation
+## 4.1.1 Explanation
 
 Our cloud-based environment is meticulously designed to provide a robust and scalable platform for LLM development. It incorporates state-of-the-art tools and frameworks to ensure that students have access to the necessary computational resources and software stack. The environment includes:
 
@@ -70,11 +72,11 @@ Our cloud-based environment is meticulously designed to provide a robust and sca
 
 Each component plays a crucial role in the LLM development process, from providing the underlying operating system to enabling efficient model training and deployment [1][2][3].
 
-#### 4.1.2 Case Study: Building a Scalable NLP Pipeline
+## 4.1.2 Case Study: Building a Scalable NLP Pipeline
 
 Imagine you're tasked with building a scalable NLP pipeline for a large tech company. This pipeline needs to handle various tasks such as sentiment analysis, named entity recognition, and text summarization. Our experimental environment provides all the necessary tools to develop, test, and deploy such a pipeline efficiently.
 
-#### 4.1.3 Code: Comprehensive Environment Setup and Verification
+## 4.1.3 Code: Comprehensive Environment Setup and Verification
 
 ```python
 import sys
@@ -115,7 +117,7 @@ if __name__ == "__main__":
 
 This script provides a comprehensive check of the entire environment, ensuring that all components are correctly installed and meet the version requirements.
 
-#### 4.1.4 Reflection
+## 4.1.4 Reflection
 
 Understanding the intricate relationships between various components of our experimental environment is crucial for effective LLM development. Each tool and framework has been carefully selected to provide a seamless and powerful development experience.
 
@@ -125,9 +127,9 @@ Consider the following questions:
 2. What potential challenges might arise from using this particular stack, and how can they be mitigated?
 3. How might this environment evolve in the future to accommodate advancements in LLM technology?
 
-### 4.2 Concept 2: Advanced Setup and Configuration of the Online Server Environment
+## 4.2 Concept 2: Advanced Setup and Configuration of the Online Server Environment
 
-#### 4.2.1 Explanation
+## 4.2.1 Explanation
 
 Setting up the online server environment involves a series of carefully orchestrated steps to ensure a robust and efficient LLM development platform. This process includes:
 
@@ -142,11 +144,11 @@ Setting up the online server environment involves a series of carefully orchestr
 
 Each step is critical in creating a stable, secure, and high-performance environment for LLM development [4].
 
-#### 4.2.2 Case Study: Preparing for a Large-Scale LLM Fine-Tuning Project
+## 4.2.2 Case Study: Preparing for a Large-Scale LLM Fine-Tuning Project
 
 Imagine you're part of a research team preparing to fine-tune a large language model on a massive dataset. The setup process needs to ensure that the environment can handle the computational demands of this task while maintaining data security and enabling collaborative work.
 
-#### 4.2.3 Code: Advanced Server Setup Script
+## 4.2.3 Code: Advanced Server Setup Script
 
 ```bash
 #!/bin/bash
@@ -217,7 +219,7 @@ echo "Setup complete. Please log out and log back in for all changes to take eff
 
 This comprehensive setup script automates the entire process of setting up the server environment, from system updates to security configurations.
 
-#### 4.2.4 Reflection
+## 4.2.4 Reflection
 
 The setup and configuration process is a critical foundation for successful LLM development. It requires careful attention to detail and an understanding of how different components interact.
 
@@ -227,9 +229,9 @@ Consider the following:
 2. What potential security risks might be associated with this setup, and how can they be mitigated?
 3. How might this setup process need to be modified for different types of LLM projects or hardware configurations?
 
-### 4.3 Concept 3: Efficient Model Storage and Optimized Invocation Techniques
+## 4.3 Concept 3: Efficient Model Storage and Optimized Invocation Techniques
 
-#### 4.3.1 Explanation
+## 4.3.1 Explanation
 
 Efficient model storage and invocation are crucial for streamlined LLM development. This involves:
 
@@ -241,11 +243,11 @@ Efficient model storage and invocation are crucial for streamlined LLM developme
 
 We use a dedicated `/models` directory on the server to store pre-trained models and leverage the Hugging Face `transformers` library for efficient loading and usage [5].
 
-#### 4.3.2 Case Study: Building a Multi-Model NLP Service
+## 4.3.2 Case Study: Building a Multi-Model NLP Service
 
 Imagine you're developing a service that needs to switch between different language models based on the input language and task. Efficient storage and invocation of multiple models become crucial for maintaining good performance.
 
-#### 4.3.3 Code: Advanced Model Management and Invocation
+## 4.3.3 Code: Advanced Model Management and Invocation
 
 ```python
 import os
@@ -321,7 +323,7 @@ manager.unload_model("gpt2")
 
 This `ModelManager` class provides advanced functionality for efficient model storage, loading, and invocation. It includes features like automatic downloading of models if not found locally, GPU memory management, and model size estimation.
 
-#### 4.3.4 Reflection
+## 4.3.4 Reflection
 
 Efficient model storage and invocation are key to building scalable and responsive LLM applications. The techniques demonstrated here allow for flexible use of multiple models while optimizing resource usage.
 
@@ -331,9 +333,9 @@ Consider the following questions:
 2. What challenges might arise when dealing with very large language models, and how could this system be adapted to address them?
 3. How might version control for models be implemented to ensure reproducibility in LLM experiments?
 
-### 4.4 Concept 4: Comprehensive Troubleshooting Guide for Common and Advanced Issues
+## 4.4 Concept 4: Comprehensive Troubleshooting Guide for Common and Advanced Issues
 
-#### 4.4.1 Explanation
+## 4.4.1 Explanation
 
 Troubleshooting is an essential skill in LLM development. Common issues include:
 
@@ -346,11 +348,11 @@ Troubleshooting is an essential skill in LLM development. Common issues include:
 
 Effective troubleshooting involves systematic problem identification, environment analysis, and solution implementation.
 
-#### 4.4.2 Case Study: Debugging a Production LLM Service
+## 4.4.2 Case Study: Debugging a Production LLM Service
 
 Imagine you're on call for a production LLM service that suddenly starts throwing errors. You need to quickly diagnose and resolve the issue to minimize downtime.
 
-#### 4.4.3 Code: Advanced Troubleshooting Tools
+## 4.4.3 Code: Advanced Troubleshooting Tools
 
 ```python
 import sys
@@ -433,7 +435,7 @@ if __name__ == "__main__":
 
 This `TroubleshootingTools` class provides a comprehensive set of methods for diagnosing common issues in the LLM development environment, including CUDA availability, system and GPU memory usage, disk space, and model loading.
 
-#### 4.4.4 Reflection
+## 4.4.4 Reflection
 
 Effective troubleshooting is critical for maintaining a smooth LLM development workflow. The tools and techniques demonstrated here provide a systematic approach to identifying and resolving common issues.
 
@@ -443,9 +445,9 @@ Consider the following:
 2. What additional checks or tools might be useful for troubleshooting more specific LLM-related issues?
 3. How can effective logging and monitoring be implemented to proactively identify potential issues before they cause significant problems?
 
-### 4.5 Concept 5: Performance Optimization Strategies for the LLM Development Environment
+## 4.5 Concept 5: Performance Optimization Strategies for the LLM Development Environment
 
-#### 4.5.1 Explanation
+## 4.5.1 Explanation
 
 Optimizing the performance of the LLM development environment is crucial for efficient model training and inference. Key optimization strategies include:
 
@@ -458,11 +460,11 @@ Optimizing the performance of the LLM development environment is crucial for eff
 
 These techniques can significantly reduce training time and resource usage, allowing for more efficient experimentation and development [6].
 
-#### 4.5.2 Case Study: Optimizing Training for a Large-Scale Language Model
+## 4.5.2 Case Study: Optimizing Training for a Large-Scale Language Model
 
 Imagine you're tasked with training a large language model with billions of parameters. The training process needs to be optimized to complete within a reasonable timeframe and budget.
 
-#### 4.5.3 Code: Advanced Performance Optimization Techniques
+## 4.5.3 Code: Advanced Performance Optimization Techniques
 
 ```python
 import torch
@@ -548,7 +550,7 @@ trainer.save_model("/models/optimized_gpt2")
 
 This `OptimizedTrainer` class demonstrates advanced performance optimization techniques including mixed precision training, gradient accumulation, and efficient data loading. It's designed to work with Hugging Face models and can be easily adapted for different model architectures and datasets.
 
-#### 4.5.4 Reflection
+## 4.5.4 Reflection
 
 Performance optimization is crucial for making LLM development practical and cost-effective. The techniques demonstrated here can significantly reduce training time and resource usage.
 
@@ -558,9 +560,9 @@ Consider the following questions:
 2. What additional optimization strategies might be applicable for even larger language models?
 3. How might these optimization techniques need to be adjusted for different hardware configurations or cloud environments?
 
-### 4.6 Concept 6: Integration of Version Control and Collaborative Tools in the LLM Workflow
+## 4.6 Concept 6: Integration of Version Control and Collaborative Tools in the LLM Workflow
 
-#### 4.6.1 Explanation
+## 4.6.1 Explanation
 
 Integrating version control and collaborative tools is essential for managing complex LLM projects, especially in team settings. Key aspects include:
 
@@ -572,11 +574,11 @@ Integrating version control and collaborative tools is essential for managing co
 
 Effective use of these tools can greatly enhance team productivity and project manageability [7].
 
-#### 4.6.2 Case Study: Managing a Large-Scale LLM Research Project
+## 4.6.2 Case Study: Managing a Large-Scale LLM Research Project
 
 Imagine you're leading a team of researchers working on developing a new state-of-the-art language model. The project involves multiple experiments, frequent code changes, and collaboration among team members located in different time zones.
 
-#### 4.6.3 Code: Advanced Version Control and Collaboration Setup
+## 4.6.3 Code: Advanced Version Control and Collaboration Setup
 
 ```python
 import os
@@ -680,7 +682,7 @@ loaded_model, loaded_tokenizer = project_manager.load_model_version("v1.0")
 
 This `LLMProjectManager` class demonstrates how to integrate Git for version control, nbdime for better notebook diffs, and MLflow for experiment tracking in an LLM project. It provides methods for managing Git branches, logging experiments, and versioning models.
 
-#### 4.6.4 Reflection
+## 4.6.4 Reflection
 
 Integrating version control and collaborative tools is crucial for managing complex LLM projects, especially in team settings. These tools and practices can greatly enhance productivity, reproducibility, and collaboration.
 
@@ -690,9 +692,9 @@ Consider the following:
 2. What additional tools or practices might be useful for enhancing collaboration in distributed LLM research teams?
 3. How can we ensure that experiment results are reproducible given the stochastic nature of many LLM training processes?
 
-## 5. Summary
+# 5. Summary
 
-### 5.1 Conclusion
+## 5.1 Conclusion
 
 In this comprehensive lesson on setting up the experimental environment for LLM development, we've explored a wide range of topics from basic setup to advanced optimization and collaboration techniques. We've seen how a well-configured environment, efficient model management, effective troubleshooting, performance optimization, and good collaboration practices can significantly enhance the LLM development process.
 
@@ -706,7 +708,7 @@ Key takeaways include:
 
 As LLM technology continues to advance, the ability to set up and manage efficient, scalable, and collaborative development environments will become increasingly crucial. The skills and techniques covered in this lesson provide a solid foundation for tackling complex LLM projects in both research and industry settings.
 
-### 5.2 Mind Maps
+## 5.2 Mind Maps
 
 ```mermaid
 graph TD
@@ -750,11 +752,11 @@ graph TD
     G --> G4[Collaborative Notebooks]
 ```
 
-### 5.3 Preview
+## 5.3 Preview
 
 In our next lesson, we'll dive deep into the fascinating world of tokenization and embeddings in the context of LLMs. We'll explore how different tokenization strategies affect model performance, and how to effectively use pre-trained embeddings in your LLM projects. Get ready to unlock the power of text representation!
 
-## 6. Homework
+# 6. Homework
 
 1. Set up the complete experimental environment as described in this lesson. Document any issues you encounter and how you resolved them.
 
@@ -770,7 +772,7 @@ In our next lesson, we'll dive deep into the fascinating world of tokenization a
 
 7. Research and write a short report (1000 words) on advanced techniques for distributed training of very large language models. Include considerations for hardware requirements and potential challenges.
 
-## 7. Reference and Citation
+# 7. Reference and Citation
 
 [1] Anaconda. (2021). Miniconda. <https://docs.conda.io/en/latest/miniconda.html>
 

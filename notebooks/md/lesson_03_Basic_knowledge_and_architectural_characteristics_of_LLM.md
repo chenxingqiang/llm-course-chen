@@ -6,29 +6,33 @@ gantt
     dateFormat X
     axisFormat %d
     section Course Timeline
-    Course Overview                                     :a1, 0, 1d
-    NLP Fundamentals                                    :a2, after a1, 1d
-    Basic knowledge and architectural characteristics   :active,a3, after a2, 1d
-    LLM Development Fundamentals                        :a4, after a3, 1d
-    Experimental Environment Setup                      :a5, after a4, 1d
-    Gap                                                 :a6, after a5, 1d
-    Model Inference and Function calling                :a12, after a6, 1d
-    Prompt engineering - ChatGPT Prompt Engineering     :a13, after a12, 1d
-    Model Quantization Techniques                       :a14, after a13, 1d
+    Course Overview                                    :a1, 0, 1d
+    NLP Fundamentals                                   :a2, after a1, 1d
+    Basic knowledge and architectural characteristics of LLM :active,a3, after a2, 1d
+    LLM Development Fundamentals                       :a4, after a3, 1d
+    Introduction and Setup of the Experimental Environment :a5, after a4, 1d
+    The concept of the tokenizer and common types      :a6, after a5, 1d
+    Text data preprocessing and preparation            :a7, after a6, 1d
+    LLM training - Fine-tuning                         :a8, after a7, 1d
+    LLM training - Reward Modeling and Proximal Policy Optimization :a9, after a8, 1d
+    Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
     section Lessons
-    lesson 01 :l1, 0, 1d
-    lesson 02 :l2, after l1, 1d
-    lesson 03 :active,l3, after l2, 1d
-    lesson 04 :l4, after l3, 1d
-    lesson 05 :l5, after l4, 1d
-    Gap       :l6, after l5, 1d
-    lesson 12 :l12, after l6, 1d
-    lesson 13 :l13, after l12, 1d
-    lesson 14 :l14, after l13, 1d```
+    lesson 1  :l1, 0, 1d
+    lesson 2  :l2, after l1, 1d
+    lesson 3  :active,l3, after l2, 1d
+    lesson 4  :l4, after l3, 1d
+    lesson 5  :l5, after l4, 1d
+    lesson 6  :l6, after l5, 1d
+    lesson 7  :l7, after l6, 1d
+    lesson 8  :l8, after l7, 1d
+    lesson 9  :l9, after l8, 1d
+    lesson 10 :l10, after l9, 1d
+```
+
 
 Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
 
-## 2. Learning Objectives
+# 2. Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
@@ -39,7 +43,7 @@ By the end of this comprehensive lesson, students will be able to:
 - 2.5 Critically evaluate the trade-offs and challenges associated with scaling LLMs
 - 2.6 Understand the broader implications of LLM advancements on AI ethics and societal impact
 
-## 3. Overview
+# 3. Overview
 
 This in-depth lesson covers three key concepts, providing a comprehensive exploration of Large Language Model fundamentals:
 
@@ -47,11 +51,11 @@ This in-depth lesson covers three key concepts, providing a comprehensive explor
 - 3.2 Deep Dive into Attention Mechanisms and Transformer Architecture
 - 3.3 Comprehensive Analysis of LLM Architectural Characteristics
 
-## 4. Detailed Content
+# 4. Detailed Content
 
-### 4.1 Concept 1: The Evolution and Impact of LLMs in Natural Language Processing
+## 4.1 Concept 1: The Evolution and Impact of LLMs in Natural Language Processing
 
-#### 4.1.1 Explanation
+## 4.1.1 Explanation
 The history of Large Language Models (LLMs) is a testament to the rapid advancements in artificial intelligence and natural language processing. From the introduction of Word2Vec in 2013 to the release of GPT-4 in 2023, LLMs have undergone a remarkable evolution in terms of size, capability, and impact on various NLP tasks [1].
 
 Key milestones in LLM development include:
@@ -69,7 +73,7 @@ The growth in LLM capabilities has been driven by several factors:
 3. Architectural innovations, especially the transformer architecture
 4. Improved training techniques and optimization algorithms
 
-#### 4.1.2 Case Study: GPT-3 and Its Impact on NLP Tasks
+## 4.1.2 Case Study: GPT-3 and Its Impact on NLP Tasks
 
 GPT-3, released in 2020, marked a significant milestone in LLM development. With 175 billion parameters, it demonstrated remarkable few-shot learning capabilities across a wide range of tasks.
 
@@ -109,7 +113,7 @@ plt.show()
 
 This visualization demonstrates the significant performance improvements brought by GPT-3 across various NLP tasks.
 
-#### 4.1.3 Code: Visualizing LLM Growth
+## 4.1.3 Code: Visualizing LLM Growth
 
 Let's create a more detailed visualization of LLM growth over time, including more models and using a logarithmic scale to better represent the exponential growth:
 
@@ -139,7 +143,7 @@ plt.show()
 
 This visualization clearly demonstrates the exponential growth in LLM size over the past decade.
 
-#### 4.1.4 Reflection
+## 4.1.4 Reflection
 
 The rapid evolution of LLMs has led to significant advancements in various NLP tasks, including:
 
@@ -154,9 +158,9 @@ However, this growth also raises important questions:
 2. How do we ensure that these models are unbiased and ethically sound?
 3. What are the implications of having a few organizations control such powerful AI technologies?
 
-### 4.2 Concept 2: Deep Dive into Attention Mechanisms and Transformer Architecture
+## 4.2 Concept 2: Deep Dive into Attention Mechanisms and Transformer Architecture
 
-#### 4.2.1 Explanation
+## 4.2.1 Explanation
 
 The transformer architecture, introduced in the seminal paper "Attention is All You Need" by Vaswani et al. in 2017, revolutionized NLP by introducing the self-attention mechanism [2]. This architecture forms the foundation of modern LLMs.
 
@@ -170,7 +174,7 @@ Key components of the transformer architecture include:
 
 The self-attention mechanism allows the model to weigh the importance of different words in the input sequence when processing each word, enabling the capture of long-range dependencies in text.
 
-#### 4.2.2 Case Study: Analyzing Self-Attention in Practice
+## 4.2.2 Case Study: Analyzing Self-Attention in Practice
 
 Let's examine how self-attention works in practice by visualizing attention weights for a simple sentence.
 
@@ -208,7 +212,7 @@ plt.show()
 
 This visualization shows how each word attends to other words in the sentence. Darker colors indicate stronger attention.
 
-#### 4.2.3 Code: Implementing a Basic Transformer Block
+## 4.2.3 Code: Implementing a Basic Transformer Block
 
 Let's implement a basic transformer block including multi-head attention and a feed-forward network:
 
@@ -289,7 +293,7 @@ print(f"Output shape: {output.shape}")
 
 This code implements the core components of a transformer block, including multi-head attention and a feed-forward network.
 
-#### 4.2.4 Reflection
+## 4.2.4 Reflection
 
 The attention mechanism and transformer architecture have become the foundation of modern LLMs due to several key advantages:
 
@@ -303,9 +307,9 @@ However, there are also challenges:
 2. Difficulty in modeling very long sequences (though there are ongoing efforts to address this)
 3. Large memory requirements, especially for big models
 
-### 4.3 Concept 3: Comprehensive Analysis of LLM Architectural Characteristics
+## 4.3 Concept 3: Comprehensive Analysis of LLM Architectural Characteristics
 
-#### 4.3.1 Explanation
+## 4.3.1 Explanation
 
 LLMs are characterized by several key architectural features that contribute to their impressive capabilities [3]:
 
@@ -318,7 +322,7 @@ LLMs are characterized by several key architectural features that contribute to 
 
 These characteristics collectively determine the model's capacity, efficiency, and suitability for different tasks.
 
-#### 4.3.2 Case Study: Scaling Laws in Language Models
+## 4.3.2 Case Study: Scaling Laws in Language Models
 
 Research has shown that model performance tends to follow power-law scaling with respect to model size, dataset size, and compute budget. Let's visualize this relationship:
 
@@ -361,7 +365,7 @@ plt.show()
 
 This visualization illustrates the hypothetical scaling law for language models, showing how performance improves with model size, but with diminishing returns at extremely large scales.
 
-#### 4.3.3 Code: Analyzing Model Architecture
+## 4.3.3 Code: Analyzing Model Architecture
 
 Let's create a simple tool to analyze and compare the architectural characteristics of different LLMs:
 
@@ -424,7 +428,7 @@ print(comparison)
 
 This code creates a visual comparison of different LLM architectures, highlighting key characteristics like model size, depth, width, and vocabulary size.
 
-#### 4.3.4 Reflection
+## 4.3.4 Reflection
 
 The architectural characteristics of LLMs play a crucial role in determining their capabilities:
 
@@ -440,9 +444,9 @@ However, these characteristics also present challenges:
 2. They may be more prone to overfitting on smaller datasets.
 3. Deployment of very large models can be challenging in resource-constrained environments.
 
-## 5. Summary
+# 5. Summary
 
-### 5.1 Conclusion
+## 5.1 Conclusion
 
 In this comprehensive lesson, we've explored the fundamental concepts and architectural characteristics of Large Language Models. We've traced their rapid evolution from Word2Vec to GPT-4, delved into the transformer architecture that powers modern LLMs, and analyzed the key architectural features that contribute to their impressive capabilities.
 
@@ -455,7 +459,7 @@ Key takeaways include:
 
 As LLMs continue to evolve, understanding these fundamentals will be crucial for researchers and practitioners working to push the boundaries of what's possible in natural language processing and artificial intelligence.
 
-### 5.2 Mind Maps
+## 5.2 Mind Maps
 
 ```mermaid
 graph TD
@@ -494,7 +498,7 @@ graph TD
 
 This mind map provides a visual overview of the key concepts covered in this lesson, illustrating the relationships between different aspects of LLM fundamentals, architecture, and evolution.
 
-## 6. Homework
+# 6. Homework
 
 1. Implement a simple transformer model using PyTorch or TensorFlow. Train it on a small dataset (e.g., a subset of the IMDb movie review dataset) and evaluate its performance.
 
@@ -508,7 +512,7 @@ This mind map provides a visual overview of the key concepts covered in this les
 
 6. Experiment with a pre-trained LLM (e.g., GPT-2) using the Hugging Face Transformers library. Perform fine-tuning on a specific task of your choice and compare the performance before and after fine-tuning.
 
-## 7. Reference and Citation
+# 7. Reference and Citation
 
 [1] Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. arXiv preprint arXiv:2005.14165.
 

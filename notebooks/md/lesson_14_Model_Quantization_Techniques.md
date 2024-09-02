@@ -6,30 +6,32 @@ gantt
     dateFormat X
     axisFormat %d
     section Course Timeline
-    Course Overview                                     :a1, 0, 1d
-    NLP Fundamentals                                    :a2, after a1, 1d
-    Basic knowledge and architectural characteristics   :a3, after a2, 1d
-    LLM Development Fundamentals                        :a4, after a3, 1d
-    Experimental Environment Setup                      :a5, after a4, 1d
-    Gap                                                 :a6, after a5, 1d
-    Model Inference and Function calling                :a12, after a6, 1d
-    Prompt engineering - ChatGPT Prompt Engineering     :a13, after a12, 1d
-    Model Quantization Techniques                       :active,a14, after a13, 1d
+    Famous SOTA LLM models and JAIS model              :a10, 0, 1d
+    Methods and Metrics for Model Evaluation           :a11, after a10, 1d
+    Model Inference and Function calling               :a12, after a11, 1d
+    Prompt engineering - ChatGPT Prompt Engineering    :a13, after a12, 1d
+    Model Quantization Techniques                      :active,a14, after a13, 1d
+    Introduction to Chatbot Project                    :a15, after a14, 1d
+    Test Dataset Collection and Model Evaluation       :a16, after a15, 1d
+    Designing input and output formats for chatbot with context :a17, after a16, 1d
+    Model Deployment and Backend Development           :a18, after a17, 1d
+    Frontend web page debugging                        :a19, after a18, 1d
     section Lessons
-    lesson 01 :l1, 0, 1d
-    lesson 02 :l2, after l1, 1d
-    lesson 03 :l3, after l2, 1d
-    lesson 04 :l4, after l3, 1d
-    lesson 05 :l5, after l4, 1d
-    Gap       :l6, after l5, 1d
-    lesson 12 :l12, after l6, 1d
+    lesson 10 :l10, 0, 1d
+    lesson 11 :l11, after l10, 1d
+    lesson 12 :l12, after l11, 1d
     lesson 13 :l13, after l12, 1d
     lesson 14 :active,l14, after l13, 1d
+    lesson 15 :l15, after l14, 1d
+    lesson 16 :l16, after l15, 1d
+    lesson 17 :l17, after l16, 1d
+    lesson 18 :l18, after l17, 1d
+    lesson 19 :l19, after l18, 1d
 ```
 
 Advanced Model Quantization Techniques for Efficient Inference
 
-## 2. Learning Objectives
+# 2. Learning Objectives
 
 This course combines theory with hands-on practice. Upon completion, students will be able to:
 
@@ -39,7 +41,7 @@ This course combines theory with hands-on practice. Upon completion, students wi
 - 2.4 Evaluate the impact of quantization on model performance and resource utilization
 - 2.5 Apply quantization strategies to real-world deep learning models
 
-## 3. Overview
+# 3. Overview
 
 This comprehensive lesson covers 5 key concepts, 4 case studies, and 3 hands-on experiments to achieve the learning objectives. We will explore:
 
@@ -49,11 +51,11 @@ This comprehensive lesson covers 5 key concepts, 4 case studies, and 3 hands-on 
 - 3.4 Performance analysis and trade-offs in quantized models
 - 3.5 Advanced quantization strategies for different model architectures
 
-## 4. Detailed Content
+# 4. Detailed Content
 
-### 4.1 Concept 1: Foundations of Model Quantization
+## 4.1 Concept 1: Foundations of Model Quantization
 
-#### 4.1.1 Explanation
+## 4.1.1 Explanation
 
 Model quantization is a technique used to reduce the precision of weights and activations in neural networks. It's crucial for deploying large models on resource-constrained devices, improving inference speed, and reducing memory footprint.
 
@@ -63,11 +65,11 @@ Key aspects:
 - Storage and computational benefits
 - Potential impact on model accuracy
 
-#### 4.1.2 Case Study: MobileNetV2 Deployment on Smartphones
+## 4.1.2 Case Study: MobileNetV2 Deployment on Smartphones
 
 Examine how Google successfully deployed MobileNetV2 on various smartphone devices using quantization, achieving significant speedup with minimal accuracy loss.
 
-#### 4.1.3 Code: Basic Int8 Quantization in PyTorch
+## 4.1.3 Code: Basic Int8 Quantization in PyTorch
 
 ```python
 import torch
@@ -118,7 +120,7 @@ print(f"Original accuracy: {original_accuracy:.4f}")
 print(f"Quantized accuracy: {quantized_accuracy:.4f}")
 ```
 
-#### 4.1.4 Reflection
+## 4.1.4 Reflection
 
 Discuss the trade-offs between model size, inference speed, and accuracy when applying quantization. Consider:
 
@@ -126,9 +128,9 @@ Discuss the trade-offs between model size, inference speed, and accuracy when ap
 - What are the implications for energy consumption in mobile and edge devices?
 - How might quantization affect the interpretability of model decisions?
 
-### 4.2 Concept 2: Types of Quantization Techniques
+## 4.2 Concept 2: Types of Quantization Techniques
 
-#### 4.2.1 Explanation
+## 4.2.1 Explanation
 
 We'll explore various quantization techniques, each with its own strengths and use cases:
 
@@ -155,11 +157,11 @@ table-4.2.1.1 Quantization Techniques Pros and Cons
 
 explanation of the table: This table provides a quick reference for the pros, cons, and ideal use cases of each quantization technique, helping developers choose the most appropriate method for their specific requirements.
 
-#### 4.2.2 Case Study: BERT Quantization for Natural Language Processing
+## 4.2.2 Case Study: BERT Quantization for Natural Language Processing
 
 Explore how Hugging Face implemented efficient quantization for BERT models, enabling faster inference in production NLP systems.
 
-#### 4.2.3 Code: Implementing Quantization-Aware Training in TensorFlow
+## 4.2.3 Code: Implementing Quantization-Aware Training in TensorFlow
 
 ```python
 import tensorflow as tf
@@ -220,7 +222,7 @@ for i, (test_image, test_label) in enumerate(zip(test_images, test_labels)):
 print(f"Quantized model accuracy: {test_accuracy / len(test_labels):.4f}")
 ```
 
-#### 4.2.4 Reflection
+## 4.2.4 Reflection
 
 Consider the challenges and benefits of implementing different quantization techniques in real-world scenarios:
 
@@ -228,9 +230,9 @@ Consider the challenges and benefits of implementing different quantization tech
 - What are the implications for model maintenance and updates?
 - How might different quantization techniques affect model robustness and generalization?
 
-### 4.3 Concept 3: Quantization for Different Model Architectures
+## 4.3 Concept 3: Quantization for Different Model Architectures
 
-#### 4.3.1 Explanation
+## 4.3.1 Explanation
 
 Different neural network architectures may require specialized quantization approaches:
 
@@ -239,11 +241,11 @@ Different neural network architectures may require specialized quantization appr
 - Transformer-based models
 - Graph Neural Networks (GNNs)
 
-#### 4.3.2 Case Study: Quantizing Transformer Models for Machine Translation
+## 4.3.2 Case Study: Quantizing Transformer Models for Machine Translation
 
 Analyze how Google achieved significant speedup in neural machine translation by quantizing Transformer models.
 
-#### 4.3.3 Code: Quantizing a Pre-trained BERT Model with Hugging Face Transformers
+## 4.3.3 Code: Quantizing a Pre-trained BERT Model with Hugging Face Transformers
 
 ```python
 from transformers import BertForSequenceClassification, BertTokenizer
@@ -305,7 +307,7 @@ print(f"Quantized accuracy: {quantized_accuracy:.4f}")
 torch.save(quantized_model.state_dict(), 'quantized_bert.pth')
 ```
 
-#### 4.3.4 Reflection
+## 4.3.4 Reflection
 
 Discuss the challenges of quantizing complex model architectures:
 
@@ -313,9 +315,9 @@ Discuss the challenges of quantizing complex model architectures:
 - What are the specific considerations for quantizing recurrent layers in RNNs?
 - How might quantization impact the graph structure in GNNs?
 
-### 4.4 Concept 4: Hardware-Aware Quantization
+## 4.4 Concept 4: Hardware-Aware Quantization
 
-#### 4.4.1 Explanation
+## 4.4.1 Explanation
 
 Different hardware platforms have varying support for quantized operations. Hardware-aware quantization optimizes models for specific devices:
 
@@ -323,11 +325,11 @@ Different hardware platforms have varying support for quantized operations. Hard
 - GPUs (e.g., NVIDIA, AMD)
 - Specialized AI accelerators (e.g., Google TPU, Apple Neural Engine)
 
-#### 4.4.2 Case Study: TensorRT Optimization for NVIDIA GPUs
+## 4.4.2 Case Study: TensorRT Optimization for NVIDIA GPUs
 
 Examine how NVIDIA's TensorRT uses quantization and other optimizations to accelerate inference on GPUs.
 
-#### 4.4.3 Code: Quantization for TensorFlow Lite on Mobile Devices
+## 4.4.3 Code: Quantization for TensorFlow Lite on Mobile Devices
 
 ```python
 import tensorflow as tf
@@ -384,7 +386,7 @@ predicted_label = np.argmax(output_data)
 print(f"Predicted class: {predicted_label}")
 ```
 
-#### 4.4.4 Reflection
+## 4.4.4 Reflection
 
 Consider the implications of hardware-aware quantization:
 
@@ -392,9 +394,9 @@ Consider the implications of hardware-aware quantization:
 - What are the trade-offs between model portability and optimized performance?
 - How might hardware-aware quantization influence model design decisions?
 
-## 5. Summary
+# 5. Summary
 
-### 5.1 Conclusion
+## 5.1 Conclusion
 
 In this comprehensive lesson, we've explored the fundamental concepts of model quantization, various quantization techniques, and their practical implementations across different deep learning frameworks. We've seen how quantization can significantly reduce model size and improve inference speed, making it crucial for deploying large language models and other neural networks on resource-constrained devices.
 
@@ -405,7 +407,7 @@ Key takeaKey takeaways include:
 - Practical implementation strategies using popular frameworks
 - Considerations for different model architectures and hardware platforms
 
-### 5.2 Mind Maps
+## 5.2 Mind Maps
 
 ```mermaid
 graph TD
@@ -441,11 +443,11 @@ graph TD
     F --> F4[TensorRT]
 ```
 
-### 5.3 Preview
+## 5.3 Preview
 
 In our next lesson, we will delve into advanced quantization techniques for edge computing scenarios. We'll explore how to optimize quantized models for ultra-low-power devices and examine emerging research in this rapidly evolving field.
 
-## 6. Homework
+# 6. Homework
 
 1. Implement post-training static quantization on a pre-trained ResNet50 model using PyTorch. Compare its performance (accuracy and inference speed) with the original model on both CPU and GPU.
 
@@ -457,7 +459,7 @@ In our next lesson, we will delve into advanced quantization techniques for edge
 
 5. Implement quantization-aware training for a simple convolutional neural network on the CIFAR-10 dataset. Compare the final accuracy of the quantized model with a non-quantized baseline trained for the same number of epochs.
 
-## 7. Reference and Citation
+# 7. Reference and Citation
 
 1. Jacob, B., et al. (2018). "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
 

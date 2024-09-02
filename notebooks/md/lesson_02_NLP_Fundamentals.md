@@ -24,7 +24,8 @@ gantt
     Gap       :l6, after l5, 1d
     lesson 12 :l12, after l6, 1d
     lesson 13 :l13, after l12, 1d
-    lesson 14 :l14, after l13, 1d```
+    lesson 14 :l14, after l13, 1d
+```
 
 Advanced Natural Language Processing: From Fundamentals to State-of-the-Art
 
