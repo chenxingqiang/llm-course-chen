@@ -60,7 +60,7 @@ This in-depth lesson covers eight key concepts, providing a comprehensive explor
 
 ## 4.1 Concept 1: Advanced Tokenization Techniques
 
-## 4.1.1 Explanation
+### 4.1.1 Explanation
 
 Tokenization is the foundational process of converting raw text into a sequence of tokens that the model can process. It's a crucial step that significantly influences the model's ability to understand and generate text. Advanced tokenization techniques go beyond simple word or character splitting, employing sophisticated algorithms to capture semantic and syntactic information [1].
 
@@ -72,11 +72,11 @@ Key aspects of advanced tokenization include:
 - Special token management (e.g., [CLS], [SEP], [MASK])
 - Impact of tokenization on model performance and training efficiency
 
-## 4.1.2 Case Study: Multilingual Tokenization for Global Language Models
+### 4.1.2 Case Study: Multilingual Tokenization for Global Language Models
 
 Imagine you're developing a language model that needs to handle multiple languages, including those with non-Latin scripts. Your tokenization strategy needs to effectively handle a diverse range of linguistic structures and writing systems.
 
-## 4.1.3 Code: Advanced Tokenization Examples
+### 4.1.3 Code: Advanced Tokenization Examples
 
 ```python
 from transformers import AutoTokenizer
@@ -154,7 +154,7 @@ for name, result in oov_results.items():
 
 This code demonstrates advanced tokenization techniques, including comparison of different tokenizers, visualization of token length distributions, and handling of out-of-vocabulary words.
 
-## 4.1.4 Reflection
+### 4.1.4 Reflection
 
 Advanced tokenization techniques play a crucial role in the performance and capabilities of LLMs. The choice of tokenization strategy can significantly impact a model's ability to handle different languages, rare words, and complex linguistic structures.
 
@@ -166,7 +166,7 @@ Consider the following questions:
 
 ## 4.2 Concept 2: Sophisticated Prompting Strategies
 
-## 4.2.1 Explanation
+### 4.2.1 Explanation
 
 Prompting is a powerful technique that allows LLMs to perform a wide range of tasks without additional training. Sophisticated prompting strategies go beyond simple text completion, enabling complex reasoning, task decomposition, and even self-improvement [2].
 
@@ -179,11 +179,11 @@ Key aspects of advanced prompting include:
 - Task decomposition through prompting
 - Ethical considerations in prompt design
 
-## 4.2.2 Case Study: Developing a Complex Reasoning System
+### 4.2.2 Case Study: Developing a Complex Reasoning System
 
 Imagine you're building a system that needs to perform complex logical reasoning tasks, such as solving multi-step math problems or analyzing legal documents. You need to design prompting strategies that can guide the model through the reasoning process step-by-step.
 
-## 4.2.3 Code: Advanced Prompting Techniques
+### 4.2.3 Code: Advanced Prompting Techniques
 
 ```python
 import openai
@@ -267,7 +267,7 @@ print(ethical_analysis)
 
 This code demonstrates advanced prompting techniques including chain-of-thought reasoning, self-consistency through multiple attempts, task decomposition, and ethical consideration prompts.
 
-## 4.2.4 Reflection
+###4.2.4 Reflection
 
 Sophisticated prompting strategies can dramatically enhance the capabilities of LLMs, allowing them to perform complex reasoning tasks and handle a wide range of applications. However, they also raise important questions about the true understanding and capabilities of these models.
 
@@ -279,7 +279,7 @@ Consider the following questions:
 
 ## 4.3 Concept 3: Comprehensive Data Preparation and Preprocessing
 
-## 4.3.1 Explanation
+### 4.3.1 Explanation
 
 Data preparation and preprocessing are critical steps in LLM development that can significantly impact model performance. Comprehensive approaches go beyond basic cleaning to include advanced techniques for data augmentation, bias mitigation, and quality assurance [3].
 
@@ -293,11 +293,11 @@ Key aspects of advanced data preparation include:
 - Privacy-preserving data preprocessing
 - Quality assurance and validation techniques
 
-## 4.3.2 Case Study: Preparing a Diverse and Unbiased Dataset for a Multilingual LLM
+### 4.3.2 Case Study: Preparing a Diverse and Unbiased Dataset for a Multilingual LLM
 
 Imagine you're tasked with preparing a dataset for training a large multilingual language model that will be used in various applications across different cultures and domains. You need to ensure the dataset is diverse, representative, and free from harmful biases.
 
-## 4.3.3 Code: Advanced Data Preparation and Preprocessing
+### 4.3.3 Code: Advanced Data Preparation and Preprocessing
 
 ```python
 import pandas as pd
@@ -406,7 +406,7 @@ print(train_data[['cleaned_text', 'augmented_text', 'translated_text']].head())
 
 This code demonstrates advanced data preparation techniques including text cleaning, data augmentation, translation for multilingual support, and bias detection.
 
-## 4.3.4 Reflection
+### 4.3.4 Reflection
 
 Comprehensive data preparation and preprocessing are crucial for developing high-quality LLMs. These techniques can significantly impact the model's performance, fairness, and generalization capabilities.
 
@@ -418,7 +418,7 @@ Consider the following questions:
 
 ## 4.4 Concept 4: In-depth Pre-training Methodologies
 
-## 4.4.1 Explanation
+### 4.4.1 Explanation
 
 Pre-training is a fundamental step in LLM development where the model learns general language understanding from a large corpus of text. Advanced pre-training methodologies go beyond simple language modeling to incorporate structured knowledge, multi-task learning, and efficient training techniques [4].
 
@@ -432,11 +432,11 @@ Key aspects of advanced pre-training include:
 - Efficient pre-training techniques (e.g., sparse attention, gradient checkpointing)
 - Continual pre-training and domain adaptation
 
-## 4.4.2 Case Study: Pre-training a Domain-Specific LLM for Scientific Literature
+### 4.4.2 Case Study: Pre-training a Domain-Specific LLM for Scientific Literature
 
 Imagine you're developing an LLM specifically for understanding and generating scientific literature across multiple disciplines. You need to design a pre-training methodology that effectively captures scientific knowledge and writing styles.
 
-## 4.4.3 Code: Advanced Pre-training Techniques
+### 4.4.3 Code: Advanced Pre-training Techniques
 
 ```python
 import torch
@@ -544,7 +544,7 @@ pre_trainer.contrastive_pretraining(texts)
 
 This code demonstrates advanced pre-training techniques including curriculum learning and contrastive pre-training, which can be particularly effective for domain-specific language models.
 
-## 4.4.4 Reflection
+### 4.4.4 Reflection
 
 Advanced pre-training methodologies can significantly enhance the capabilities and efficiency of LLMs. These techniques allow models to capture more nuanced language understanding and domain-specific knowledge.
 
@@ -556,7 +556,7 @@ Consider the following questions:
 
 ## 4.5 Concept 5: Advanced Fine-tuning Techniques
 
-## 4.5.1 Explanation
+### 4.5.1 Explanation
 
 Fine-tuning adapts a pre-trained model to specific tasks or domains. Advanced fine-tuning techniques go beyond simple supervised learning to include methods that efficiently adapt large models with limited data and computational resources [5].
 
@@ -570,11 +570,11 @@ Key aspects of advanced fine-tuning include:
 - Fine-tuning with noisy labels and weak supervision
 - Ethical considerations in fine-tuning
 
-## 4.5.2 Case Study: Adapting a Large Language Model for Specialized Medical Tasks
+### 4.5.2 Case Study: Adapting a Large Language Model for Specialized Medical Tasks
 
 Imagine you're working on adapting a large, general-purpose language model for a series of specialized medical tasks, including diagnosis assistance and medical literature summarization. You have limited labeled data and computational resources.
 
-## 4.5.3 Code: Advanced Fine-tuning Techniques
+### 4.5.3 Code: Advanced Fine-tuning Techniques
 
 ```python
 import torch
@@ -723,7 +723,7 @@ fine_tuner.continual_fine_tune(datasets)
 
 This code demonstrates advanced fine-tuning techniques including few-shot learning and continual fine-tuning with Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting.
 
-## 4.5.4 Reflection
+### 4.5.4 Reflection
 
 Advanced fine-tuning techniques enable more efficient and effective adaptation of large language models to specific tasks and domains. These methods are particularly crucial when working with limited data or computational resources.
 
@@ -735,7 +735,7 @@ Consider the following questions:
 
 ## 4.6 Concept 6: Reward Modeling and Reinforcement Learning in LLMs
 
-## 4.6.1 Explanation
+### 4.6.1 Explanation
 
 Reward modeling and reinforcement learning (RL) techniques allow LLMs to learn from human feedback and optimize for specific objectives beyond simple language modeling. These approaches can lead to models that better align with human preferences and values [6].
 
@@ -748,11 +748,11 @@ Key aspects include:
 - Safe exploration in language model RL
 - Ethical considerations in reward design
 
-## 4.6.2 Case Study: Developing an AI Writing Assistant with Human Feedback
+### 4.6.2 Case Study: Developing an AI Writing Assistant with Human Feedback
 
 Imagine you're creating an AI writing assistant that needs to generate high-quality, engaging content while adhering to specific style guidelines and factual accuracy. You want to incorporate human feedback to continuously improve the model's outputs.
 
-## 4.6.3 Code: Reward Modeling and RL for LLMs
+### 4.6.3 Code: Reward Modeling and RL for LLMs
 
 ```python
 import torch
@@ -860,7 +860,7 @@ print(generated_text)
 
 This code demonstrates the implementation of a reward model and its integration with a language model using reinforcement learning techniques. The reward model is trained on human feedback, and the language model is then optimized to maximize the predicted reward.
 
-## 4.6.4 Reflection
+### 4.6.4 Reflection
 
 Reward modeling and reinforcement learning offer powerful tools for aligning language models with human preferences and specific objectives. However, they also introduce new challenges and ethical considerations.
 
@@ -872,7 +872,7 @@ Consider the following questions:
 
 ## 4.7 Concept 7: Efficient Model Quantization Strategies
 
-## 4.7.1 Explanation
+### 4.7.1 Explanation
 
 Model quantization is a technique used to reduce the size and computational requirements of large language models while maintaining their performance. Advanced quantization strategies go beyond simple precision reduction to include methods like mixed-precision quantization and quantization-aware training [7].
 
@@ -885,11 +885,11 @@ Key aspects include:
 - Hardware-aware quantization
 - Impact of quantization on model performance and behavior
 
-## 4.7.2 Case Study: Deploying a Large Language Model on Edge Devices
+### 4.7.2 Case Study: Deploying a Large Language Model on Edge Devices
 
 Imagine you need to deploy a large language model for real-time translation on mobile devices with limited computational resources. You need to significantly reduce the model size and inference time without substantially degrading performance.
 
-## 4.7.3 Code: Advanced Model Quantization
+### 4.7.3 Code: Advanced Model Quantization
 
 ```python
 import torch
@@ -989,7 +989,7 @@ quantizer.compare_models(test_data)
 
 This code demonstrates various quantization techniques including dynamic quantization, static quantization, and a simplified mixed-precision quantization. It also compares the performance and size of the quantized models with the original model.
 
-## 4.7.4 Reflection
+### 4.7.4 Reflection
 
 Efficient model quantization is crucial for deploying large language models in resource-constrained environments. However, it requires careful consideration of the trade-offs between model size, inference speed, and performance.
 
@@ -1001,7 +1001,7 @@ Consider the following questions:
 
 ## 4.8 Concept 8: Accurate Model Performance Estimation and Evaluation
 
-## 4.8.1 Explanation
+### 4.8.1 Explanation
 
 Accurate performance estimation and evaluation are crucial for understanding the capabilities and limitations of large language models. This involves not only traditional metrics but also more sophisticated evaluation techniques that can capture the nuanced performance of LLMs across various tasks and domains [8].
 
@@ -1014,11 +1014,11 @@ Key aspects include:
 - Human evaluation and alignment assessment
 - Evaluation of safety and ethical considerations
 
-## 4.8.2 Case Study: Evaluating a Multilingual, Multi-task Language Model
+### 4.8.2 Case Study: Evaluating a Multilingual, Multi-task Language Model
 
 Imagine you've developed a large language model capable of performing various tasks (e.g., translation, summarization, question-answering) across multiple languages. You need to design a comprehensive evaluation strategy that accurately assesses its performance across these diverse capabilities.
 
-## 4.8.3 Code: Advanced Model Evaluation Framework
+### 4.8.3 Code: Advanced Model Evaluation Framework
 
 ```python
 import torch
@@ -1179,7 +1179,7 @@ print("Calibration Results:", calibration_results)
 
 This code demonstrates a comprehensive evaluation framework for large language models, including classification performance, generation quality, robustness to perturbations, fairness across sensitive attributes, and model calibration.
 
-## 4.8.4 Reflection
+### 4.8.4 Reflection
 
 Accurate performance estimation and evaluation are essential for understanding the true capabilities and limitations of large language models. These techniques help in identifying areas for improvement and potential risks associated with model deployment.
 

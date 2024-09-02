@@ -29,7 +29,6 @@ gantt
     lesson 10 :l10, after l9, 1d
 ```
 
-
 Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
 
 # 2. Learning Objectives
@@ -55,7 +54,7 @@ This in-depth lesson covers three key concepts, providing a comprehensive explor
 
 ## 4.1 Concept 1: The Evolution and Impact of LLMs in Natural Language Processing
 
-## 4.1.1 Explanation
+### 4.1.1 Explanation
 The history of Large Language Models (LLMs) is a testament to the rapid advancements in artificial intelligence and natural language processing. From the introduction of Word2Vec in 2013 to the release of GPT-4 in 2023, LLMs have undergone a remarkable evolution in terms of size, capability, and impact on various NLP tasks [1].
 
 Key milestones in LLM development include:
@@ -73,7 +72,7 @@ The growth in LLM capabilities has been driven by several factors:
 3. Architectural innovations, especially the transformer architecture
 4. Improved training techniques and optimization algorithms
 
-## 4.1.2 Case Study: GPT-3 and Its Impact on NLP Tasks
+### 4.1.2 Case Study: GPT-3 and Its Impact on NLP Tasks
 
 GPT-3, released in 2020, marked a significant milestone in LLM development. With 175 billion parameters, it demonstrated remarkable few-shot learning capabilities across a wide range of tasks.
 
@@ -113,7 +112,7 @@ plt.show()
 
 This visualization demonstrates the significant performance improvements brought by GPT-3 across various NLP tasks.
 
-## 4.1.3 Code: Visualizing LLM Growth
+### 4.1.3 Code: Visualizing LLM Growth
 
 Let's create a more detailed visualization of LLM growth over time, including more models and using a logarithmic scale to better represent the exponential growth:
 
@@ -143,7 +142,7 @@ plt.show()
 
 This visualization clearly demonstrates the exponential growth in LLM size over the past decade.
 
-## 4.1.4 Reflection
+### 4.1.4 Reflection
 
 The rapid evolution of LLMs has led to significant advancements in various NLP tasks, including:
 
@@ -160,7 +159,7 @@ However, this growth also raises important questions:
 
 ## 4.2 Concept 2: Deep Dive into Attention Mechanisms and Transformer Architecture
 
-## 4.2.1 Explanation
+### 4.2.1 Explanation
 
 The transformer architecture, introduced in the seminal paper "Attention is All You Need" by Vaswani et al. in 2017, revolutionized NLP by introducing the self-attention mechanism [2]. This architecture forms the foundation of modern LLMs.
 
@@ -174,7 +173,7 @@ Key components of the transformer architecture include:
 
 The self-attention mechanism allows the model to weigh the importance of different words in the input sequence when processing each word, enabling the capture of long-range dependencies in text.
 
-## 4.2.2 Case Study: Analyzing Self-Attention in Practice
+### 4.2.2 Case Study: Analyzing Self-Attention in Practice
 
 Let's examine how self-attention works in practice by visualizing attention weights for a simple sentence.
 
@@ -212,7 +211,7 @@ plt.show()
 
 This visualization shows how each word attends to other words in the sentence. Darker colors indicate stronger attention.
 
-## 4.2.3 Code: Implementing a Basic Transformer Block
+### 4.2.3 Code: Implementing a Basic Transformer Block
 
 Let's implement a basic transformer block including multi-head attention and a feed-forward network:
 
@@ -268,7 +267,7 @@ class TransformerBlock(nn.Module):
         self.norm1 = nn.LayerNorm(d_model)
         self.norm2 = nn.LayerNorm(d_model)
         self.dropout = nn.Dropout(dropout)
-        
+
     def forward(self, x, mask=None):
         attn_output = self.attn(x, x, x, mask)
         x = self.norm1(x + self.dropout(attn_output))
@@ -293,7 +292,7 @@ print(f"Output shape: {output.shape}")
 
 This code implements the core components of a transformer block, including multi-head attention and a feed-forward network.
 
-## 4.2.4 Reflection
+### 4.2.4 Reflection
 
 The attention mechanism and transformer architecture have become the foundation of modern LLMs due to several key advantages:
 
@@ -309,7 +308,7 @@ However, there are also challenges:
 
 ## 4.3 Concept 3: Comprehensive Analysis of LLM Architectural Characteristics
 
-## 4.3.1 Explanation
+### 4.3.1 Explanation
 
 LLMs are characterized by several key architectural features that contribute to their impressive capabilities [3]:
 
@@ -322,7 +321,7 @@ LLMs are characterized by several key architectural features that contribute to 
 
 These characteristics collectively determine the model's capacity, efficiency, and suitability for different tasks.
 
-## 4.3.2 Case Study: Scaling Laws in Language Models
+### 4.3.2 Case Study: Scaling Laws in Language Models
 
 Research has shown that model performance tends to follow power-law scaling with respect to model size, dataset size, and compute budget. Let's visualize this relationship:
 
@@ -365,7 +364,7 @@ plt.show()
 
 This visualization illustrates the hypothetical scaling law for language models, showing how performance improves with model size, but with diminishing returns at extremely large scales.
 
-## 4.3.3 Code: Analyzing Model Architecture
+### 4.3.3 Code: Analyzing Model Architecture
 
 Let's create a simple tool to analyze and compare the architectural characteristics of different LLMs:
 
@@ -428,7 +427,7 @@ print(comparison)
 
 This code creates a visual comparison of different LLM architectures, highlighting key characteristics like model size, depth, width, and vocabulary size.
 
-## 4.3.4 Reflection
+### 4.3.4 Reflection
 
 The architectural characteristics of LLMs play a crucial role in determining their capabilities:
 

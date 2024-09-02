@@ -57,10 +57,12 @@ This in-depth lesson introduces five key concepts, explores three main roles in 
 
 ## 4.1 Concept 1: Artificial General Intelligence (AGI)
 
-## 4.1.1 Explanation
+### 4.1.1 Explanation
+
 Artificial General Intelligence (AGI) represents a hypothetical form of AI that possesses the ability to understand, learn, and apply knowledge across a wide range of domains, similar to human intelligence. Unlike narrow AI, which is designed for specific tasks, AGI aims to exhibit general problem-solving skills and adaptability [1].
 
 Key characteristics of AGI include:
+
 1. Generalization across domains
 2. Continuous learning and adaptation
 3. Abstract reasoning and problem-solving
@@ -69,15 +71,18 @@ Key characteristics of AGI include:
 
 The concept of AGI is crucial as it represents the ultimate goal of AI research and development, potentially leading to transformative changes in society, economy, and human-machine interaction.
 
-## 4.1.2 Case Study: AlphaGo vs. AGI
+### 4.1.2 Case Study: AlphaGo vs. AGI
+
 Let's compare AlphaGo, a narrow AI system, with the concept of AGI:
 
 AlphaGo:
+
 - Specialized in playing the game Go
 - Outperforms humans in its specific domain
 - Cannot transfer skills to other games or tasks
 
 AGI (hypothetical):
+
 - Could learn and master Go along with any other game
 - Would understand the concept of games in general
 - Could apply strategic thinking to non-game situations
@@ -85,8 +90,7 @@ AGI (hypothetical):
 
 This comparison highlights the vast difference between current AI capabilities and the aspirations of AGI.
 
-
-## 4.1.3 Visualization: AGI in Context
+### 4.1.3 Visualization: AGI in Context
 
 ```mermaid
 graph TD
@@ -103,7 +107,7 @@ graph TD
 
 This diagram illustrates the relationship between different levels of AI, highlighting AGI's position as a bridge between narrow AI and hypothetical superintelligence.
 
-## 4.1.4 Reflection
+### 4.1.4 Reflection
 
 Understanding AGI is fundamental to grasping the potential and limitations of current AI systems. It helps in setting realistic expectations and guides research and development efforts in the field of AI. However, it's important to note that AGI remains a theoretical concept, and there are significant challenges to overcome before it can be realized. These challenges include:
 
@@ -116,11 +120,11 @@ As we progress through this course, we'll explore how current technologies, part
 
 ## 4.2 Concept 2: Skills for the AGI Era
 
-## 4.2.1 Explanation
+### 4.2.1 Explanation
 
 As we move towards an AGI era, different roles will require specific skills to thrive in this new landscape. These skills span across technical, strategic, and ethical domains, emphasizing the interdisciplinary nature of AGI development and application. We'll focus on three key roles: AI Users, Product Managers, and Engineers.
 
-## 4.2.2 Case Study: Skills in Action
+### 4.2.2 Case Study: Skills in Action
 
 Let's examine how these skills might be applied in a real-world scenario:
 
@@ -144,7 +148,7 @@ Scenario: Developing an AGI-powered personal assistant for healthcare
    - Ethical AI Development: Implementing fairness, transparency, and privacy in the AI system
    - Continuous Learning: Staying updated with the latest advancements in AGI and healthcare AI
 
-## 4.2.3 Visualization: Key Skills for Different Roles in the AGI Era
+### 4.2.3 Visualization: Key Skills for Different Roles in the AGI Era
 
 ```python
 import matplotlib.pyplot as plt
@@ -180,13 +184,13 @@ plt.show()
 
 This visualization provides a comparative view of the key skills required for different roles in the AGI era, emphasizing the diverse skill sets needed across these roles.
 
-## 4.2.5 Reflection
+### 4.2.5 Reflection
 
 The diverse skill sets required for different roles in the AGI era highlight the need for continuous learning and adaptability. It also underscores the importance of interdisciplinary knowledge and collaboration in the development and application of AGI technologies. As the field of AI continues to evolve rapidly, professionals in all roles must be prepared to update their skills regularly and think critically about the ethical implications of their work.
 
 ## 4.3 Concept 3: LLMs as a Path to AGI
 
-## 4.3.1 Explanation
+### 4.3.1 Explanation
 
 Large Language Models (LLMs) have emerged as a promising approach towards achieving AGI. These models, trained on vast amounts of text data, demonstrate remarkable capabilities in natural language understanding and generation, exhibiting characteristics that align with AGI goals [3].
 
@@ -204,7 +208,7 @@ However, it's important to note that current LLMs also have limitations, includi
 3. Hallucination: Generating plausible but incorrect information
 4. Ethical concerns: Potential biases and misuse of generated content
 
-## 4.3.2 Case Study: GPT-3 Demonstrating AGI-like Capabilities
+### 4.3.2 Case Study: GPT-3 Demonstrating AGI-like Capabilities
 
 OpenAI's GPT-3 has shown remarkable abilities that hint at AGI-like capabilities:
 
@@ -234,7 +238,7 @@ print(f"The factorial of {number} is {result}")
 
 This example demonstrates GPT-3's ability to understand the concept of factorial and generate correct, functional code.
 
-## 4.3.3 Code: Interacting with an LLM (Using OpenAI's GPT-3)
+### 4.3.3 Code: Interacting with an LLM (Using OpenAI's GPT-3)
 
 Let's create a Python script that interacts with GPT-3 to demonstrate some of its capabilities:
 
@@ -302,7 +306,7 @@ print(query_gpt3(prompt, max_tokens=150))
 
 This script demonstrates some of the key capabilities of LLMs that make them potential stepping stones towards AGI, including few-shot learning, multi-task capabilities, and emergent behaviors like reasoning.
 
-## 4.3.4 Visualization: LLM Capabilities vs AGI Requirements
+### 4.3.4 Visualization: LLM Capabilities vs AGI Requirements
 
 ```mermaid
 graph TD
@@ -333,13 +337,13 @@ graph TD
 
 This diagram illustrates the relationship between LLM capabilities and AGI requirements, showing how current LLM abilities align with some aspects of AGI while highlighting areas for further development.
 
-## 4.3.5 Reflection
+### 4.3.5 Reflection
 
 LLMs represent a significant step towards AGI, showcasing abilities like few-shot learning, multi-task capabilities, and emergent behaviors. However, challenges remain in areas such as reasoning, common sense understanding, and ethical decision-making. As we progress in this course, we'll explore how these models can be leveraged and extended to address more complex AI challenges, while also considering their limitations and potential risks.
 
 ## 4.4 Concept 4: Ethical Considerations in AGI Development
 
-## 4.4.1 Explanation
+### 4.4.1 Explanation
 
 As we move closer to AGI, it's crucial to consider the ethical implications of developing such powerful AI systems. Key ethical considerations include:
 
@@ -350,7 +354,7 @@ As we move closer to AGI, it's crucial to consider the ethical implications of d
 5. Existential Risk: Considering the potential long-term impacts of AGI on humanity's future.
 6. Alignment Problem: Ensuring AGI systems are aligned with human values and goals.
 
-## 4.4.2 Case Study: Ethical Challenges in Healthcare AGI
+### 4.4.2 Case Study: Ethical Challenges in Healthcare AGI
 
 Imagine an AGI system developed for healthcare diagnosis and treatment recommendation:
 
@@ -362,7 +366,7 @@ Ethical Challenges:
 4. Human Oversight: Balancing AGI capabilities with the need for human medical expertise.
 5. Informed Consent: Ensuring patients understand and consent to AGI involvement in their care.
 
-## 4.4.3 Code: Ethical AI Decision-Making Simulation
+### 4.4.3 Code: Ethical AI Decision-Making Simulation
 
 Let's create a simple simulation of ethical decision-making in an AI system:
 
@@ -377,24 +381,24 @@ class EthicalAGI:
             'privacy': 0.9,
             'beneficence': 0.85
         }
-    
+
     def make_decision(self, options, context):
         scored_options = []
         for option in options:
             score = self.evaluate_option(option, context)
             scored_options.append((option, score))
-        
+
         best_option = max(scored_options, key=lambda x: x[1])
         return best_option[0], best_option[1]
-    
+
     def evaluate_option(self, option, context):
         fairness_score = random.uniform(0, 1) * self.ethical_priorities['fairness']
         transparency_score = random.uniform(0, 1) * self.ethical_priorities['transparency']
         privacy_score = random.uniform(0, 1) * self.ethical_priorities['privacy']
         beneficence_score = random.uniform(0, 1) * self.ethical_priorities['beneficence']
-        
+
         return fairness_score + transparency_score + privacy_score + beneficence_score
-    
+
     def explain_decision(self, decision, score):
         print(f"Decision: {decision}")
         print(f"Ethical score: {score:.2f}")
@@ -418,7 +422,7 @@ agi.explain_decision(decision, score)
 
 This simulation demonstrates how an AGI system might incorporate ethical considerations into its decision-making process, weighing factors like fairness, transparency, privacy, and beneficence.
 
-## 4.4.4 Visualization: Ethical Considerations in AGI Development
+### 4.4.4 Visualization: Ethical Considerations in AGI Development
 
 ```mermaid
 graph TD
@@ -429,38 +433,38 @@ graph TD
     A --> F[Job Displacement]
     A --> G[Existential Risk]
     A --> H[Alignment Problem]
-    
+
     B --> I[Clear Responsibility]
     B --> J[Auditability]
-    
+
     C --> K[Explainable AI]
     C --> L[Open Source Development]
-    
+
     D --> M[Diverse Training Data]
     D --> N[Algorithmic Fairness]
-    
+
     E --> O[Data Protection]
     E --> P[Informed Consent]
-    
+
     F --> Q[Reskilling Programs]
     F --> R[Universal Basic Income]
-    
+
     G --> S[Safety Measures]
     G --> T[Long-term Planning]
-    
+
     H --> U[Value Learning]
     H --> V[Human-AI Collaboration]
 ```
 
 This diagram illustrates the various ethical considerations in AGI development and their interconnections.
 
-## 4.4.5 Reflection
+### 4.4.5 Reflection
 
 Addressing ethical considerations in AGI development is crucial for ensuring that these powerful systems benefit humanity while minimizing potential risks. As we progress through this course, we'll need to constantly consider the ethical implications of the technologies we're studying and developing. This includes not only the direct impacts of AGI systems but also the broader societal changes they may bring about.
 
 ## 4.5 Concept 5: Course Structure, Goals, and Learning Path
 
-## 4.5.1 Explanation
+### 4.5.1 Explanation
 
 This course is structured into two main phases: Fundamentals of LLM and Core Knowledge and Practice of RAG (Retrieval-Augmented Generation). Each phase consists of theoretical foundations followed by practical project work.
 
@@ -481,9 +485,9 @@ The course goals are to:
 4. Foster critical thinking about the ethical implications of AGI
 5. Prepare students for careers in AI research and development
 
-## 4.5.2 Course Analysis: LLM and RAG Modules
+### 4.5.2 Course Analysis: LLM and RAG Modules
 
-### 4.5.2.1.Theory vs. Practical Hours per Module
+#### 4.5.2.1.Theory vs. Practical Hours per Module
 
 The chart below compares the theory and practical hours allocated to each module.
 
@@ -530,7 +534,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-### 4.5.2.2. Cumulative Learning Path
+#### 4.5.2.2. Cumulative Learning Path
 
 This chart illustrates the cumulative learning hours as students progress through the course.
 
@@ -539,7 +543,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 lesson_names = [
-    'Course Overview', 'NLP Fundamentals', 'Basic knowledge and architectural characteristics', 
+    'Course Overview', 'NLP Fundamentals', 'Basic knowledge and architectural characteristics',
     'LLM Development Fundamentals', 'Introduction and Setup of the Experimental Environment',
     'The concept of the tokenizer and common types', 'Text data preprocessing and preparation',
     'Model Inference and Function calling', 'Prompt engineering - ChatGPT Prompt Engineering',
@@ -564,7 +568,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-### 4.5.2.3. Lesson Distribution Across Modules
+#### 4.5.2.3. Lesson Distribution Across Modules
 
 The pie chart below shows how lessons are distributed across the different modules.
 
@@ -577,7 +581,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-### 4.5.2.4. Time Allocation Across Lessons and Modules
+#### 4.5.2.4. Time Allocation Across Lessons and Modules
 
 This heatmap visualizes the time allocation for each lesson within each module.
 
@@ -620,7 +624,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-## 4.5.3 Reflection
+### 4.5.3 Reflection
 
 The course structure provides a comprehensive journey from theoretical foundations to practical applications, enabling students to build a solid understanding of LLMs and RAG while developing hands-on skills through project work. By combining theory with practice and covering both LLM fundamentals and advanced techniques like RAG, the course prepares students for the cutting-edge of AI development.
 
@@ -657,47 +661,47 @@ graph TD
     A --> D[LLMs as Path to AGI]
     A --> E[Ethical Considerations]
     A --> F[Course Structure]
-    
+
     B --> G[Generalization]
     B --> H[Adaptability]
     B --> I[Reasoning]
-    
+
     C --> J[AI Users]
     C --> K[Product Managers]
     C --> L[Engineers]
-    
+
     D --> M[Few-shot Learning]
     D --> N[Multi-task Capabilities]
     D --> O[Limitations]
-    
+
     E --> P[Transparency]
     E --> Q[Fairness]
     E --> R[Privacy]
     E --> S[Long-term Impact]
-    
+
     F --> T[LLM Fundamentals]
     F --> U[LLM Project]
     F --> V[RAG Fundamentals]
     F --> W[RAG Project]
-    
+
     J --> X[AI Literacy]
     J --> Y[Critical Thinking]
-    
+
     K --> Z[AI Strategy]
     K --> AA[Ethical Leadership]
-    
+
     L --> AB[Advanced ML/DL]
     L --> AC[Ethical AI Development]
-    
+
     M --> AD[Improved Efficiency]
     N --> AE[Versatility]
     O --> AF[Ethical Challenges]
-    
+
     P --> AG[Explainable AI]
     Q --> AH[Bias Mitigation]
     R --> AI[Data Protection]
     S --> AJ[Existential Risk]
-    
+
     T --> AK[Theory]
     U --> AL[Practical Skills]
     V --> AM[Advanced Techniques]

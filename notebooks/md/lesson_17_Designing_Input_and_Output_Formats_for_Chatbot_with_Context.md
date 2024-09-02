@@ -2,38 +2,34 @@
 # 1. Course Title: Advanced Prompt Engineering - Mastering ChatGPT Interactions
 
 ```mermaid
-graph TD
-    A[Advanced Prompt Engineering] --> B[Foundations]
-    A --> C[Advanced Techniques]
-    A --> D[Optimization]
-    A --> E[Prompt Chaining]
-    A --> F[Ethics and Bias]
-    A --> G[Evaluation]
-
-    B --> B1[Clarity]
-    B --> B2[Context]
-    B --> B3[Structure]
-
-    C --> C1[Task-Specific Design]
-    C --> C2[Domain Adaptation]
-    C --> C3[Creativity Elicitation]
-
-    D --> D1[Performance Metrics]
-    D --> D2[Consistency Strategies]
-    D --> D3[Fine-tuning Approaches]
-
-    E --> E1[Multi-step Reasoning]
-    E --> E2[Information Synthesis]
-    E --> E3[Complex Problem Solving]
-
-    F --> F1[Bias Identification]
-    F --> F2[Fairness Considerations]
-    F --> F3[Ethical Guidelines]
-
-    G --> G1[Quantitative Metrics]
-    G --> G2[Qualitative Analysis]
-    G --> G3[User Feedback Integration]
+gantt
+    title LLM Course Timeline
+    dateFormat X
+    axisFormat %d
+    section Course Timeline
+    Prompt engineering - ChatGPT Prompt Engineering    :a13, 0, 1d
+    Model Quantization Techniques                      :a14, after a13, 1d
+    Introduction to Chatbot Project                    :a15, after a14, 1d
+    Test Dataset Collection and Model Evaluation       :a16, after a15, 1d
+    Designing input and output formats for chatbot with context :active,a17, after a16, 1d
+    Model Deployment and Backend Development           :a18, after a17, 1d
+    Frontend web page debugging                        :a19, after a18, 1d
+    System Testing and Deployment                      :a20, after a19, 1d
+    RAG Introduction                                   :a21, after a20, 1d
+    RAG Frameworks - Introduction and use of Llamaindex and LangChain :a22, after a21, 1d
+    section Lessons
+    lesson 13 :l13, 0, 1d
+    lesson 14 :l14, after l13, 1d
+    lesson 15 :l15, after l14, 1d
+    lesson 16 :l16, after l15, 1d
+    lesson 17 :active,l17, after l16, 1d
+    lesson 18 :l18, after l17, 1d
+    lesson 19 :l19, after l18, 1d
+    lesson 20 :l20, after l19, 1d
+    lesson 21 :l21, after l20, 1d
+    lesson 22 :l22, after l21, 1d
 ```
+
 
 # 2. Learning Objectives
 
@@ -61,7 +57,7 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 
 ## 4.1 Concept 1: Foundations of Prompt Engineering: Principles and Best Practices
 
-## 4.1.1 Explanation
+### 4.1.1 Explanation
 
 Prompt engineering is the art and science of designing inputs to AI language models to elicit desired outputs. It involves understanding the model's capabilities, limitations, and behavior to craft prompts that effectively guide the model's responses [1].
 
@@ -72,11 +68,11 @@ Key principles include:
 - Structuring prompts for optimal comprehension
 - Balancing between guidance and open-endedness
 
-## 4.1.2 Case Study: Improving Customer Service Chatbot Responses
+### 4.1.2 Case Study: Improving Customer Service Chatbot Responses
 
 Imagine you're tasked with improving a customer service chatbot for an e-commerce platform. The current prompts are leading to generic and sometimes irrelevant responses. Your goal is to redesign the prompts to provide more accurate and helpful information to customers.
 
-## 4.1.3 Code: Prompt Engineering Framework
+### 4.1.3 Code: Prompt Engineering Framework
 
 ```python
 import openai
@@ -141,7 +137,7 @@ print("\nGenerated Response:")
 print(response)
 ```
 
-## 4.1.4 Reflection
+### 4.1.4 Reflection
 
 Effective prompt engineering is foundational to successful interactions with AI language models. It requires a deep understanding of both the model's capabilities and the specific requirements of the task at hand.
 

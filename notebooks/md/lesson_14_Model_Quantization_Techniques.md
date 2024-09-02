@@ -1,3 +1,4 @@
+
 # 1.Course Title: Model Quantization Techniques: A Comprehensive Guide
 
 ```mermaid
@@ -55,7 +56,7 @@ This comprehensive lesson covers 5 key concepts, 4 case studies, and 3 hands-on 
 
 ## 4.1 Concept 1: Foundations of Model Quantization
 
-## 4.1.1 Explanation
+### 4.1.1 Explanation
 
 Model quantization is a technique used to reduce the precision of weights and activations in neural networks. It's crucial for deploying large models on resource-constrained devices, improving inference speed, and reducing memory footprint.
 
@@ -65,11 +66,11 @@ Key aspects:
 - Storage and computational benefits
 - Potential impact on model accuracy
 
-## 4.1.2 Case Study: MobileNetV2 Deployment on Smartphones
+### 4.1.2 Case Study: MobileNetV2 Deployment on Smartphones
 
 Examine how Google successfully deployed MobileNetV2 on various smartphone devices using quantization, achieving significant speedup with minimal accuracy loss.
 
-## 4.1.3 Code: Basic Int8 Quantization in PyTorch
+### 4.1.3 Code: Basic Int8 Quantization in PyTorch
 
 ```python
 import torch
@@ -120,7 +121,7 @@ print(f"Original accuracy: {original_accuracy:.4f}")
 print(f"Quantized accuracy: {quantized_accuracy:.4f}")
 ```
 
-## 4.1.4 Reflection
+### 4.1.4 Reflection
 
 Discuss the trade-offs between model size, inference speed, and accuracy when applying quantization. Consider:
 
@@ -130,7 +131,7 @@ Discuss the trade-offs between model size, inference speed, and accuracy when ap
 
 ## 4.2 Concept 2: Types of Quantization Techniques
 
-## 4.2.1 Explanation
+### 4.2.1 Explanation
 
 We'll explore various quantization techniques, each with its own strengths and use cases:
 
@@ -157,11 +158,11 @@ table-4.2.1.1 Quantization Techniques Pros and Cons
 
 explanation of the table: This table provides a quick reference for the pros, cons, and ideal use cases of each quantization technique, helping developers choose the most appropriate method for their specific requirements.
 
-## 4.2.2 Case Study: BERT Quantization for Natural Language Processing
+### 4.2.2 Case Study: BERT Quantization for Natural Language Processing
 
 Explore how Hugging Face implemented efficient quantization for BERT models, enabling faster inference in production NLP systems.
 
-## 4.2.3 Code: Implementing Quantization-Aware Training in TensorFlow
+### 4.2.3 Code: Implementing Quantization-Aware Training in TensorFlow
 
 ```python
 import tensorflow as tf
@@ -222,7 +223,7 @@ for i, (test_image, test_label) in enumerate(zip(test_images, test_labels)):
 print(f"Quantized model accuracy: {test_accuracy / len(test_labels):.4f}")
 ```
 
-## 4.2.4 Reflection
+### 4.2.4 Reflection
 
 Consider the challenges and benefits of implementing different quantization techniques in real-world scenarios:
 
@@ -232,7 +233,7 @@ Consider the challenges and benefits of implementing different quantization tech
 
 ## 4.3 Concept 3: Quantization for Different Model Architectures
 
-## 4.3.1 Explanation
+### 4.3.1 Explanation
 
 Different neural network architectures may require specialized quantization approaches:
 
@@ -241,11 +242,11 @@ Different neural network architectures may require specialized quantization appr
 - Transformer-based models
 - Graph Neural Networks (GNNs)
 
-## 4.3.2 Case Study: Quantizing Transformer Models for Machine Translation
+### 4.3.2 Case Study: Quantizing Transformer Models for Machine Translation
 
 Analyze how Google achieved significant speedup in neural machine translation by quantizing Transformer models.
 
-## 4.3.3 Code: Quantizing a Pre-trained BERT Model with Hugging Face Transformers
+### 4.3.3 Code: Quantizing a Pre-trained BERT Model with Hugging Face Transformers
 
 ```python
 from transformers import BertForSequenceClassification, BertTokenizer
@@ -307,7 +308,7 @@ print(f"Quantized accuracy: {quantized_accuracy:.4f}")
 torch.save(quantized_model.state_dict(), 'quantized_bert.pth')
 ```
 
-## 4.3.4 Reflection
+### 4.3.4 Reflection
 
 Discuss the challenges of quantizing complex model architectures:
 
@@ -317,7 +318,7 @@ Discuss the challenges of quantizing complex model architectures:
 
 ## 4.4 Concept 4: Hardware-Aware Quantization
 
-## 4.4.1 Explanation
+### 4.4.1 Explanation
 
 Different hardware platforms have varying support for quantized operations. Hardware-aware quantization optimizes models for specific devices:
 
@@ -325,11 +326,11 @@ Different hardware platforms have varying support for quantized operations. Hard
 - GPUs (e.g., NVIDIA, AMD)
 - Specialized AI accelerators (e.g., Google TPU, Apple Neural Engine)
 
-## 4.4.2 Case Study: TensorRT Optimization for NVIDIA GPUs
+### 4.4.2 Case Study: TensorRT Optimization for NVIDIA GPUs
 
 Examine how NVIDIA's TensorRT uses quantization and other optimizations to accelerate inference on GPUs.
 
-## 4.4.3 Code: Quantization for TensorFlow Lite on Mobile Devices
+### 4.4.3 Code: Quantization for TensorFlow Lite on Mobile Devices
 
 ```python
 import tensorflow as tf
@@ -386,7 +387,7 @@ predicted_label = np.argmax(output_data)
 print(f"Predicted class: {predicted_label}")
 ```
 
-## 4.4.4 Reflection
+### 4.4.4 Reflection
 
 Consider the implications of hardware-aware quantization:
 

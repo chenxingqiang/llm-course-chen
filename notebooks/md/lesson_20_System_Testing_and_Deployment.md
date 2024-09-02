@@ -2,38 +2,34 @@
 # 1. Course Title: Comprehensive System Testing and Robust Deployment Strategies for AI Applications
 
 ```mermaid
-graph TD
-    A[Frontend Debugging for AI Apps] --> B[Advanced Debugging Techniques]
-    A --> C[Async Operations & State Management]
-    A --> D[Performance Optimization]
-    A --> E[Error Handling & User Feedback]
-    A --> F[Testing Frameworks]
-    A --> G[Visualization Techniques]
-
-    B --> B1[AI-specific Logging]
-    B --> B2[ML Model Interaction Debugging]
-    B --> B3[AI Behavior Analysis]
-
-    C --> C1[Async Request Management]
-    C --> C2[State Consistency]
-    C --> C3[Race Condition Handling]
-
-    D --> D1[Lazy Loading for AI Components]
-    D --> D2[Optimized Rendering]
-    D --> D3[Caching Strategies]
-
-    E --> E1[Graceful Error Handling]
-    E --> E2[User-Friendly Feedback]
-    E --> E3[AI Confidence Indicators]
-
-    F --> F1[Unit Testing AI Components]
-    F --> F2[Integration Testing]
-    F --> F3[AI Output Validation]
-
-    G --> G1[AI Decision Visualizations]
-    G --> G2[Interactive Debugging Tools]
-    G3[Performance Profiling Visualizations]
+gantt
+    title LLM Course Timeline
+    dateFormat X
+    axisFormat %d
+    section Course Timeline
+    Test Dataset Collection and Model Evaluation       :a16, 0, 1d
+    Designing input and output formats for chatbot with context :a17, after a16, 1d
+    Model Deployment and Backend Development           :a18, after a17, 1d
+    Frontend web page debugging                        :a19, after a18, 1d
+    System Testing and Deployment                      :active,a20, after a19, 1d
+    RAG Introduction                                   :a21, after a20, 1d
+    RAG Frameworks - Introduction and use of Llamaindex and LangChain :a22, after a21, 1d
+    RAG embedding model                                :a23, after a22, 1d
+    VectorDB - The use of the Milvus database          :a24, after a23, 1d
+    Keyword search and Vector Retrieval                :a25, after a24, 1d
+    section Lessons
+    lesson 16 :l16, 0, 1d
+    lesson 17 :l17, after l16, 1d
+    lesson 18 :l18, after l17, 1d
+    lesson 19 :l19, after l18, 1d
+    lesson 20 :active,l20, after l19, 1d
+    lesson 21 :l21, after l20, 1d
+    lesson 22 :l22, after l21, 1d
+    lesson 23 :l23, after l22, 1d
+    lesson 24 :l24, after l23, 1d
+    lesson 25 :l25, after l24, 1d
 ```
+
 
 # 2. Learning Objectives
 
@@ -397,7 +393,7 @@ graph TD
     G3[Performance Profiling Visualizations]
 ```
 
-## 6. Homework
+# 6. Homework
 
 1. Design and implement a comprehensive testing suite for an AI-powered image recognition system. Include tests for accuracy, performance, fairness across different demographic groups, and robustness against adversarial inputs.
 
@@ -411,7 +407,7 @@ graph TD
 
 6. Conduct an ethical audit of an AI system's testing and deployment process. Identify potential ethical issues and propose mitigation strategies. Write a report detailing your findings and recommendations.
 
-## 7. Reference and Citation
+# 7. Reference and Citation
 
 [1] Breck, E., Cai, S., Nielsen, E., Salib, M., & Sculley, D. (2017). The ML test score: A rubric for ML production readiness and technical debt reduction. In 2017 IEEE International Conference on Big Data (Big Data) (pp. 1123-1132).
 

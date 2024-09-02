@@ -6,30 +6,32 @@ gantt
     dateFormat X
     axisFormat %d
     section Course Timeline
-    Course Overview                                     :a1, 0, 1d
-    NLP Fundamentals                                    :active,a2, after a1, 1d
-    Basic knowledge and architectural characteristics   :a3, after a2, 1d
-    LLM Development Fundamentals                        :a4, after a3, 1d
-    Experimental Environment Setup                      :a5, after a4, 1d
-    Gap                                                 :a6, after a5, 1d
-    Model Inference and Function calling                :a12, after a6, 1d
-    Prompt engineering - ChatGPT Prompt Engineering     :a13, after a12, 1d
-    Model Quantization Techniques                       :a14, after a13, 1d
+    Course Overview                                    :a1, 0, 1d
+    NLP Fundamentals                                   :active,a2, after a1, 1d
+    Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
+    LLM Development Fundamentals                       :a4, after a3, 1d
+    Introduction and Setup of the Experimental Environment :a5, after a4, 1d
+    The concept of the tokenizer and common types      :a6, after a5, 1d
+    Text data preprocessing and preparation            :a7, after a6, 1d
+    LLM training - Fine-tuning                         :a8, after a7, 1d
+    LLM training - Reward Modeling and Proximal Policy Optimization :a9, after a8, 1d
+    Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
     section Lessons
-    lesson 01 :l1, 0, 1d
-    lesson 02 :active,l2, after l1, 1d
-    lesson 03 :l3, after l2, 1d
-    lesson 04 :l4, after l3, 1d
-    lesson 05 :l5, after l4, 1d
-    Gap       :l6, after l5, 1d
-    lesson 12 :l12, after l6, 1d
-    lesson 13 :l13, after l12, 1d
-    lesson 14 :l14, after l13, 1d
+    lesson 1  :l1, 0, 1d
+    lesson 2  :active,l2, after l1, 1d
+    lesson 3  :l3, after l2, 1d
+    lesson 4  :l4, after l3, 1d
+    lesson 5  :l5, after l4, 1d
+    lesson 6  :l6, after l5, 1d
+    lesson 7  :l7, after l6, 1d
+    lesson 8  :l8, after l7, 1d
+    lesson 9  :l9, after l8, 1d
+    lesson 10 :l10, after l9, 1d
 ```
 
 Advanced Natural Language Processing: From Fundamentals to State-of-the-Art
 
-## 2. Learning Objectives
+# 2. Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
@@ -40,7 +42,7 @@ By the end of this comprehensive lesson, students will be able to:
 - 2.5 Implement basic NLP tasks using popular libraries and frameworks
 - 2.6 Critically evaluate the strengths and limitations of different NLP approaches
 
-## 3. Overview
+# 3. Overview
 
 This in-depth lesson covers four key concepts, providing a comprehensive exploration of Natural Language Processing (NLP) fundamentals:
 
@@ -49,11 +51,12 @@ This in-depth lesson covers four key concepts, providing a comprehensive explora
 - 3.3 The Evolution of NLP: From Rule-based Systems to Transformers
 - 3.4 State-of-the-Art NLP Models and Their Groundbreaking Capabilities
 
-## 4. Detailed Content
+# 4. Detailed Content
 
-### 4.1 Concept 1: The Importance and Wide-ranging Applications of NLP
+## 4.1 Concept 1: The Importance and Wide-ranging Applications of NLP
 
-#### 4.1.1 Explanation
+### 4.1.1 Explanation
+
 Natural Language Processing (NLP) is a crucial subfield of artificial intelligence that focuses on the interaction between computers and humans using natural language. Its importance stems from several key factors:
 
 1. Improving Human-Computer Interaction: NLP enables more natural and intuitive interfaces.
@@ -63,6 +66,7 @@ Natural Language Processing (NLP) is a crucial subfield of artificial intelligen
 5. Data-driven Decision Making: NLP can analyze large volumes of text data to provide insights.
 
 The applications of NLP are vast and growing, including:
+
 - Virtual Assistants (e.g., Siri, Alexa)
 - Machine Translation (e.g., Google Translate)
 - Sentiment Analysis for Social Media Monitoring
@@ -71,7 +75,8 @@ The applications of NLP are vast and growing, including:
 - Automatic Text Summarization
 - Speech Recognition Systems
 
-#### 4.1.2 Case Study: NLP in Healthcare
+### 4.1.2 Case Study: NLP in Healthcare
+
 Let's consider the application of NLP in healthcare. Electronic Health Records (EHRs) contain vast amounts of unstructured text data. NLP can help in:
 
 1. Extracting relevant medical information from clinical notes
@@ -81,7 +86,7 @@ Let's consider the application of NLP in healthcare. Electronic Health Records (
 
 For example, a study by Liao et al. (2015) showed that NLP could identify patients with heart failure from clinical notes with high accuracy, potentially improving early diagnosis and treatment.
 
-#### 4.1.3 Code: Advanced Sentiment Analysis with VADER
+### 4.1.3 Code: Advanced Sentiment Analysis with VADER
 
 Let's implement a more sophisticated sentiment analysis using VADER (Valence Aware Dictionary and sEntiment Reasoner), which is particularly attuned to sentiments expressed in social media:
 
@@ -129,13 +134,13 @@ for i, (text, sentiment) in enumerate(zip(texts, sentiments)):
 
 This code performs sentiment analysis on multiple pieces of text feedback about a course, visualizing the results and providing a more nuanced understanding of sentiment.
 
-#### 4.1.4 Reflection
+### 4.1.4 Reflection
 
 The wide-ranging applications of NLP demonstrate its crucial role in modern AI. From improving user experiences to enabling data-driven decision making in complex fields like healthcare, NLP is transforming how we interact with and extract value from textual data. However, it's important to consider the ethical implications, such as privacy concerns in healthcare applications or potential biases in sentiment analysis systems.
 
-### 4.2 Concept 2: Comprehensive Overview of NLP Tasks and Their Real-world Applications
+## 4.2 Concept 2: Comprehensive Overview of NLP Tasks and Their Real-world Applications
 
-#### 4.2.1 Explanation
+### 4.2.1 Explanation
 
 NLP encompasses a wide range of tasks, which can be broadly categorized into three main types:
 
@@ -150,7 +155,7 @@ NLP encompasses a wide range of tasks, which can be broadly categorized into thr
 
 Each of these task types serves different purposes in processing and understanding natural language, often working together in complex NLP systems.
 
-#### 4.2.2 Case Study: Multilingual Customer Support System
+### 4.2.2 Case Study: Multilingual Customer Support System
 
 Imagine developing a multilingual customer support system for a global e-commerce platform. This system would incorporate multiple NLP tasks:
 
@@ -163,7 +168,7 @@ Imagine developing a multilingual customer support system for a global e-commerc
 
 This case study demonstrates how different NLP tasks can be combined to create a sophisticated, real-world application.
 
-#### 4.2.3 Code: Multi-task NLP Pipeline
+### 4.2.3 Code: Multi-task NLP Pipeline
 
 Let's implement a simplified version of the multilingual customer support system described above:
 
@@ -236,7 +241,7 @@ for query in queries:
 
 This code demonstrates a multi-task NLP pipeline that processes customer queries, handling language detection, translation, named entity recognition, sentiment analysis, and a simplified form of intent classification.
 
-#### 4.2.4 Reflection
+### 4.2.4 Reflection
 
 The diversity of NLP tasks allows for the creation of sophisticated systems that can understand and generate human language in nuanced ways. However, each task comes with its own challenges:
 
@@ -246,9 +251,9 @@ The diversity of NLP tasks allows for the creation of sophisticated systems that
 
 Understanding these challenges is crucial for developing robust NLP systems and choosing the right approaches for specific applications.
 
-### 4.3 Concept 3: The Evolution of NLP: From Rule-based Systems to Transformers
+## 4.3 Concept 3: The Evolution of NLP: From Rule-based Systems to Transformers
 
-#### 4.3.1 Explanation
+### 4.3.1 Explanation
 
 The field of NLP has seen significant advancements over the years, evolving from simple rule-based systems to sophisticated neural network-based approaches. This evolution can be broadly categorized into several stages:
 
@@ -260,7 +265,7 @@ The field of NLP has seen significant advancements over the years, evolving from
 
 Each stage brought significant improvements in NLP capabilities, with the most recent advancements enabling human-like language understanding and generation.
 
-#### 4.3.2 Case Study: Evolution of Machine Translation
+### 4.3.2 Case Study: Evolution of Machine Translation
 
 Let's trace the evolution of machine translation as an example:
 
@@ -280,7 +285,7 @@ Let's trace the evolution of machine translation as an example:
    - Pros: State-of-the-art performance, better handling of context.
    - Cons: Requires large amounts of data and computational resources.
 
-#### 4.3.3 Code: Comparing Different Text Classification Approaches
+### 4.3.3 Code: Comparing Different Text Classification Approaches
 
 Let's implement and compare different text classification approaches to see the evolution in practice:
 
@@ -381,7 +386,7 @@ plt.show()
 
 This code demonstrates the evolution of text classification methods, from traditional machine learning approaches (Naive Bayes and SVM) to deep learning (LSTM). It visualizes the performance comparison and the training process of the LSTM model.
 
-#### 4.3.4 Reflection
+### 4.3.4 Reflection
 
 The evolution of NLP techniques has led to significant improvements in performance and capabilities:
 
@@ -399,9 +404,9 @@ However, this evolution also brings challenges:
 
 Understanding this evolution helps in choosing the right approach for specific NLP tasks and understanding the trade-offs involved.
 
-### 4.4 Concept 4: State-of-the-Art NLP Models and Their Groundbreaking Capabilities
+## 4.4 Concept 4: State-of-the-Art NLP Models and Their Groundbreaking Capabilities
 
-#### 4.4.1 Explanation
+### 4.4.1 Explanation
 
 Modern NLP is dominated by large pre-trained models based on the Transformer architecture. These models have set new benchmarks in various NLP tasks and can be fine-tuned for specific applications. Key models include:
 
@@ -426,7 +431,7 @@ Modern NLP is dominated by large pre-trained models based on the Transformer arc
 
 These models have dramatically expanded the possibilities of what can be achieved with NLP, from more accurate language understanding to human-like text generation.
 
-#### 4.4.2 Case Study: GPT-3 in Creative Writing
+### 4.4.2 Case Study: GPT-3 in Creative Writing
 
 GPT-3 has shown remarkable capabilities in creative writing tasks. For example, it has been used to:
 
@@ -436,7 +441,7 @@ GPT-3 has shown remarkable capabilities in creative writing tasks. For example, 
 
 Gwern Branwen's experiments with GPT-3 for poetry and creative writing showcase its ability to understand and emulate various literary styles and forms.
 
-#### 4.4.3 Code: Fine-tuning BERT for Sentiment Analysis
+### 4.4.3 Code: Fine-tuning BERT for Sentiment Analysis
 
 Let's implement a more advanced sentiment analysis by fine-tuning a pre-trained BERT model:
 
@@ -564,7 +569,7 @@ for text in test_texts:
 
 This code demonstrates how to fine-tune a pre-trained BERT model for sentiment analysis, showcasing the power of transfer learning in modern NLP.
 
-#### 4.4.4 Reflection
+### 4.4.4 Reflection
 
 State-of-the-art NLP models have dramatically expanded the possibilities of what can be achieved with natural language processing:
 
@@ -581,9 +586,9 @@ However, these models also raise important ethical considerations:
 
 As NLP practitioners, it's crucial to consider these ethical implications alongside the technical capabilities of these models.
 
-## 5. Summary
+# 5. Summary
 
-### 5.1 Conclusion
+## 5.1 Conclusion
 
 In this comprehensive lesson on NLP fundamentals, we've explored the importance and wide-ranging applications of NLP, delved into various NLP tasks, traced the evolution of NLP techniques, and examined state-of-the-art models that are pushing the boundaries of what's possible in language processing and generation.
 
@@ -597,7 +602,7 @@ Key takeaways include:
 
 As NLP continues to advance, understanding these fundamentals will be crucial for developing and applying NLP solutions effectively and responsibly.
 
-### 5.2 Mind Maps
+## 5.2 Mind Maps
 
 ```mermaid
 graph TD
@@ -605,35 +610,35 @@ graph TD
     A --> C[NLP Tasks]
     A --> D[Evolution of NLP]
     A --> E[State-of-the-Art Models]
-    
+
     B --> B1[Human-Computer Interaction]
     B --> B2[Information Extraction]
     B --> B3[Automation]
     B --> B4[Accessibility]
     B --> B5[Data-driven Decision Making]
-    
+
     C --> C1[Classification Tasks]
     C --> C2[Extraction Tasks]
     C --> C3[Generation Tasks]
-    
+
     C1 --> C1a[Sentiment Analysis]
     C1 --> C1b[Topic Classification]
     C2 --> C2a[Named Entity Recognition]
     C2 --> C2b[Relationship Extraction]
     C3 --> C3a[Machine Translation]
     C3 --> C3b[Text Summarization]
-    
+
     D --> D1[Rule-based Systems]
     D --> D2[Statistical Methods]
     D --> D3[Machine Learning]
     D --> D4[Deep Learning]
     D --> D5[Transformer Models]
-    
+
     E --> E1[BERT]
     E --> E2[GPT Series]
     E --> E3[T5]
     E --> E4[XLNet]
-    
+
     E1 --> E1a[Bidirectional Context]
     E2 --> E2a[Few-shot Learning]
     E3 --> E3a[Unified NLP Framework]
@@ -642,7 +647,7 @@ graph TD
 
 This mind map provides a visual overview of the key concepts covered in this lesson, illustrating the relationships between different aspects of NLP fundamentals, tasks, evolution, and state-of-the-art models.
 
-## 6. Homework
+# 6. Homework
 
 1. Implement a text classification system using three different approaches: a traditional machine learning method (e.g., Naive Bayes or SVM), a recurrent neural network (LSTM or GRU), and a fine-tuned BERT model. Compare their performance on a dataset of your choice (e.g., movie reviews, news articles).
 
@@ -656,7 +661,7 @@ This mind map provides a visual overview of the key concepts covered in this les
 
 6. Develop a simple machine translation system using sequence-to-sequence learning with attention. Train it on a small parallel corpus (e.g., English-French) and compare its performance with popular online translation services.
 
-## 7. Reference and Citation
+# 7. Reference and Citation
 
 [1] Jurafsky, D., & Martin, J. H. (2020). Speech and Language Processing (3rd ed. draft). Retrieved from <https://web.stanford.edu/~jurafsky/slp3/>
 

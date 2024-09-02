@@ -83,16 +83,24 @@ Examine the impact of GPT-3's release in 2020:
 ## 4.1.3 Visualization: The Evolution of AI and Information Revolutions
 
 ```mermaid
-graph TD
-    A[First Industrial Revolution] --> B[Mechanization]
-    B --> C[Steam Power]
-    C --> D[First Information Revolution]
+graph LR
+    A["First Industrial
+    Revolution"] --> B[Mechanization]
+    B --> C["Steam
+    Power"]
+    C --> D["First Information
+    Revolution"]
     D --> E[Computers]
     E --> F[Internet]
-    F --> G[Second Information Revolution]
-    G --> H[Large Language Models]
-    H --> I[Artificial General Intelligence]
-    I --> J[Potential Technological Singularity]
+    F --> G["Second Information
+    Revolution"]
+    G --> H["Large Language
+    Models"]
+    H --> I["Artificial General
+    Intelligence"]
+    I --> J["Potential
+    Technological
+    Singularity"]
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#ccf,stroke:#333,stroke-width:2px
