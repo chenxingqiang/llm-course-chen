@@ -5,7 +5,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Course Overview                                    :a1, 0, 1d
     NLP Fundamentals                                   :a2, after a1, 1d
     Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
@@ -29,30 +29,43 @@ gantt
     lesson 10 :l10, after l9, 1d
 ```
 
-
 Advanced Setup and Configuration of the LLM Experimental Environment
 
 # 2. Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
-- 2.1 Thoroughly understand and explain the components of our course's experimental environment
-- 2.2 Proficiently set up and configure the online server environment for LLM development
-- 2.3 Master model storage techniques and implement efficient invocation methods
-- 2.4 Skillfully troubleshoot and resolve common setup issues
-- 2.5 Optimize the experimental environment for peak performance
-- 2.6 Implement version control and collaborative workflows in the LLM development process
+1. Thoroughly understand and explain the components of our course's experimental environment
+
+2. Proficiently set up and configure the online server environment for LLM development
+
+3. Master model storage techniques and implement efficient invocation methods
+
+4. Skillfully troubleshoot and resolve common setup issues
+
+5. Optimize the experimental environment for peak performance
+
+6. Implement version control and collaborative workflows in the LLM development process
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of the experimental environment setup for LLM development:
 
-- 3.1 Detailed introduction to the experimental environment components
-- 3.2 Advanced setup and configuration of the online server environment
-- 3.3 Efficient model storage and optimized invocation techniques
-- 3.4 Comprehensive troubleshooting guide for common and advanced issues
-- 3.5 Performance optimization strategies for the LLM development environment
-- 3.6 Integration of version control and collaborative tools in the LLM workflow
+1. Detailed introduction to the experimental environment components
+
+2. Advanced setup and configuration of the online server environment
+
+3. Efficient model storage and optimized invocation techniques
+
+4. Comprehensive troubleshooting guide for common and advanced issues
+
+5. Performance optimization strategies for the LLM development environment
+
+6. Integration of version control and collaborative tools in the LLM workflow
+
+   
 
 # 4. Detailed Content
 
@@ -712,45 +725,60 @@ As LLM technology continues to advance, the ability to set up and manage efficie
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[LLM Experimental Environment Setup] --> B[Environment Components]
-    A --> C[Server Setup]
-    A --> D[Model Management]
-    A --> E[Troubleshooting]
-    A --> F[Performance Optimization]
-    A --> G[Version Control & Collaboration]
+graph LR
+    A(("LLM Experimental<br/>Environment Setup"))
+    
+    B["Environment<br/>Components"]
+    C["Server Setup"]
+    D["Model Management"]
+    E["Troubleshooting"]
+    F["Performance<br/>Optimization"]
+    G["Version Control &<br/>Collaboration"]
+    
+    A --> B & C & D & E & F & G
+    
+    B --> B1["Ubuntu 20.04"]
+    B --> B2["Python 3.8+"]
+    B --> B3["CUDA 11.2"]
+    B --> B4["PyTorch 1.9+"]
+    B --> B5["Transformers 4.10+"]
+    
+    C --> C1["System Update"]
+    C --> C2["Package Installation"]
+    C --> C3["Python Environment"]
+    C --> C4["Deep Learning<br/>Frameworks"]
+    C --> C5["Development Tools"]
+    
+    D --> D1["Model Storage"]
+    D --> D2["Efficient Loading"]
+    D --> D3["Optimized Invocation"]
+    D --> D4["Caching Strategies"]
+    
+    E --> E1["CUDA Issues"]
+    E --> E2["Memory Management"]
+    E --> E3["Package Conflicts"]
+    E --> E4["Model Loading Errors"]
+    
+    F --> F1["GPU Optimization"]
+    F --> F2["Mixed Precision<br/>Training"]
+    F --> F3["Gradient Accumulation"]
+    F --> F4["Efficient Data Loading"]
+    
+    G --> G1["Git for Code"]
+    G --> G2["Model Versioning"]
+    G --> G3["Experiment Tracking"]
+    G --> G4["Collaborative Notebooks"]
 
-    B --> B1[Ubuntu 20.04]
-    B --> B2[Python 3.8+]
-    B --> B3[CUDA 11.2]
-    B --> B4[PyTorch 1.9+]
-    B --> B5[Transformers 4.10+]
-
-    C --> C1[System Update]
-    C --> C2[Package Installation]
-    C --> C3[Python Environment]
-    C --> C4[Deep Learning Frameworks]
-    C --> C5[Development Tools]
-
-    D --> D1[Model Storage]
-    D --> D2[Efficient Loading]
-    D --> D3[Optimized Invocation]
-    D --> D4[Caching Strategies]
-
-    E --> E1[CUDA Issues]
-    E --> E2[Memory Management]
-    E --> E3[Package Conflicts]
-    E --> E4[Model Loading Errors]
-
-    F --> F1[GPU Optimization]
-    F --> F2[Mixed Precision Training]
-    F --> F3[Gradient Accumulation]
-    F --> F4[Efficient Data Loading]
-
-    G --> G1[Git for Code]
-    G --> G2[Model Versioning]
-    G --> G3[Experiment Tracking]
-    G --> G4[Collaborative Notebooks]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#fcf,stroke:#333,stroke-width:2px
+    style F fill:#fcf,stroke:#333,stroke-width:2px
+    style G fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class B1,B2,B3,B4,B5,C1,C2,C3,C4,C5,D1,D2,D3,D4,E1,E2,E3,E4,F1,F2,F3,F4,G1,G2,G3,G4 subTopic
 ```
 
 ## 5.3 Preview

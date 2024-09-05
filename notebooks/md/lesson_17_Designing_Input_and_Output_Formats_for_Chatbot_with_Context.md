@@ -6,7 +6,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Prompt engineering - ChatGPT Prompt Engineering    :a13, 0, 1d
     Model Quantization Techniques                      :a14, after a13, 1d
     Introduction to Chatbot Project                    :a15, after a14, 1d
@@ -30,28 +30,41 @@ gantt
     lesson 22 :l22, after l21, 1d
 ```
 
-
 # 2. Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
-2.1 Understand the fundamental principles and importance of prompt engineering in AI interactions
-2.2 Master advanced techniques for crafting effective prompts for various tasks and domains
-2.3 Implement strategies for optimizing prompt performance and consistency
-2.4 Develop skills in prompt chaining and multi-step reasoning tasks
-2.5 Apply ethical considerations and bias mitigation techniques in prompt design
-2.6 Evaluate and iterate on prompts using quantitative and qualitative metrics
+1. Understand the fundamental principles and importance of prompt engineering in AI interactions
+
+2. Master advanced techniques for crafting effective prompts for various tasks and domains
+
+3. Implement strategies for optimizing prompt performance and consistency
+
+4. Develop skills in prompt chaining and multi-step reasoning tasks
+
+5. Apply ethical considerations and bias mitigation techniques in prompt design
+
+6. Evaluate and iterate on prompts using quantitative and qualitative metrics
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of advanced prompt engineering:
 
-3.1 Foundations of Prompt Engineering: Principles and Best Practices
-3.2 Advanced Prompt Crafting Techniques for Diverse Applications
-3.3 Optimizing Prompt Performance and Consistency
-3.4 Prompt Chaining and Multi-Step Reasoning
-3.5 Ethical Considerations and Bias Mitigation in Prompt Design
-3.6 Evaluation and Iteration of Prompt Engineering Strategies
+1. Foundations of Prompt Engineering: Principles and Best Practices
+
+2. Advanced Prompt Crafting Techniques for Diverse Applications
+
+3. Optimizing Prompt Performance and Consistency
+
+4. Prompt Chaining and Multi-Step Reasoning
+
+5. Ethical Considerations and Bias Mitigation in Prompt Design
+
+6. Evaluation and Iteration of Prompt Engineering Strategies
+
+   
 
 # 4. Detailed Content
 
@@ -169,37 +182,52 @@ As AI language models continue to advance, mastery of prompt engineering will re
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[Advanced Prompt Engineering] --> B[Foundations]
-    A --> C[Advanced Techniques]
-    A --> D[Optimization]
-    A --> E[Prompt Chaining]
-    A --> F[Ethics and Bias]
-    A --> G[Evaluation]
+graph LR
+    A(("Advanced Prompt<br/>Engineering"))
+    
+    B["Foundations"]
+    C["Advanced<br/>Techniques"]
+    D["Optimization"]
+    E["Prompt<br/>Chaining"]
+    F["Ethics and Bias"]
+    G["Evaluation"]
+    
+    A --> B & C & D & E & F & G
+    
+    B --> B1["Clarity"]
+    B --> B2["Context"]
+    B --> B3["Structure"]
+    
+    C --> C1["Task-Specific Design"]
+    C --> C2["Domain Adaptation"]
+    C --> C3["Creativity Elicitation"]
+    
+    D --> D1["Performance Metrics"]
+    D --> D2["Consistency Strategies"]
+    D --> D3["Fine-tuning Approaches"]
+    
+    E --> E1["Multi-step Reasoning"]
+    E --> E2["Information Synthesis"]
+    E --> E3["Complex Problem Solving"]
+    
+    F --> F1["Bias Identification"]
+    F --> F2["Fairness Considerations"]
+    F --> F3["Ethical Guidelines"]
+    
+    G --> G1["Quantitative Metrics"]
+    G --> G2["Qualitative Analysis"]
+    G --> G3["User Feedback Integration"]
 
-    B --> B1[Clarity]
-    B --> B2[Context]
-    B --> B3[Structure]
-
-    C --> C1[Task-Specific Design]
-    C --> C2[Domain Adaptation]
-    C --> C3[Creativity Elicitation]
-
-    D --> D1[Performance Metrics]
-    D --> D2[Consistency Strategies]
-    D --> D3[Fine-tuning Approaches]
-
-    E --> E1[Multi-step Reasoning]
-    E --> E2[Information Synthesis]
-    E --> E3[Complex Problem Solving]
-
-    F --> F1[Bias Identification]
-    F --> F2[Fairness Considerations]
-    F --> F3[Ethical Guidelines]
-
-    G --> G1[Quantitative Metrics]
-    G --> G2[Qualitative Analysis]
-    G --> G3[User Feedback Integration]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#fcf,stroke:#333,stroke-width:2px
+    style F fill:#fcf,stroke:#333,stroke-width:2px
+    style G fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3 subTopic
 ```
 
 # 6. Homework

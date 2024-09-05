@@ -1,5 +1,4 @@
 
-
 # 1.Course Title: Advanced Model Inference and Function Calling
 
 ```mermaid
@@ -7,7 +6,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     LLM training - Fine-tuning                         :a8, 0, 1d
     LLM training - Reward Modeling and Proximal Policy Optimization :a9, after a8, 1d
     Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
@@ -37,23 +36,37 @@ Mastering Model Inference and Function Calling: From Local to Cloud-Based LLMs
 
 By the end of this comprehensive lesson, students will be able to:
 
-- 2.1 Expertly load, utilize, and optimize local LLM models using PyTorch and Hugging Face
-- 2.2 Accurately estimate model size and efficiently manage GPU resources for optimal performance
-- 2.3 Seamlessly integrate and leverage the OpenAI API for accessing state-of-the-art remote LLM services
-- 2.4 Implement advanced inference techniques using specialized models like JAIS
-- 2.5 Design and implement custom function calling mechanisms for LLMs
-- 2.6 Compare and contrast the performance, capabilities, and use cases of different inference approaches
+1. Expertly load, utilize, and optimize local LLM models using PyTorch and Hugging Face
+
+2. Accurately estimate model size and efficiently manage GPU resources for optimal performance
+
+3. Seamlessly integrate and leverage the OpenAI API for accessing state-of-the-art remote LLM services
+
+4. Implement advanced inference techniques using specialized models like JAIS
+
+5. Design and implement custom function calling mechanisms for LLMs
+
+6. Compare and contrast the performance, capabilities, and use cases of different inference approaches
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of model inference and function calling:
 
-- 3.1 Mastering PyTorch and Hugging Face for local LLM model deployment and optimization
-- 3.2 Advanced techniques for model size estimation and GPU resource management
-- 3.3 Harnessing the full potential of the OpenAI API for cloud-based LLM services
-- 3.4 Exploring cutting-edge specialized models: A deep dive into JAIS
-- 3.5 Implementing custom function calling mechanisms for LLMs
-- 3.6 Comparative analysis of local, cloud-based, and specialized model inference
+1. Mastering PyTorch and Hugging Face for local LLM model deployment and optimization
+
+2. Advanced techniques for model size estimation and GPU resource management
+
+3. Harnessing the full potential of the OpenAI API for cloud-based LLM services
+
+4. Exploring cutting-edge specialized models: A deep dive into JAIS
+
+5. Implementing custom function calling mechanisms for LLMs
+
+6. Comparative analysis of local, cloud-based, and specialized model inference
+
+   
 
 # 4. Detailed Content
 
@@ -805,47 +818,60 @@ As AI continues to evolve, the ability to effectively implement and combine thes
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[Model Inference & Function Calling] --> B[Local Models]
-    A --> C[Cloud-Based Services]
-    A --> D[Specialized Models]
-    A --> E[Custom Function Calling]
-    A --> F[Comparative Analysis]
+graph LR
+    A(("Model Inference &<br/>Function Calling"))
+    
+    B["Local Models"]
+    C["Cloud-Based<br/>Services"]
+    D["Specialized Models"]
+    E["Custom Function<br/>Calling"]
+    F["Comparative<br/>Analysis"]
+    
+    A --> B & C & D & E & F
+    
+    B --> B1["PyTorch"]
+    B --> B2["Hugging Face"]
+    B --> B3["Resource<br/>Management"]
+    
+    C --> C1["OpenAI API"]
+    C --> C2["API Integration"]
+    C --> C3["Prompt Engineering"]
+    
+    D --> D1["JAIS Model"]
+    D --> D2["Scientific<br/>Applications"]
+    D --> D3["Multilingual<br/>Capabilities"]
+    
+    E --> E1["Function Definition"]
+    E --> E2["Output Parsing"]
+    E --> E3["Error Handling"]
+    
+    F --> F1["Performance<br/>Benchmarking"]
+    F --> F2["Cost Analysis"]
+    F --> F3["Use Case<br/>Optimization"]
+    
+    B3 --> B3a["GPU Utilization"]
+    B3 --> B3b["Memory Management"]
+    
+    C2 --> C2a["Authentication"]
+    C2 --> C2b["Rate Limiting"]
+    
+    D2 --> D2a["Technical Content"]
+    D2 --> D2b["Research Assistance"]
+    
+    E2 --> E2a["Regex Parsing"]
+    E2 --> E2b["JSON Parsing"]
+    
+    F2 --> F2a["Operational Costs"]
+    F2 --> F2b["Development Costs"]
 
-    B --> B1[PyTorch]
-    B --> B2[Hugging Face]
-    B --> B3[Resource Management]
-
-    C --> C1[OpenAI API]
-    C --> C2[API Integration]
-    C --> C3[Prompt Engineering]
-
-    D --> D1[JAIS Model]
-    D --> D2[Scientific Applications]
-    D --> D3[Multilingual Capabilities]
-
-    E --> E1[Function Definition]
-    E --> E2[Output Parsing]
-    E --> E3[Error Handling]
-
-    F --> F1[Performance Benchmarking]
-    F --> F2[Cost Analysis]
-    F --> F3[Use Case Optimization]
-
-    B3 --> B3a[GPU Utilization]
-    B3 --> B3b[Memory Management]
-
-    C2 --> C2a[Authentication]
-    C2 --> C2b[Rate Limiting]
-
-    D2 --> D2a[Technical Content]
-    D2 --> D2b[Research Assistance]
-
-    E2 --> E2a[Regex Parsing]
-    E2 --> E2b[JSON Parsing]
-
-    F2 --> F2a[Operational Costs]
-    F2 --> F2b[Development Costs]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B,C,D,E,F fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3 subTopic
+    
+    classDef subSubTopic fill:#e6f3ff,stroke:#333,stroke-width:1px
+    class B3a,B3b,C2a,C2b,D2a,D2b,E2a,E2b,F2a,F2b subSubTopic
 ```
 
 # 6. Homework

@@ -5,7 +5,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Course Overview                                    :a1, 0, 1d
     NLP Fundamentals                                   :a2, after a1, 1d
     Basic knowledge and architectural characteristics of LLM :active,a3, after a2, 1d
@@ -35,26 +35,38 @@ Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
 
 By the end of this comprehensive lesson, students will be able to:
 
-- 2.1 Thoroughly understand and explain the development history of LLMs and their transformative impact on NLP
-- 2.2 Master the concepts of attention mechanisms and transformer architecture, including their mathematical foundations
-- 2.3 Recognize and analyze the key architectural characteristics of LLMs and their implications for model performance
-- 2.4 Implement basic components of LLM architectures and visualize their operations
-- 2.5 Critically evaluate the trade-offs and challenges associated with scaling LLMs
-- 2.6 Understand the broader implications of LLM advancements on AI ethics and societal impact
+1. Thoroughly understand and explain the development history of LLMs and their transformative impact on NLP
+
+2. Master the concepts of attention mechanisms and transformer architecture, including their mathematical foundations
+
+3. Recognize and analyze the key architectural characteristics of LLMs and their implications for model performance
+
+4. Implement basic components of LLM architectures and visualize their operations
+
+5. Critically evaluate the trade-offs and challenges associated with scaling LLMs
+
+6. Understand the broader implications of LLM advancements on AI ethics and societal impact
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers three key concepts, providing a comprehensive exploration of Large Language Model fundamentals:
 
-- 3.1 The Evolution and Impact of LLMs in Natural Language Processing
-- 3.2 Deep Dive into Attention Mechanisms and Transformer Architecture
-- 3.3 Comprehensive Analysis of LLM Architectural Characteristics
+1. The Evolution and Impact of LLMs in Natural Language Processing
+
+2. Deep Dive into Attention Mechanisms and Transformer Architecture
+
+3. Comprehensive Analysis of LLM Architectural Characteristics
+
+   
 
 # 4. Detailed Content
 
 ## 4.1 Concept 1: The Evolution and Impact of LLMs in Natural Language Processing
 
 ### 4.1.1 Explanation
+
 The history of Large Language Models (LLMs) is a testament to the rapid advancements in artificial intelligence and natural language processing. From the introduction of Word2Vec in 2013 to the release of GPT-4 in 2023, LLMs have undergone a remarkable evolution in terms of size, capability, and impact on various NLP tasks [1].
 
 Key milestones in LLM development include:
@@ -461,38 +473,50 @@ As LLMs continue to evolve, understanding these fundamentals will be crucial for
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[LLM Fundamentals] --> B[Evolution of LLMs]
-    A --> C[Transformer Architecture]
-    A --> D[Architectural Characteristics]
+graph LR
+    A(("LLM Fundamentals"))
     
-    B --> E[Word2Vec]
-    B --> F[BERT]
-    B --> G[GPT Series]
-    B --> H[T5]
+    B["Evolution of LLMs"]
+    C["Transformer<br/>Architecture"]
+    D["Architectural<br/>Characteristics"]
     
-    C --> I[Self-Attention]
-    C --> J[Multi-Head Attention]
-    C --> K[Positional Encoding]
-    C --> L[Feed-Forward Networks]
+    A --> B & C & D
     
-    D --> M[Model Size]
-    D --> N[Model Depth]
-    D --> O[Model Width]
-    D --> P[Vocabulary Size]
+    B --> E["Word2Vec"]
+    B --> F["BERT"]
+    B --> G["GPT Series"]
+    B --> H["T5"]
     
-    M --> Q[Parameter Count]
-    N --> R[Number of Layers]
-    O --> S[Hidden State Dimension]
-    P --> T[Token Vocabulary]
+    C --> I["Self-Attention"]
+    C --> J["Multi-Head Attention"]
+    C --> K["Positional Encoding"]
+    C --> L["Feed-Forward Networks"]
     
-    I --> U[Query]
-    I --> V[Key]
-    I --> W[Value]
+    D --> M["Model Size"]
+    D --> N["Model Depth"]
+    D --> O["Model Width"]
+    D --> P["Vocabulary Size"]
     
-    G --> X[GPT-2]
-    G --> Y[GPT-3]
-    G --> Z[GPT-4]
+    M --> Q["Parameter Count"]
+    N --> R["Number of Layers"]
+    O --> S["Hidden State<br/>Dimension"]
+    P --> T["Token Vocabulary"]
+    
+    I --> U["Query"]
+    I --> V["Key"]
+    I --> W["Value"]
+    
+    G --> X["GPT-2"]
+    G --> Y["GPT-3"]
+    G --> Z["GPT-4"]
+
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z subTopic
 ```
 
 This mind map provides a visual overview of the key concepts covered in this lesson, illustrating the relationships between different aspects of LLM fundamentals, architecture, and evolution.

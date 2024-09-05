@@ -6,7 +6,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Course Overview                                    :active,a1, 0, 1d
     NLP Fundamentals                                   :a2, after a1, 1d
     Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
@@ -31,6 +31,38 @@ gantt
 ```
 
 Advanced AI: From Large Language Models to Artificial General Intelligence
+
+
+
+## 1.1 MBZUAI LLM Online Course Overview
+
+This comprehensive course on Large Language Models (LLMs) and Artificial General Intelligence (AGI) is designed to provide a balanced mix of theoretical knowledge and practical skills. The course is structured as follows:
+
+1. Progressive Learning Path: 
+   - Begins with "LLM Foundations" and advances to "RAG Core Technology and Practice"
+   - Covers key LLM development technologies
+   - Explores applications of Langchain and RAG (Retrieval-Augmented Generation) techniques
+   - Strong emphasis on practical applications throughout
+
+2. Theory-Practice Balance:
+   - 12 hours of theoretical instruction
+   - 14 hours of practical sessions
+   - Covers fundamental knowledge of LLMs, evolution of NLP algorithms and models
+   - Includes extensive LLM project engineering practice
+   - Focuses on design and implementation of chatbot systems
+
+3. Project-Based Learning:
+   - Centers around building a chatbot project
+   - Encompasses project design, database management, and front-end to back-end interaction
+   - Utilizes tools such as OpenAI API, Hugging Face model library, and Milvus vector database
+
+4. Key Skill Development:
+   - Mastering critical skills in LLM development
+   - Focus on practical applications
+   - Building a solid foundation for project engineering practice
+   - Enhancing overall project development capabilities
+
+This course is designed to equip students with both the theoretical understanding and practical skills necessary to navigate the rapidly evolving field of AI, with a particular focus on LLMs and their potential role in the development of AGI.
 
 # 2. Learning Objectives
 
@@ -93,7 +125,7 @@ This comparison highlights the vast difference between current AI capabilities a
 ### 4.1.3 Visualization: AGI in Context
 
 ```mermaid
-graph TD
+graph LR
     A[Artificial Intelligence] --> B[Narrow AI]
     A --> C[Artificial General Intelligence AGI]
     A --> D[Artificial Superintelligence ASI]
@@ -309,7 +341,7 @@ This script demonstrates some of the key capabilities of LLMs that make them pot
 ### 4.3.4 Visualization: LLM Capabilities vs AGI Requirements
 
 ```mermaid
-graph TD
+graph LR
     A[AGI Requirements] --> B[General Problem Solving]
     A --> C[Continuous Learning]
     A --> D[Adaptability]
@@ -425,7 +457,7 @@ This simulation demonstrates how an AGI system might incorporate ethical conside
 ### 4.4.4 Visualization: Ethical Considerations in AGI Development
 
 ```mermaid
-graph TD
+graph LR
     A[Ethical Considerations in AGI] --> B[Accountability]
     A --> C[Transparency]
     A --> D[Bias and Fairness]
@@ -655,7 +687,7 @@ As we embark on this learning journey, we'll need to maintain a balance between 
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
+graph LR
     A[Course Overview] --> B[AGI Concept]
     A --> C[Skills for AGI Era]
     A --> D[LLMs as Path to AGI]

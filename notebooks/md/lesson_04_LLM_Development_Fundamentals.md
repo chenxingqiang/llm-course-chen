@@ -6,7 +6,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Course Overview                                    :a1, 0, 1d
     NLP Fundamentals                                   :a2, after a1, 1d
     Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
@@ -36,25 +36,41 @@ Advanced Fundamentals of Large Language Model Development
 
 By the end of this comprehensive lesson, students will be able to:
 
-2.1 Thoroughly understand and explain the LLM development pipeline
-2.2 Master key concepts including tokenization, prompting, and fine-tuning
-2.3 Implement and apply advanced techniques such as reward modeling and model quantization
-2.4 Critically evaluate different approaches in LLM development and their trade-offs
-2.5 Design and execute experiments to test LLM performance and behavior
-2.6 Understand the ethical implications and challenges in LLM development
+1. Thoroughly understand and explain the LLM development pipeline
+
+2. Master key concepts including tokenization, prompting, and fine-tuning
+
+3. Implement and apply advanced techniques such as reward modeling and model quantization
+
+4. Critically evaluate different approaches in LLM development and their trade-offs
+
+5. Design and execute experiments to test LLM performance and behavior
+
+6. Understand the ethical implications and challenges in LLM development
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers eight key concepts, providing a comprehensive exploration of LLM development fundamentals:
 
-3.1 Advanced Tokenization Techniques
-3.2 Sophisticated Prompting Strategies
-3.3 Comprehensive Data Preparation and Preprocessing
-3.4 In-depth Pre-training Methodologies
-3.5 Advanced Fine-tuning Techniques
-3.6 Reward Modeling and Reinforcement Learning in LLMs
-3.7 Efficient Model Quantization Strategies
-3.8 Accurate Model Performance Estimation and Evaluation
+1. Advanced Tokenization Techniques
+
+2. Sophisticated Prompting Strategies
+
+3. Comprehensive Data Preparation and Preprocessing
+
+4. In-depth Pre-training Methodologies
+
+5. Advanced Fine-tuning Techniques
+
+6. Reward Modeling and Reinforcement Learning in LLMs
+
+7. Efficient Model Quantization Strategies
+
+8. Accurate Model Performance Estimation and Evaluation
+
+   
 
 # 4. Detailed Content
 
@@ -267,7 +283,7 @@ print(ethical_analysis)
 
 This code demonstrates advanced prompting techniques including chain-of-thought reasoning, self-consistency through multiple attempts, task decomposition, and ethical consideration prompts.
 
-###4.2.4 Reflection
+### 4.2.4 Reflection
 
 Sophisticated prompting strategies can dramatically enhance the capabilities of LLMs, allowing them to perform complex reasoning tasks and handle a wide range of applications. However, they also raise important questions about the true understanding and capabilities of these models.
 
@@ -1210,47 +1226,63 @@ As the field of LLM development continues to evolve rapidly, mastering these fun
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[LLM Development Fundamentals] --> B[Advanced Tokenization]
-    A --> C[Sophisticated Prompting]
-    A --> D[Data Preparation]
-    A --> E[Pre-training Methodologies]
-    A --> F[Fine-tuning Techniques]
-    A --> G[Reward Modeling & RL]
-    A --> H[Model Quantization]
-    A --> I[Performance Evaluation]
+graph LR
+    A(("LLM Development<br/>Fundamentals"))
+    
+    B["Advanced<br/>Tokenization"]
+    C["Sophisticated<br/>Prompting"]
+    D["Data Preparation"]
+    E["Pre-training<br/>Methodologies"]
+    F["Fine-tuning<br/>Techniques"]
+    G["Reward Modeling<br/>& RL"]
+    H["Model<br/>Quantization"]
+    I["Performance<br/>Evaluation"]
+    
+    A --> B & C & D & E & F & G & H & I
+    
+    B --> B1["Subword Tokenization"]
+    B --> B2["Multilingual Tokenization"]
+    B --> B3["Out-of-Vocabulary<br/>Handling"]
+    
+    C --> C1["Zero-shot Learning"]
+    C --> C2["Few-shot Learning"]
+    C --> C3["Chain-of-Thought<br/>Prompting"]
+    
+    D --> D1["Data Cleaning"]
+    D --> D2["Augmentation<br/>Techniques"]
+    D --> D3["Bias Mitigation"]
+    
+    E --> E1["Masked Language<br/>Modeling"]
+    E --> E2["Contrastive Learning"]
+    E --> E3["Curriculum Learning"]
+    
+    F --> F1["Parameter-Efficient<br/>Fine-tuning"]
+    F --> F2["Multi-task Fine-tuning"]
+    F --> F3["Continual Learning"]
+    
+    G --> G1["Human Preference<br/>Learning"]
+    G --> G2["Policy Optimization"]
+    G --> G3["Safe Exploration"]
+    
+    H --> H1["Post-training<br/>Quantization"]
+    H --> H2["Quantization-aware<br/>Training"]
+    H --> H3["Mixed-precision<br/>Quantization"]
+    
+    I --> I1["Task-specific Metrics"]
+    I --> I2["Robustness Evaluation"]
+    I --> I3["Fairness Assessment"]
 
-    B --> B1[Subword Tokenization]
-    B --> B2[Multilingual Tokenization]
-    B --> B3[Out-of-Vocabulary Handling]
-
-    C --> C1[Zero-shot Learning]
-    C --> C2[Few-shot Learning]
-    C --> C3[Chain-of-Thought Prompting]
-
-    D --> D1[Data Cleaning]
-    D --> D2[Augmentation Techniques]
-    D --> D3[Bias Mitigation]
-
-    E --> E1[Masked Language Modeling]
-    E --> E2[Contrastive Learning]
-    E --> E3[Curriculum Learning]
-
-    F --> F1[Parameter-Efficient Fine-tuning]
-    F --> F2[Multi-task Fine-tuning]
-    F --> F3[Continual Learning]
-
-    G --> G1[Human Preference Learning]
-    G --> G2[Policy Optimization]
-    G --> G3[Safe Exploration]
-
-    H --> H1[Post-training Quantization]
-    H --> H2[Quantization-aware Training]
-    H --> H3[Mixed-precision Quantization]
-
-    I --> I1[Task-specific Metrics]
-    I --> I2[Robustness Evaluation]
-    I --> I3[Fairness Assessment]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#fcf,stroke:#333,stroke-width:2px
+    style F fill:#fcf,stroke:#333,stroke-width:2px
+    style G fill:#fcf,stroke:#333,stroke-width:2px
+    style H fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3,H1,H2,H3,I1,I2,I3 subTopic
 ```
 
 ## 5.3 Preview

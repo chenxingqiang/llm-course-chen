@@ -6,7 +6,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     LLM training - Reward Modeling and Proximal Policy Optimization :a9, 0, 1d
     Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
     Methods and Metrics for Model Evaluation           :a11, after a10, 1d
@@ -36,24 +36,39 @@ Advanced ChatGPT Prompt Engineering: From Basics to Mastery
 
 This course combines theoretical knowledge with practical application. By the end of this lesson, students will be able to:
 
-- 2.1 Comprehend the fundamental principles and importance of prompts in AI interactions
-- 2.2 Craft effective prompts for a wide range of use cases and applications
-- 2.3 Apply advanced prompt optimization techniques to enhance AI responses
-- 2.4 Implement sophisticated prompting strategies, including Chain of Thought and Tree of Thought
-- 2.5 Identify potential security risks and implement measures to prevent prompt injection attacks
-- 2.6 Evaluate and refine prompts based on AI responses and desired outcomes
+1. Comprehend the fundamental principles and importance of prompts in AI interactions
+
+2. Craft effective prompts for a wide range of use cases and applications
+
+3. Apply advanced prompt optimization techniques to enhance AI responses
+
+4. Implement sophisticated prompting strategies, including Chain of Thought and Tree of Thought
+
+5. Identify potential security risks and implement measures to prevent prompt injection attacks
+
+6. Evaluate and refine prompts based on AI responses and desired outcomes
+
+   
 
 # 3. Overview
 
 This comprehensive lesson covers seven key concepts, exploring the depth and breadth of ChatGPT prompt engineering:
 
-- 3.1 Fundamentals of ChatGPT prompts
-- 3.2 Crafting effective prompts for diverse scenarios
-- 3.3 Advanced prompt optimization techniques
-- 3.4 Chain of Thought prompting for complex reasoning tasks
-- 3.5 Self-consistency and its role in improving AI outputs
-- 3.6 Tree of Thought: A novel approach to problem-solving with AI
-- 3.7 Security in prompt engineering: Preventing and mitigating prompt injection attacks
+1. Fundamentals of ChatGPT prompts
+
+2. Crafting effective prompts for diverse scenarios
+
+3. Advanced prompt optimization techniques
+
+4. Chain of Thought prompting for complex reasoning tasks
+
+5. Self-consistency and its role in improving AI outputs
+
+6. Tree of Thought: A novel approach to problem-solving with AI
+
+7. Security in prompt engineering: Preventing and mitigating prompt injection attacks
+
+   
 
 # 4. Detailed Content
 
@@ -816,27 +831,42 @@ As AI continues to evolve and integrate into various aspects of business and soc
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[ChatGPT Prompt Engineering] --> B[Fundamentals]
-    A --> C[Advanced Techniques]
-    A --> D[Security Considerations]
-    B --> E[Clarity and Specificity]
-    B --> F[Context Provision]
-    B --> G[Task Breakdown]
-    C --> H[Chain of Thought]
-    C --> I[Self-Consistency]
-    C --> J[Tree of Thought]
-    D --> K[Prompt Injection Prevention]
-    D --> L[Input Sanitization]
-    D --> M[Robust System Prompts]
+graph LR
+    A(("ChatGPT Prompt<br/>Engineering"))
     
-    H --> N[Step-by-Step Reasoning]
-    I --> O[Multiple Solution Paths]
-    J --> P[Branching Possibilities]
+    B["Fundamentals"]
+    C["Advanced<br/>Techniques"]
+    D["Security<br/>Considerations"]
     
-    K --> Q[Attack Vector Understanding]
-    L --> R[Regex Filtering]
-    M --> S[Security Guidelines]
+    A --> B & C & D
+    
+    B --> E["Clarity and<br/>Specificity"]
+    B --> F["Context Provision"]
+    B --> G["Task Breakdown"]
+    
+    C --> H["Chain of Thought"]
+    C --> I["Self-Consistency"]
+    C --> J["Tree of Thought"]
+    
+    D --> K["Prompt Injection<br/>Prevention"]
+    D --> L["Input Sanitization"]
+    D --> M["Robust System<br/>Prompts"]
+    
+    H --> N["Step-by-Step<br/>Reasoning"]
+    I --> O["Multiple Solution<br/>Paths"]
+    J --> P["Branching<br/>Possibilities"]
+    
+    K --> Q["Attack Vector<br/>Understanding"]
+    L --> R["Regex Filtering"]
+    M --> S["Security Guidelines"]
+
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S subTopic
 ```
 
 # 6. Homework

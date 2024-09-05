@@ -6,7 +6,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Test Dataset Collection and Model Evaluation       :a16, 0, 1d
     Designing input and output formats for chatbot with context :a17, after a16, 1d
     Model Deployment and Backend Development           :a18, after a17, 1d
@@ -30,28 +30,41 @@ gantt
     lesson 25 :l25, after l24, 1d
 ```
 
-
 # 2. Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
-- 2.1 Design and implement comprehensive system testing strategies for AI-powered applications
-- 2.2 Master techniques for continuous integration and deployment (CI/CD) in AI systems
-- 2.3 Develop strategies for monitoring and maintaining AI systems in production environments
-- 2.4 Implement effective rollback and recovery procedures for AI deployments
-- 2.5 Apply best practices for scaling AI systems to handle increased load and data volume
-- 2.6 Understand and address ethical considerations in AI system testing and deployment
+1. Design and implement comprehensive system testing strategies for AI-powered applications
+
+2. Master techniques for continuous integration and deployment (CI/CD) in AI systems
+
+3.  Develop strategies for monitoring and maintaining AI systems in production environments
+
+4. Implement effective rollback and recovery procedures for AI deployments
+
+5. Apply best practices for scaling AI systems to handle increased load and data volume
+
+6. Understand and address ethical considerations in AI system testing and deployment
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of system testing and deployment for AI applications:
 
-- 3.1 Comprehensive System Testing Strategies for AI Applications
-- 3.2 CI/CD Pipelines for AI Systems
-- 3.3 Production Monitoring and Maintenance of AI Systems
-- 3.4 Rollback and Recovery Procedures for AI Deployments
-- 3.5 Scaling Strategies for AI Systems
-- 3.6 Ethical Considerations in AI System Testing and Deployment
+1. Comprehensive System Testing Strategies for AI Applications
+
+2. CI/CD Pipelines for AI Systems
+
+3. Production Monitoring and Maintenance of AI Systems
+
+4. Rollback and Recovery Procedures for AI Deployments
+
+5. Scaling Strategies for AI Systems
+
+6. Ethical Considerations in AI System Testing and Deployment
+
+   
 
 # 4. Detailed Content
 
@@ -360,37 +373,49 @@ As AI systems become increasingly prevalent and complex, the skills and knowledg
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[Frontend Debugging for AI Apps] --> B[Advanced Debugging Techniques]
-    A --> C[Async Operations & State Management]
-    A --> D[Performance Optimization]
-    A --> E[Error Handling & User Feedback]
-    A --> F[Testing Frameworks]
-    A --> G[Visualization Techniques]
-
-    B --> B1[AI-specific Logging]
-    B --> B2[ML Model Interaction Debugging]
-    B --> B3[AI Behavior Analysis]
-
-    C --> C1[Async Request Management]
-    C --> C2[State Consistency]
-    C --> C3[Race Condition Handling]
-
-    D --> D1[Lazy Loading for AI Components]
-    D --> D2[Optimized Rendering]
-    D --> D3[Caching Strategies]
-
-    E --> E1[Graceful Error Handling]
-    E --> E2[User-Friendly Feedback]
-    E --> E3[AI Confidence Indicators]
-
-    F --> F1[Unit Testing AI Components]
-    F --> F2[Integration Testing]
-    F --> F3[AI Output Validation]
-
-    G --> G1[AI Decision Visualizations]
-    G --> G2[Interactive Debugging Tools]
-    G3[Performance Profiling Visualizations]
+graph LR
+    A[("Frontend Debugging<br/>for AI Apps")]
+    
+    B["Advanced Debugging<br/>Techniques"]
+    C["Async Operations &<br/>State Management"]
+    D["Performance<br/>Optimization"]
+    E["Error Handling &<br/>User Feedback"]
+    F["Testing<br/>Frameworks"]
+    G["Visualization<br/>Techniques"]
+    
+    A --> B & C & D & E & F & G
+    
+    B --> B1["AI-specific Logging"]
+    B --> B2["ML Model Interaction<br/>Debugging"]
+    B --> B3["AI Behavior Analysis"]
+    
+    C --> C1["Async Request<br/>Management"]
+    C --> C2["State Consistency"]
+    C --> C3["Race Condition<br/>Handling"]
+    
+    D --> D1["Lazy Loading for<br/>AI Components"]
+    D --> D2["Optimized Rendering"]
+    D --> D3["Caching Strategies"]
+    
+    E --> E1["Graceful Error<br/>Handling"]
+    E --> E2["User-Friendly<br/>Feedback"]
+    E --> E3["AI Confidence<br/>Indicators"]
+    
+    F --> F1["Unit Testing<br/>AI Components"]
+    F --> F2["Integration Testing"]
+    F --> F3["AI Output Validation"]
+    
+    G --> G1["AI Decision<br/>Visualizations"]
+    G --> G2["Interactive Debugging<br/>Tools"]
+    G --> G3["Performance Profiling<br/>Visualizations"]
+    
+    classDef root fill:#f9f,stroke:#333,stroke-width:4px;
+    classDef mainTopic fill:#fcf,stroke:#333,stroke-width:2px;
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px;
+    
+    class A root;
+    class B,C,D,E,F,G mainTopic;
+    class B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3 subTopic;
 ```
 
 # 6. Homework

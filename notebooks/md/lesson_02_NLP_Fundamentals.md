@@ -5,7 +5,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Course Overview                                    :a1, 0, 1d
     NLP Fundamentals                                   :active,a2, after a1, 1d
     Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
@@ -35,21 +35,33 @@ Advanced Natural Language Processing: From Fundamentals to State-of-the-Art
 
 By the end of this comprehensive lesson, students will be able to:
 
-- 2.1 Thoroughly understand and explain the importance of NLP in modern AI applications
-- 2.2 Recognize and categorize the main types of NLP tasks, with the ability to provide relevant examples
-- 2.3 Comprehend the evolution of NLP algorithms and models, from traditional approaches to neural networks
-- 2.4 Gain deep insights into state-of-the-art NLP models and their applications
-- 2.5 Implement basic NLP tasks using popular libraries and frameworks
-- 2.6 Critically evaluate the strengths and limitations of different NLP approaches
+1. Thoroughly understand and explain the importance of NLP in modern AI applications
+
+2. Recognize and categorize the main types of NLP tasks, with the ability to provide relevant examples
+
+3. Comprehend the evolution of NLP algorithms and models, from traditional approaches to neural networks
+
+4. Gain deep insights into state-of-the-art NLP models and their applications
+
+5. Implement basic NLP tasks using popular libraries and frameworks
+
+6. Critically evaluate the strengths and limitations of different NLP approaches
+
+   
 
 # 3. Overview
 
 This in-depth lesson covers four key concepts, providing a comprehensive exploration of Natural Language Processing (NLP) fundamentals:
 
-- 3.1 The Importance and Wide-ranging Applications of NLP
-- 3.2 Comprehensive Overview of NLP Tasks and Their Real-world Applications
-- 3.3 The Evolution of NLP: From Rule-based Systems to Transformers
-- 3.4 State-of-the-Art NLP Models and Their Groundbreaking Capabilities
+1. The Importance and Wide-ranging Applications of NLP
+
+2. Comprehensive Overview of NLP Tasks and Their Real-world Applications
+
+3. The Evolution of NLP: From Rule-based Systems to Transformers
+
+4. State-of-the-Art NLP Models and Their Groundbreaking Capabilities
+
+   
 
 # 4. Detailed Content
 
@@ -605,44 +617,59 @@ As NLP continues to advance, understanding these fundamentals will be crucial fo
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[NLP Fundamentals] --> B[Importance of NLP]
-    A --> C[NLP Tasks]
-    A --> D[Evolution of NLP]
-    A --> E[State-of-the-Art Models]
+graph LR
+    A(("NLP Fundamentals"))
+    
+    B["Importance of NLP"]
+    C["NLP Tasks"]
+    D["Evolution of NLP"]
+    E["State-of-the-Art<br/>Models"]
+    
+    A --> B & C & D & E
+    
+    B --> B1["Human-Computer<br/>Interaction"]
+    B --> B2["Information Extraction"]
+    B --> B3["Automation"]
+    B --> B4["Accessibility"]
+    B --> B5["Data-driven<br/>Decision Making"]
+    
+    C --> C1["Classification Tasks"]
+    C --> C2["Extraction Tasks"]
+    C --> C3["Generation Tasks"]
+    C1 --> C1a["Sentiment Analysis"]
+    C1 --> C1b["Topic Classification"]
+    C2 --> C2a["Named Entity<br/>Recognition"]
+    C2 --> C2b["Relationship Extraction"]
+    C3 --> C3a["Machine Translation"]
+    C3 --> C3b["Text Summarization"]
+    
+    D --> D1["Rule-based Systems"]
+    D --> D2["Statistical Methods"]
+    D --> D3["Machine Learning"]
+    D --> D4["Deep Learning"]
+    D --> D5["Transformer Models"]
+    
+    E --> E1["BERT"]
+    E --> E2["GPT Series"]
+    E --> E3["T5"]
+    E --> E4["XLNet"]
+    E1 --> E1a["Bidirectional Context"]
+    E2 --> E2a["Few-shot Learning"]
+    E3 --> E3a["Unified NLP Framework"]
+    E4 --> E4a["Permutation<br/>Language Modeling"]
 
-    B --> B1[Human-Computer Interaction]
-    B --> B2[Information Extraction]
-    B --> B3[Automation]
-    B --> B4[Accessibility]
-    B --> B5[Data-driven Decision Making]
-
-    C --> C1[Classification Tasks]
-    C --> C2[Extraction Tasks]
-    C --> C3[Generation Tasks]
-
-    C1 --> C1a[Sentiment Analysis]
-    C1 --> C1b[Topic Classification]
-    C2 --> C2a[Named Entity Recognition]
-    C2 --> C2b[Relationship Extraction]
-    C3 --> C3a[Machine Translation]
-    C3 --> C3b[Text Summarization]
-
-    D --> D1[Rule-based Systems]
-    D --> D2[Statistical Methods]
-    D --> D3[Machine Learning]
-    D --> D4[Deep Learning]
-    D --> D5[Transformer Models]
-
-    E --> E1[BERT]
-    E --> E2[GPT Series]
-    E --> E3[T5]
-    E --> E4[XLNet]
-
-    E1 --> E1a[Bidirectional Context]
-    E2 --> E2a[Few-shot Learning]
-    E3 --> E3a[Unified NLP Framework]
-    E4 --> E4a[Permutation Language Modeling]
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class B1,B2,B3,B4,B5,C1,C2,C3,D1,D2,D3,D4,D5,E1,E2,E3,E4 subTopic
+    
+    classDef subSubTopic fill:#e6f3ff,stroke:#333,stroke-width:1px
+    class C1a,C1b,C2a,C2b,C3a,C3b,E1a,E2a,E3a,E4a subSubTopic
+    
 ```
 
 This mind map provides a visual overview of the key concepts covered in this lesson, illustrating the relationships between different aspects of NLP fundamentals, tasks, evolution, and state-of-the-art models.

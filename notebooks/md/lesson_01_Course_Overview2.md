@@ -1,34 +1,65 @@
-
 # 1. Course Title:Course_Overview LLM and AGI: Navigating the Second Information Revolution
 
 ```mermaid
 gantt
-    title LLM and AGI Course Timeline
+    title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
-    Course Overview                                     :active,a1, 0, 1d
-    NLP Fundamentals                                    :a2, after a1, 1d
-    Basic knowledge and architectural characteristics   :a3, after a2, 1d
-    LLM Development Fundamentals                        :a4, after a3, 1d
-    Experimental Environment Setup                      :a5, after a4, 1d
-    Gap                                                 :a6, after a5, 1d
-    Model Inference and Function calling                :a12, after a6, 1d
-    Prompt engineering - ChatGPT Prompt Engineering     :a13, after a12, 1d
-    Model Quantization Techniques                       :a14, after a13, 1d
+    section Course Content
+    Course Overview                                    :active,a1, 0, 1d
+    NLP Fundamentals                                   :a2, after a1, 1d
+    Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
+    LLM Development Fundamentals                       :a4, after a3, 1d
+    Introduction and Setup of the Experimental Environment :a5, after a4, 1d
+    The concept of the tokenizer and common types      :a6, after a5, 1d
+    Text data preprocessing and preparation            :a7, after a6, 1d
+    LLM training - Fine-tuning                         :a8, after a7, 1d
+    LLM training - Reward Modeling and Proximal Policy Optimization :a9, after a8, 1d
+    Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
     section Lessons
-    lesson 01 :active,l1, 0, 1d
-    lesson 02 :l2, after l1, 1d
-    lesson 03 :l3, after l2, 1d
-    lesson 04 :l4, after l3, 1d
-    lesson 05 :l5, after l4, 1d
-    Gap       :l6, after l5, 1d
-    lesson 12 :l12, after l6, 1d
-    lesson 13 :l13, after l12, 1d
-    lesson 14 :l14, after l13, 1d
+    lesson 1  :active,l1, 0, 1d
+    lesson 2  :l2, after l1, 1d
+    lesson 3  :l3, after l2, 1d
+    lesson 4  :l4, after l3, 1d
+    lesson 5  :l5, after l4, 1d
+    lesson 6  :l6, after l5, 1d
+    lesson 7  :l7, after l6, 1d
+    lesson 8  :l8, after l7, 1d
+    lesson 9  :l9, after l8, 1d
+    lesson 10 :l10, after l9, 1d
 ```
 
 Embracing the Dawn of Artificial General Intelligence in the Second Information Revolution
+
+## 1.1 MBZUAI LLM Online Course Overview
+
+This comprehensive course on Large Language Models (LLMs) and Artificial General Intelligence (AGI) is designed to provide a balanced mix of theoretical knowledge and practical skills. The course is structured as follows:
+
+1. Progressive Learning Path: 
+   - Begins with "LLM Foundations" and advances to "RAG Core Technology and Practice"
+   - Covers key LLM development technologies
+   - Explores applications of Langchain and RAG (Retrieval-Augmented Generation) techniques
+   - Strong emphasis on practical applications throughout
+
+2. Theory-Practice Balance:
+   - 12 hours of theoretical instruction
+   - 14 hours of practical sessions
+   - Covers fundamental knowledge of LLMs, evolution of NLP algorithms and models
+   - Includes extensive LLM project engineering practice
+   - Focuses on design and implementation of chatbot systems
+
+3. Project-Based Learning:
+   - Centers around building a chatbot project
+   - Encompasses project design, database management, and front-end to back-end interaction
+   - Utilizes tools such as OpenAI API, Hugging Face model library, and Milvus vector database
+
+4. Key Skill Development:
+   - Mastering critical skills in LLM development
+   - Focus on practical applications
+   - Building a solid foundation for project engineering practice
+   - Enhancing overall project development capabilities
+
+This course is designed to equip students with both the theoretical understanding and practical skills necessary to navigate the rapidly evolving field of AI, with a particular focus on LLMs and their potential role in the development of AGI.
 
 # 2. Learning Objectives
 
@@ -45,11 +76,15 @@ By the end of this comprehensive lesson, students will be able to:
 
 This in-depth lesson introduces five key concepts, exploring the transformative potential of AGI and LLMs, and outlining strategies for navigating this new era:
 
-3.1 The Second Information Revolution: AGI and LLMs as Catalysts for Change
-3.2 Reshaping Global Economic and Social Structures in the AGI Era
-3.3 LLMs as the Bridge to AGI: Capabilities, Limitations, and Future Trajectories
-3.4 Strategies for Thriving in the AGI-Driven World
-3.5 Ethical Considerations and Societal Implications of AGI Development
+1. The Second Information Revolution: AGI and LLMs as Catalysts for Change
+
+2. Reshaping Global Economic and Social Structures in the AGI Era
+
+3. LLMs as the Bridge to AGI: Capabilities, Limitations, and Future Trajectories
+
+4. Strategies for Thriving in the AGI-Driven World
+
+5. Ethical Considerations and Societal Implications of AGI Development
 
 # 4. Detailed Content
 
@@ -83,29 +118,35 @@ Examine the impact of GPT-3's release in 2020:
 ## 4.1.3 Visualization: The Evolution of AI and Information Revolutions
 
 ```mermaid
-graph LR
-    A["First Industrial
-    Revolution"] --> B[Mechanization]
-    B --> C["Steam
-    Power"]
-    C --> D["First Information
-    Revolution"]
-    D --> E[Computers]
-    E --> F[Internet]
-    F --> G["Second Information
-    Revolution"]
-    G --> H["Large Language
-    Models"]
-    H --> I["Artificial General
-    Intelligence"]
-    I --> J["Potential
-    Technological
-    Singularity"]
+graph TD
+    A["First Industrial Revolution"]
+    B[Mechanization]
+    C["Steam Power"]
+    D["Second Industrial Revolution"]
+    E["Electricity"]
+    F["Mass Production"]
+    G["First Information Revolution"]
+    H["Computers"]
+    I["Internet"]
+    J["Second Information Revolution"]
+    K["Large Language Models (LLMs)"]
+    L["Artificial General Intelligence (AGI)"]
+    M["Potential Technological Singularity"]
+
+    A --> B & C
+    B & C --> D
+    D --> E & F
+    E & F --> G
+    G --> H --> I
+    I --> J
+    J --> K --> L
+    L --> M
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#ccf,stroke:#333,stroke-width:2px
-    style G fill:#cfc,stroke:#333,stroke-width:2px
-    style J fill:#fcc,stroke:#333,stroke-width:2px
+    style D fill:#ffc,stroke:#333,stroke-width:2px
+    style G fill:#ccf,stroke:#333,stroke-width:2px
+    style J fill:#cfc,stroke:#333,stroke-width:2px
+    style M fill:#fcc,stroke:#333,stroke-width:2px
 ```
 
 This diagram illustrates the progression from the First Industrial Revolution to the potential Technological Singularity, highlighting the pivotal role of LLMs and AGI in the Second Information Revolution.
@@ -305,19 +346,22 @@ This script demonstrates some of the key capabilities of LLMs that make them pot
 ## 4.3.4 Visualization: LLM Capabilities vs AGI Requirements
 
 ```mermaid
-graph TD
-    A[AGI Requirements] --> B[General Problem Solving]
+graph LR
+    A[AGI Requirements]
+    G[LLM Capabilities]
+    
+    A --> B[General Problem Solving]
     A --> C[Continuous Learning]
     A --> D[Adaptability]
     A --> E[Reasoning]
     A --> F[Creativity]
-
-    G[LLM Capabilities] --> H[Few-shot Learning]
+    
+    G --> H[Few-shot Learning]
     G --> I[Multi-task Performance]
     G --> J[Language Understanding]
     G --> K[Text Generation]
     G --> L[Emergent Behaviors]
-
+    
     H -.-> B
     H -.-> C
     I -.-> B
@@ -326,9 +370,10 @@ graph TD
     K -.-> F
     L -.-> B
     L -.-> E
-
+    
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style G fill:#ccf,stroke:#333,stroke-width:2px
+ 
 ```
 
 This diagram illustrates the relationship between LLM capabilities and AGI requirements, showing how current LLM abilities align with some aspects of AGI while highlighting areas for further development.
@@ -509,35 +554,51 @@ This simulation demonstrates how an AGI system might incorporate ethical conside
 ## 4.5.4 Visualization: Ethical Considerations in AGI Development
 
 ```mermaid
-graph TD
-    A[Ethical Considerations in AGI] --> B[Accountability]
-    A --> C[Transparency]
-    A --> D[Bias and Fairness]
-    A --> E[Privacy]
-    A --> F[Job Displacement]
-    A --> G[Existential Risk]
-    A --> H[Alignment Problem]
+graph LR
+    A(("Ethical Considerations<br/>in AGI"))
     
-    B --> I[Clear Responsibility]
-    B --> J[Auditability]
+    B["Accountability"]
+    C["Transparency"]
+    D["Bias and Fairness"]
+    E["Privacy"]
+    F["Job Displacement"]
+    G["Existential Risk"]
+    H["Alignment Problem"]
     
-    C --> K[Explainable AI]
-    C --> L[Open Source Development]
+    A --> B & C & D & E & F & G & H
     
-    D --> M[Diverse Training Data]
-    D --> N[Algorithmic Fairness]
+    B --> I["Clear Responsibility"]
+    B --> J["Auditability"]
     
-    E --> O[Data Protection]
-    E --> P[Informed Consent]
+    C --> K["Explainable AI"]
+    C --> L["Open Source<br/>Development"]
     
-    F --> Q[Reskilling Programs]
-    F --> R[Universal Basic Income]
+    D --> M["Diverse Training Data"]
+    D --> N["Algorithmic Fairness"]
     
-    G --> S[Safety Measures]
-    G --> T[Long-term Planning]
+    E --> O["Data Protection"]
+    E --> P["Informed Consent"]
     
-    H --> U[Value Learning]
-    H --> V[Human-AI Collaboration]
+    F --> Q["Reskilling Programs"]
+    F --> R["Universal Basic<br/>Income"]
+    
+    G --> S["Safety Measures"]
+    G --> T["Long-term Planning"]
+    
+    H --> U["Value Learning"]
+    H --> V["Human-AI<br/>Collaboration"]
+
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#fcf,stroke:#333,stroke-width:2px
+    style F fill:#fcf,stroke:#333,stroke-width:2px
+    style G fill:#fcf,stroke:#333,stroke-width:2px
+     style H fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class I,J,K,L,M,N,O,P,Q,R,S,T,U,V subTopic
 ```
 
 This diagram illustrates the various ethical considerations in AGI development and their interconnections.
@@ -572,59 +633,46 @@ As we embark on this learning journey, we'll need to maintain a balance between 
 ## 5.2 Mind Map
 
 ```mermaid
-graph TD
-    A[LLM and AGI: Navigating the Second Information Revolution] --> B[Second Information Revolution]
-    A --> C[Global Economic and Social Restructuring]
-    A --> D[LLMs as Path to AGI]
-    A --> E[Strategies for Thriving]
-    A --> F[Ethical Considerations]
+graph LR
+    A[("Ethical Considerations<br/>in AGI")]
+    B["Accountability"]
+    C["Transparency"]
+    D["Bias and Fairness"]
+    E["Privacy"]
+    F["Job Displacement"]
+    G["Existential Risk"]
+    H["Alignment Problem"]
+    
+    A --> B & C & D & E & F & G & H
+    
+    B --> I["Clear Responsibility"]
+    B --> J["Auditability"]
+    
+    C --> K["Explainable AI"]
+    C --> L["Open Source<br/>Development"]
+    
+    D --> M["Diverse Training Data"]
+    D --> N["Algorithmic Fairness"]
+    
+    E --> O["Data Protection"]
+    E --> P["Informed Consent"]
+    
+    F --> Q["Reskilling Programs"]
+    F --> R["Universal Basic<br/>Income"]
+    
+    G --> S["Safety Measures"]
+    G --> T["Long-term Planning"]
+    
+    H --> U["Value Learning"]
+    H --> V["Human-AI<br/>Collaboration"]
 
-    B --> G[Transformative Impact]
-    B --> H[LLMs and AGI as Catalysts]
-
-    C --> I[Wealth Distribution Changes]
-    C --> J[New Social Classes]
-    C --> K[Labor Market Transformation]
-
-    D --> L[LLM Capabilities]
-    D --> M[LLM Limitations]
-    D --> N[Future Trajectories]
+    classDef mainTopic fill:#f9f,stroke:#333,stroke-width:4px;
+    classDef subTopic fill:#fcf,stroke:#333,stroke-width:2px;
+    classDef leafNode fill:#fff,stroke:#333,stroke-width:1px;
     
-    E --> O[Technical Proficiency]
-    E --> P[Adaptive Skillsets]
-    E --> Q[Ethical Leadership]
-    
-    F --> R[Accountability and Transparency]
-    F --> S[Bias and Fairness]
-    F --> T[Privacy and Data Protection]
-    F --> U[Existential Risk]
-    
-    L --> V[Few-shot Learning]
-    L --> W[Multi-task Capabilities]
-    
-    M --> X[Lack of True Understanding]
-    M --> Y[Inconsistency]
-    
-    O --> Z[AI Literacy]
-    O --> AA[Advanced ML/DL Skills]
-    
-    P --> AB[Creativity]
-    P --> AC[Critical Thinking]
-    
-    Q --> AD[Responsible AI Development]
-    Q --> AE[Ethical Decision Making]
-    
-    R --> AF[Explainable AI]
-    R --> AG[Audit Mechanisms]
-    
-    S --> AH[Diverse Training Data]
-    S --> AI[Algorithmic Fairness]
-    
-    T --> AJ[Data Protection Measures]
-    T --> AK[Informed Consent Practices]
-    
-    U --> AL[Safety Measures]
-    U --> AM[Long-term Planning]
+    class A mainTopic;
+    class B,C,D,E,F,G,H subTopic;
+    class I,J,K,L,M,N,O,P,Q,R,S,T,U,V leafNode;
 ```
 
 This comprehensive mind map provides a visual overview of the key concepts covered in this lesson, illustrating the interconnections between the Second Information Revolution, global restructuring, LLMs as a path to AGI, strategies for thriving, and ethical considerations.

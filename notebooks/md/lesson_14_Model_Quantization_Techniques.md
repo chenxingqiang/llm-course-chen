@@ -1,4 +1,3 @@
-
 # 1.Course Title: Model Quantization Techniques: A Comprehensive Guide
 
 ```mermaid
@@ -6,7 +5,7 @@ gantt
     title LLM Course Timeline
     dateFormat X
     axisFormat %d
-    section Course Timeline
+    section Course Content
     Famous SOTA LLM models and JAIS model              :a10, 0, 1d
     Methods and Metrics for Model Evaluation           :a11, after a10, 1d
     Model Inference and Function calling               :a12, after a11, 1d
@@ -36,21 +35,32 @@ Advanced Model Quantization Techniques for Efficient Inference
 
 This course combines theory with hands-on practice. Upon completion, students will be able to:
 
-- 2.1 Comprehend the fundamental principles and necessity of model quantization
-- 2.2 Distinguish between various quantization methods and their applications
-- 2.3 Implement different quantization techniques using popular deep learning frameworks
-- 2.4 Evaluate the impact of quantization on model performance and resource utilization
-- 2.5 Apply quantization strategies to real-world deep learning models
+1. Comprehend the fundamental principles and necessity of model quantization
+
+2. Distinguish between various quantization methods and their applications
+3. Implement different quantization techniques using popular deep learning frameworks
+
+4. Evaluate the impact of quantization on model performance and resource utilization
+
+5. Apply quantization strategies to real-world deep learning models
+
+   
 
 # 3. Overview
 
 This comprehensive lesson covers 5 key concepts, 4 case studies, and 3 hands-on experiments to achieve the learning objectives. We will explore:
 
-- 3.1 Foundations of model quantization and its importance in modern AI deployment
-- 3.2 Detailed examination of various quantization techniques
-- 3.3 Practical implementation of quantization using PyTorch, TensorFlow, and ONNX
-- 3.4 Performance analysis and trade-offs in quantized models
-- 3.5 Advanced quantization strategies for different model architectures
+1. Foundations of model quantization and its importance in modern AI deployment
+
+2. Detailed examination of various quantization techniques
+
+3. Practical implementation of quantization using PyTorch, TensorFlow, and ONNX
+
+4. Performance analysis and trade-offs in quantized models
+
+5. Advanced quantization strategies for different model architectures
+
+   
 
 # 4. Detailed Content
 
@@ -411,37 +421,54 @@ Key takeaKey takeaways include:
 ## 5.2 Mind Maps
 
 ```mermaid
-graph TD
-    A[Model Quantization] --> B[Foundations]
-    A --> C[Techniques]
-    A --> D[Architectures]
-    A --> E[Hardware Considerations]
-    A --> F[Implementation]
+graph LR
+    A(("Model Quantization"))
     
-    B --> B1[Necessity]
-    B --> B2[Benefits]
-    B --> B3[Challenges]
+    B["Foundations"]
+    C["Techniques"]
+    D["Architectures"]
+    E["Hardware<br/>Considerations"]
+    F["Implementation"]
     
-    C --> C1[Post-training]
-    C --> C2[Quantization-aware]
-    C --> C3[Mixed-precision]
+    A --> B & C & D & E & F
     
-    C1 --> C1a[Dynamic range]
-    C1 --> C1b[Static]
+    B --> B1["Necessity"]
+    B --> B2["Benefits"]
+    B --> B3["Challenges"]
     
-    D --> D1[CNNs]
-    D --> D2[RNNs]
-    D --> D3[Transformers]
-    D --> D4[GNNs]
+    C --> C1["Post-training"]
+    C --> C2["Quantization-aware"]
+    C --> C3["Mixed-precision"]
     
-    E --> E1[CPUs]
-    E --> E2[GPUs]
-    E --> E3[AI Accelerators]
+    C1 --> C1a["Dynamic range"]
+    C1 --> C1b["Static"]
     
-    F --> F1[PyTorch]
-    F --> F2[TensorFlow]
-    F --> F3[ONNX]
-    F --> F4[TensorRT]
+    D --> D1["CNNs"]
+    D --> D2["RNNs"]
+    D --> D3["Transformers"]
+    D --> D4["GNNs"]
+    
+    E --> E1["CPUs"]
+    E --> E2["GPUs"]
+    E --> E3["AI Accelerators"]
+    
+    F --> F1["PyTorch"]
+    F --> F2["TensorFlow"]
+    F --> F3["ONNX"]
+    F --> F4["TensorRT"]
+
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#fcf,stroke:#333,stroke-width:2px
+    style C fill:#fcf,stroke:#333,stroke-width:2px
+    style D fill:#fcf,stroke:#333,stroke-width:2px
+    style E fill:#fcf,stroke:#333,stroke-width:2px
+    style F fill:#fcf,stroke:#333,stroke-width:2px
+    
+    classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
+    class B1,B2,B3,C1,C2,C3,D1,D2,D3,D4,E1,E2,E3,F1,F2,F3,F4 subTopic
+    
+    classDef subSubTopic fill:#e6f3ff,stroke:#333,stroke-width:1px
+    class C1a,C1b subSubTopic
 ```
 
 ## 5.3 Preview

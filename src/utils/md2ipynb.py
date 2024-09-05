@@ -3,6 +3,7 @@ import re
 import nbformat as nbf
 import datetime
 
+
 def text_to_notebook(input_file, output_file):
     # 读取输入文件
     with open(input_file, "r", encoding="utf-8") as f:
@@ -49,7 +50,7 @@ def text_to_notebook(input_file, output_file):
 # 使用示例
 
 input_files = [
-    "lesson_01_Course_Overview.md",
+    "lesson_01_Course_Overview2.md",
     "lesson_02_NLP_Fundamentals.md",
     "lesson_03_Basic_knowledge_and_architectural_characteristics_of_LLM.md",
     "lesson_04_LLM_Development_Fundamentals.md",
@@ -57,6 +58,10 @@ input_files = [
     "lesson_12_Model_Inference_and_Function_calling.md",
     "lesson_13_Prompt_engineering_ChatGPT_Prompt_Engineering.md",
     "lesson_14_Model_Quantization_Techniques.md",
+    "lesson_17_Designing_Input_and_Output_Formats_for_Chatbot_with_Context.md",
+    "lesson_18_Model_Deployment_and_Backend_Development.md",
+    "lesson_19_Frontend_Web_Page_Debugging.md",
+    "lesson_20_System_Testing_and_Deployment.md",
 ]
 
 input_path = "/Users/xingqiangchen/TASK/llm-course-chen/notebooks/md/"
