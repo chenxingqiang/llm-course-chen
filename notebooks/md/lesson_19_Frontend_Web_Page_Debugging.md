@@ -46,8 +46,6 @@ By the end of this comprehensive lesson, students will be able to:
 
 6. Implement advanced visualization techniques for debugging AI model outputs and behaviors
 
-   
-
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of frontend debugging for AI applications:
@@ -63,8 +61,6 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 5. Testing Frameworks for AI-Integrated Frontend Components
 
 6. Visualization Techniques for Debugging AI Model Outputs
-
-   
 
 # 4. Detailed Content
 

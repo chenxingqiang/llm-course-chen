@@ -44,8 +44,6 @@ This course combines theory with hands-on practice. Upon completion, students wi
 
 5. Apply quantization strategies to real-world deep learning models
 
-   
-
 # 3. Overview
 
 This comprehensive lesson covers 5 key concepts, 4 case studies, and 3 hands-on experiments to achieve the learning objectives. We will explore:
@@ -59,8 +57,6 @@ This comprehensive lesson covers 5 key concepts, 4 case studies, and 3 hands-on 
 4. Performance analysis and trade-offs in quantized models
 
 5. Advanced quantization strategies for different model architectures
-
-   
 
 # 4. Detailed Content
 

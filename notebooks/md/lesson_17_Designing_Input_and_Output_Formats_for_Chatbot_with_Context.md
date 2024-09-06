@@ -46,8 +46,6 @@ By the end of this comprehensive lesson, students will be able to:
 
 6. Evaluate and iterate on prompts using quantitative and qualitative metrics
 
-   
-
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of advanced prompt engineering:
@@ -63,8 +61,6 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 5. Ethical Considerations and Bias Mitigation in Prompt Design
 
 6. Evaluation and Iteration of Prompt Engineering Strategies
-
-   
 
 # 4. Detailed Content
 
