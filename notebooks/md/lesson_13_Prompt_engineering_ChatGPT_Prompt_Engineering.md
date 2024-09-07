@@ -48,8 +48,6 @@ This course combines theoretical knowledge with practical application. By the en
 
 6. Evaluate and refine prompts based on AI responses and desired outcomes
 
-   
-
 # 3. Overview
 
 This comprehensive lesson covers seven key concepts, exploring the depth and breadth of ChatGPT prompt engineering:
@@ -67,8 +65,6 @@ This comprehensive lesson covers seven key concepts, exploring the depth and bre
 6. Tree of Thought: A novel approach to problem-solving with AI
 
 7. Security in prompt engineering: Preventing and mitigating prompt injection attacks
-
-   
 
 # 4. Detailed Content
 

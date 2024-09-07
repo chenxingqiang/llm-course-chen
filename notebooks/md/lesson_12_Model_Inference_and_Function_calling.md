@@ -48,8 +48,6 @@ By the end of this comprehensive lesson, students will be able to:
 
 6. Compare and contrast the performance, capabilities, and use cases of different inference approaches
 
-   
-
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of model inference and function calling:
@@ -65,8 +63,6 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 5. Implementing custom function calling mechanisms for LLMs
 
 6. Comparative analysis of local, cloud-based, and specialized model inference
-
-   
 
 # 4. Detailed Content
 

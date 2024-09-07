@@ -46,8 +46,6 @@ By the end of this comprehensive lesson, students will be able to:
 
 6. Apply best practices for security, privacy, and compliance in LLM deployments
 
-   
-
 # 3. Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of model deployment and backend development:
@@ -63,8 +61,6 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 5. Traffic Management and System Reliability
 
 6. Security, Privacy, and Compliance in LLM Deployments
-
-   
 
 # 4. Detailed Content
 

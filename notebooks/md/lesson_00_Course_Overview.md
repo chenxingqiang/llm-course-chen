@@ -32,13 +32,11 @@ gantt
 
 Advanced AI: From Large Language Models to Artificial General Intelligence
 
-
-
 ## 1.1 MBZUAI LLM Online Course Overview
 
 This comprehensive course on Large Language Models (LLMs) and Artificial General Intelligence (AGI) is designed to provide a balanced mix of theoretical knowledge and practical skills. The course is structured as follows:
 
-1. Progressive Learning Path: 
+1. Progressive Learning Path:
    - Begins with "LLM Foundations" and advances to "RAG Core Technology and Practice"
    - Covers key LLM development technologies
    - Explores applications of Langchain and RAG (Retrieval-Augmented Generation) techniques
