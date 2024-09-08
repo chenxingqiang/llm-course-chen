@@ -370,40 +370,40 @@ As AI systems become increasingly prevalent and complex, the skills and knowledg
 
 ```mermaid
 graph LR
-    A[("Frontend Debugging<br/>for AI Apps")]
+    A[("Frontend Debugging for AI Apps")]
     
-    B["Advanced Debugging<br/>Techniques"]
-    C["Async Operations &<br/>State Management"]
-    D["Performance<br/>Optimization"]
-    E["Error Handling &<br/>User Feedback"]
-    F["Testing<br/>Frameworks"]
-    G["Visualization<br/>Techniques"]
+    B["Advanced Debugging Techniques"]
+    C["Async Operations & State Management"]
+    D["Performance Optimization"]
+    E["Error Handling & User Feedback"]
+    F["Testing Frameworks"]
+    G["Visualization Techniques"]
     
     A --> B & C & D & E & F & G
     
     B --> B1["AI-specific Logging"]
-    B --> B2["ML Model Interaction<br/>Debugging"]
+    B --> B2["ML Model Interaction Debugging"]
     B --> B3["AI Behavior Analysis"]
     
-    C --> C1["Async Request<br/>Management"]
+    C --> C1["Async Request Management"]
     C --> C2["State Consistency"]
-    C --> C3["Race Condition<br/>Handling"]
+    C --> C3["Race Condition Handling"]
     
-    D --> D1["Lazy Loading for<br/>AI Components"]
+    D --> D1["Lazy Loading for AI Components"]
     D --> D2["Optimized Rendering"]
     D --> D3["Caching Strategies"]
     
-    E --> E1["Graceful Error<br/>Handling"]
-    E --> E2["User-Friendly<br/>Feedback"]
-    E --> E3["AI Confidence<br/>Indicators"]
+    E --> E1["Graceful Error Handling"]
+    E --> E2["User-Friendly Feedback"]
+    E --> E3["AI Confidence Indicators"]
     
-    F --> F1["Unit Testing<br/>AI Components"]
+    F --> F1["Unit Testing AI Components"]
     F --> F2["Integration Testing"]
     F --> F3["AI Output Validation"]
     
-    G --> G1["AI Decision<br/>Visualizations"]
-    G --> G2["Interactive Debugging<br/>Tools"]
-    G --> G3["Performance Profiling<br/>Visualizations"]
+    G --> G1["AI Decision Visualizations"]
+    G --> G2["Interactive Debugging Tools"]
+    G --> G3["Performance Profiling Visualizations"]
     
     classDef root fill:#f9f,stroke:#333,stroke-width:4px;
     classDef mainTopic fill:#fcf,stroke:#333,stroke-width:2px;

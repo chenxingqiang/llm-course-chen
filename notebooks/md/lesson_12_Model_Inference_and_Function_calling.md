@@ -815,35 +815,35 @@ As AI continues to evolve, the ability to effectively implement and combine thes
 
 ```mermaid
 graph LR
-    A(("Model Inference &<br/>Function Calling"))
+    A(("Model Inference & Function Calling"))
     
     B["Local Models"]
-    C["Cloud-Based<br/>Services"]
+    C["Cloud-Based Services"]
     D["Specialized Models"]
-    E["Custom Function<br/>Calling"]
-    F["Comparative<br/>Analysis"]
+    E["Custom Function Calling"]
+    F["Comparative Analysis"]
     
     A --> B & C & D & E & F
     
     B --> B1["PyTorch"]
     B --> B2["Hugging Face"]
-    B --> B3["Resource<br/>Management"]
+    B --> B3["Resource Management"]
     
     C --> C1["OpenAI API"]
     C --> C2["API Integration"]
     C --> C3["Prompt Engineering"]
     
     D --> D1["JAIS Model"]
-    D --> D2["Scientific<br/>Applications"]
-    D --> D3["Multilingual<br/>Capabilities"]
+    D --> D2["Scientific Applications"]
+    D --> D3["Multilingual Capabilities"]
     
     E --> E1["Function Definition"]
     E --> E2["Output Parsing"]
     E --> E3["Error Handling"]
     
-    F --> F1["Performance<br/>Benchmarking"]
+    F --> F1["Performance Benchmarking"]
     F --> F2["Cost Analysis"]
-    F --> F3["Use Case<br/>Optimization"]
+    F --> F3["Use Case Optimization"]
     
     B3 --> B3a["GPU Utilization"]
     B3 --> B3b["Memory Management"]

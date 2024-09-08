@@ -828,15 +828,15 @@ As AI continues to evolve and integrate into various aspects of business and soc
 
 ```mermaid
 graph LR
-    A(("ChatGPT Prompt<br/>Engineering"))
+    A(("ChatGPT Prompt Engineering"))
     
     B["Fundamentals"]
-    C["Advanced<br/>Techniques"]
-    D["Security<br/>Considerations"]
+    C["Advanced Techniques"]
+    D["Security Considerations"]
     
     A --> B & C & D
     
-    B --> E["Clarity and<br/>Specificity"]
+    B --> E["Clarity and Specificity"]
     B --> F["Context Provision"]
     B --> G["Task Breakdown"]
     
@@ -844,15 +844,15 @@ graph LR
     C --> I["Self-Consistency"]
     C --> J["Tree of Thought"]
     
-    D --> K["Prompt Injection<br/>Prevention"]
+    D --> K["Prompt Injection Prevention"]
     D --> L["Input Sanitization"]
-    D --> M["Robust System<br/>Prompts"]
+    D --> M["Robust System Prompts"]
     
-    H --> N["Step-by-Step<br/>Reasoning"]
-    I --> O["Multiple Solution<br/>Paths"]
-    J --> P["Branching<br/>Possibilities"]
+    H --> N["Step-by-Step Reasoning"]
+    I --> O["Multiple Solution Paths"]
+    J --> P["Branching Possibilities"]
     
-    K --> Q["Attack Vector<br/>Understanding"]
+    K --> Q["Attack Vector Understanding"]
     L --> R["Regex Filtering"]
     M --> S["Security Guidelines"]
 
