@@ -815,7 +815,11 @@ As AI continues to evolve, the ability to effectively implement and combine thes
 
 ```mermaid
 graph LR
+<<<<<<< HEAD
     A(("Model Inference Function Calling"))
+=======
+    A(("Model Inference & Function Calling"))
+>>>>>>> new-main
     
     B["Local Models"]
     C["Cloud-Based Services"]

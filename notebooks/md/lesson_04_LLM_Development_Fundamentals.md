@@ -49,7 +49,11 @@ In this action-packed lesson, we'll explore:
 
 Buckle up, because we're in for an exciting ride!
 
+<<<<<<< HEAD
 ## Tokenization: Chopping Up Language Like a Master Chef
+=======
+## 1. Tokenization: Chopping Up Language Like a Master Chef
+>>>>>>> new-main
 
 ### What's Tokenization, and Why Should You Care?
 
@@ -144,7 +148,11 @@ So, the next time you're building an LLM, remember: tokenization isn't just abou
 
 Stay tuned for our next section, where we'll explore the art of prompting – or as I like to call it, "How to Sweet-Talk Your LLM into Doing What You Want!"
 
+<<<<<<< HEAD
 ##  The Art of Prompting: How to Sweet-Talk Your LLM
+=======
+## 2. The Art of Prompting: How to Sweet-Talk Your LLM
+>>>>>>> new-main
 
 Welcome back, LLM whisperers! Now that we've mastered the art of chopping up language with advanced tokenization, it's time to learn how to sweet-talk our models into doing what we want. That's right, we're diving into the world of sophisticated prompting strategies!
 
@@ -259,7 +267,11 @@ But remember, with great power comes great responsibility. As you're crafting yo
 
 Stay tuned for our next exciting installment, where we'll dive into the world of data preparation. Remember, even the smartest LLM is only as good as the data it's trained on!
 
+<<<<<<< HEAD
 ## Data Preparation: Garbage In, Garbage Out? Not On Our Watch
+=======
+## 3. Data Preparation: Garbage In, Garbage Out? Not On Our Watch
+>>>>>>> new-main
 
 Welcome back, data wranglers and LLM enthusiasts! We've learned how to chop up language and sweet-talk our models, but now it's time to talk about something that might not sound as exciting but is absolutely crucial: data preparation. Remember, even the fanciest kitchen can't make a gourmet meal out of spoiled ingredients!
 
@@ -413,7 +425,11 @@ Good data preparation is the foundation of any successful LLM project. It can he
 
 In our next exciting installment, we'll dive into the world of pre-training methodologies. Get ready to give your LLM its first lessons in understanding the world!
 
+<<<<<<< HEAD
 ## Fine-Tuning: Teaching Your LLM to Become a Specialist
+=======
+## 5. Fine-Tuning: Teaching Your LLM to Become a Specialist
+>>>>>>> new-main
 
 Welcome back, LLM trainers extraordinaire! We've given our model a broad education through pre-training, and now it's time for grad school. That's right, we're diving into the world of fine-tuning, where we take our jack-of-all-trades LLM and turn it into a master of specific domains.
 
@@ -586,7 +602,11 @@ Remember, a well fine-tuned model is like a world-class expert - deeply knowledg
 
 In our next exciting installment, we'll explore how to teach our LLMs using rewards and reinforcement learning. Get ready to train your AI like you would a very smart puppy!
 
+<<<<<<< HEAD
 ## Reward Modeling and Reinforcement Learning: Teaching Your LLM to Be Good
+=======
+## 6. Reward Modeling and Reinforcement Learning: Teaching Your LLM to Be Good
+>>>>>>> new-main
 
 Welcome back, AI trainers and language model whisperers! We've fine-tuned our models to be experts, but now we're going to teach them something even more important: values. That's right, we're diving into the world of reward modeling and reinforcement learning, where we teach our LLMs not just what to do, but what's good to do.
 
@@ -728,7 +748,11 @@ Remember, a model trained with these techniques is like a brilliant student who'
 
 In our next exciting episode, we'll explore how to squeeze all this AI goodness into smaller packages through model quantization. Get ready to turn your AI behemoth into a lean, mean, language-processing machine!
 
+<<<<<<< HEAD
 ##  Model Quantization: Shrinking Your LLM Without Shrinking Its Brain
+=======
+## 7. Model Quantization: Shrinking Your LLM Without Shrinking Its Brain
+>>>>>>> new-main
 
 Welcome back, AI compressors and efficiency enthusiasts! We've created a brilliant, ethical AI, but there's just one tiny problem - it's huge! Enter the world of model quantization, where we turn our gas-guzzling AI SUV into a sleek, efficient electric car.
 
@@ -917,7 +941,11 @@ Remember, a well-quantized model is like a master chef who can create gourmet me
 
 In our grand finale, we'll explore how to accurately evaluate the performance of our lean, mean, language-processing machine. Get ready to put your LLM through its paces!
 
+<<<<<<< HEAD
 ## Model Evaluation: Putting Your LLM Through Its Paces
+=======
+## 8. Model Evaluation: Putting Your LLM Through Its Paces
+>>>>>>> new-main
 
 Welcome to the final boss battle, AI trainers! We've built, trained, fine-tuned, and optimized our LLM. Now it's time for the moment of truth: evaluating just how good our creation really is. Buckle up, because we're about to put our LLM through a gauntlet of tests that would make even the toughest AI sweat (if they could sweat, that is).
 

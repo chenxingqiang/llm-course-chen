@@ -153,7 +153,11 @@ As we continue our journey into the world of LLMs, keep these questions in mind.
 
 In the next section, we'll pull back the curtain and look at the architecture that powers these impressive models. Get ready to dive into the world of attention mechanisms and transformers!
 
+<<<<<<< HEAD
 ## The Magic Behind LLMs: Attention Mechanisms and Transformer Architecture
+=======
+## 2. The Magic Behind LLMs: Attention Mechanisms and Transformer Architecture
+>>>>>>> new-main
 
 Now that we've traced the evolution of LLMs, let's dive into the engine that powers these AI marvels: the transformer architecture. Don't worry if you're not a math whiz - we'll break it down step by step and use some fun analogies along the way!
 

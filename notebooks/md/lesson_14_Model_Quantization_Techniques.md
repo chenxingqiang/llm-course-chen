@@ -423,7 +423,7 @@ graph LR
     B["Foundations"]
     C["Techniques"]
     D["Architectures"]
-    E["Hardware<br/>Considerations"]
+    E["Hardware Considerations"]
     F["Implementation"]
     
     A --> B & C & D & E & F

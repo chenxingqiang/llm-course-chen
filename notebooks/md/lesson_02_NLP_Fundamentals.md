@@ -96,11 +96,19 @@ Before we delve into specific tasks, let's take a moment to understand the big p
 
 Each of these task types plays a crucial role in processing and understanding natural language. Often, they work together in complex NLP systems, much like instruments in an orchestra creating a symphony of language understanding.
 
+<<<<<<< HEAD
 ##  Classification Tasks: Teaching Machines to Categorize
 
 Let's start with classification tasks. These are some of the most common and practical applications of NLP.
 
 ### Sentiment Analysis: Decoding the Emotions in Text
+=======
+## 4.2 Classification Tasks: Teaching Machines to Categorize
+
+Let's start with classification tasks. These are some of the most common and practical applications of NLP.
+
+### 4.2.1 Sentiment Analysis: Decoding the Emotions in Text
+>>>>>>> new-main
 
 Imagine you're scrolling through product reviews online. Wouldn't it be great if you could instantly know whether each review is positive, negative, or neutral? That's exactly what sentiment analysis does!
 
@@ -158,7 +166,11 @@ In this example, we're using the VADER (Valence Aware Dictionary and sEntiment R
 
 When you run this code, you'll see a visualization of the sentiment scores for each piece of feedback, along with a detailed breakdown of the scores and categories. This kind of analysis can be incredibly useful for businesses to quickly gauge customer satisfaction and identify areas for improvement.
 
+<<<<<<< HEAD
 ###  Topic Classification: Organizing Text into Themes
+=======
+### 4.2.2 Topic Classification: Organizing Text into Themes
+>>>>>>> new-main
 
 Now, let's move on to another important classification task: topic classification. This is like having a super-efficient librarian who can instantly categorize books into different genres or subjects.
 
@@ -219,11 +231,19 @@ As you can see, classification tasks in NLP are powerful tools for organizing an
 
 In the next section, we'll explore extraction tasks, where we'll learn how to pull specific pieces of information out of text. Get ready to put on your detective hat!
 
+<<<<<<< HEAD
 ## Extraction Tasks: Mining Gold from Text
 
 Now that we've explored classification, let's dive into extraction tasks. These are like having a super-smart assistant who can quickly pull out specific information from a sea of text. It's an essential skill in the NLP toolkit, with applications ranging from summarizing documents to powering question-answering systems.
 
 ###  Named Entity Recognition (NER): Spotting the VIPs in Your Text
+=======
+## 4.3 Extraction Tasks: Mining Gold from Text
+
+Now that we've explored classification, let's dive into extraction tasks. These are like having a super-smart assistant who can quickly pull out specific information from a sea of text. It's an essential skill in the NLP toolkit, with applications ranging from summarizing documents to powering question-answering systems.
+
+### 4.3.1 Named Entity Recognition (NER): Spotting the VIPs in Your Text
+>>>>>>> new-main
 
 Named Entity Recognition is all about identifying and classifying key elements in text into predefined categories such as person names, organizations, locations, dates, and more. It's like having a spotlight that automatically highlights these important pieces of information.
 
@@ -286,7 +306,11 @@ spaCy's NER model can recognize a wide range of entity types, including:
 
 This kind of extraction can be incredibly useful for automatically summarizing news articles, tracking mentions of specific entities across large datasets, or building more complex systems like question-answering bots.
 
+<<<<<<< HEAD
 ###  Relationship Extraction: Connecting the Dots
+=======
+### 4.3.2 Relationship Extraction: Connecting the Dots
+>>>>>>> new-main
 
 While NER helps us identify important entities, relationship extraction takes it a step further by understanding how these entities are connected to each other. It's like drawing lines between the dots to reveal the bigger picture.
 
@@ -376,11 +400,19 @@ Extraction tasks like NER and relationship extraction are fundamental to many hi
 
 In the next section, we'll explore the exciting world of text generation tasks, where we teach machines not just to understand language, but to produce it. Get ready to see some AI creativity in action!
 
+<<<<<<< HEAD
 ##  Generation Tasks: Teaching Machines to Write
 
 Welcome to the most creative part of our NLP journey! In generation tasks, we're not just analyzing existing text; we're teaching machines to produce new text. This is where NLP starts to feel a bit magical – like teaching a computer to be a writer, translator, or even a conversationalist.
 
 ### Machine Translation: Breaking Down Language Barriers
+=======
+## 4.4 Generation Tasks: Teaching Machines to Write
+
+Welcome to the most creative part of our NLP journey! In generation tasks, we're not just analyzing existing text; we're teaching machines to produce new text. This is where NLP starts to feel a bit magical – like teaching a computer to be a writer, translator, or even a conversationalist.
+
+### 4.4.1 Machine Translation: Breaking Down Language Barriers
+>>>>>>> new-main
 
 Machine translation is one of the most impactful applications of NLP. It's like having a universal translator from science fiction, allowing us to communicate across language barriers.
 
@@ -426,7 +458,11 @@ This code uses a pre-trained model to translate English sentences to French. Whe
 
 The model we're using here is based on the Transformer architecture, which has revolutionized machine translation (and many other NLP tasks) in recent years. It's able to capture complex relationships between words and phrases, leading to more accurate and natural-sounding translations.
 
+<<<<<<< HEAD
 ### Text Summarization: Distilling the Essence of Documents
+=======
+### 4.4.2 Text Summarization: Distilling the Essence of Documents
+>>>>>>> new-main
 
 Text summarization is like having a super-efficient assistant who can read long documents and give you the key points in a fraction of the time. It's incredibly useful in our information-rich world where we often need to quickly grasp the main ideas of large amounts of text.
 
@@ -498,7 +534,11 @@ When you run this code, you'll see the original article followed by a summary co
 
 While this method is relatively simple, it can be surprisingly effective for many types of documents. More advanced summarization techniques, particularly those based on deep learning, can generate even more concise and coherent summaries, and can even produce abstractive summaries (summaries that include phrases not found verbatim in the original text).
 
+<<<<<<< HEAD
 ###  Text Generation: Unleashing AI Creativity
+=======
+### 4.4.3 Text Generation: Unleashing AI Creativity
+>>>>>>> new-main
 
 Now, let's venture into one of the most exciting areas of NLP: open-ended text generation. This is where we teach machines to write original text, from completing sentences to generating entire articles or stories.
 
@@ -566,11 +606,19 @@ As we wrap up our exploration of NLP tasks, from classification to extraction to
 
 In our next section, we'll take a step back and look at the evolution of NLP techniques that have made these tasks possible, tracing the journey from early rule-based systems to the cutting-edge deep learning models of today. Get ready for a fascinating trip through the history of NLP!
 
+<<<<<<< HEAD
 ##  The Evolution of NLP: From Rule-Based Systems to Deep Learning
 
 As we've seen, NLP can accomplish some pretty amazing feats. But how did we get here? Let's take a trip through time to understand the evolution of NLP techniques. This journey will help you appreciate the current state of the art and give you insights into where the field might be heading.
 
 ###  Rule-Based Systems: The Pioneers of NLP (1950s-1980s)
+=======
+## 4.5 The Evolution of NLP: From Rule-Based Systems to Deep Learning
+
+As we've seen, NLP can accomplish some pretty amazing feats. But how did we get here? Let's take a trip through time to understand the evolution of NLP techniques. This journey will help you appreciate the current state of the art and give you insights into where the field might be heading.
+
+### 4.5.1 Rule-Based Systems: The Pioneers of NLP (1950s-1980s)
+>>>>>>> new-main
 
 We're going to start our journey in the early days of computing. Imagine trying to teach a computer to understand language using nothing but a set of hand-crafted rules. That's exactly what the pioneers of NLP did!
 
@@ -630,7 +678,11 @@ Rule-based systems like ELIZA were groundbreaking for their time, but they had s
 
 Despite these limitations, rule-based systems laid the foundation for NLP and are still used in some applications today, particularly where the language domain is narrow and well-defined.
 
+<<<<<<< HEAD
 ###  Statistical Methods: Bringing Probability into the Mix (1980s-2000s)
+=======
+### 4.5.2 Statistical Methods: Bringing Probability into the Mix (1980s-2000s)
+>>>>>>> new-main
 
 As computers became more powerful and larger text corpora became available, researchers began to explore statistical approaches to NLP. Instead of relying solely on hand-crafted rules, these methods use probability and statistics to learn patterns from data.
 
@@ -706,7 +758,11 @@ However, they also had limitations:
 
 Statistical methods dominated NLP for many years and are still used in various applications today. However, they've largely been superseded by machine learning approaches, especially deep learning, which we'll explore next.
 
+<<<<<<< HEAD
 ###  Machine Learning: Teaching Computers to Learn Language (2000s-2010s)
+=======
+### 4.5.3 Machine Learning: Teaching Computers to Learn Language (2000s-2010s)
+>>>>>>> new-main
 
 As we moved into the 21st century, machine learning techniques started to gain prominence in NLP. These methods could automatically learn to make decisions based on features extracted from text, often outperforming both rule-based and purely statistical approaches.
 
@@ -777,7 +833,11 @@ Machine learning approaches like Naive Bayes, Support Vector Machines (SVM), and
 
 However, these methods still relied heavily on feature engineering - the process of manually designing and selecting the most relevant features from text. This would change with the advent of deep learning.
 
+<<<<<<< HEAD
 ### 4 Deep Learning: The Neural Revolution (2010s-present)
+=======
+### 4.5.4 Deep Learning: The Neural Revolution (2010s-present)
+>>>>>>> new-main
 
 The most recent and perhaps most dramatic shift in NLP has been the rise of deep learning. Neural network models, especially those based on the Transformer architecture, have set new state-of-the-art benchmarks on virtually every NLP task.
 
@@ -810,6 +870,435 @@ def word_analogy(word1, word2, word3):
 # Find similar words
 print("Words similar to 'computer':")
 print(find_similar_words('computer'))
+<<<<<<< HEAD
+=======
+
+print("\nWords similar to 'happy':")
+print(find_similar_words('happy'))
+
+# Perform word analogy
+print("\nWord analogy: man is to king as woman is to...")
+result = word_analogy('man', 'king', 'woman')
+if result:
+    print(f"{result[0]}: {result[1]}")
+
+# Visualize word relationships
+def plot_words(words):
+    vectors = [model[word] for word in words if word in model]
+    if len(vectors) != len(words):
+        print("Some words are not in the vocabulary.")
+        return
+    
+    vectors = np.array(vectors)
+    similarities = cosine_similarity(vectors)
+    
+    import matplotlib.pyplot as plt
+    
+    fig, ax = plt.subplots(figsize=(10, 10))
+    im = ax.imshow(similarities)
+    
+    ax.set_xticks(np.arange(len(words)))
+    ax.set_yticks(np.arange(len(words)))
+    ax.set_xticklabels(words)
+    ax.set_yticklabels(words)
+    
+    plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+    
+    for i in range(len(words)):
+        for j in range(len(words)):
+            text = ax.text(j, i, f"{similarities[i, j]:.2f}", ha="center", va="center", color="w")
+    
+    ax.set_title("Word Similarities")
+    fig.tight_layout()
+    plt.show()
+
+# Visualize relationships between some words
+words_to_plot = ['king', 'queen', 'man', 'woman', 'doctor', 'nurse']
+plot_words(words_to_plot)
+```
+
+This code demonstrates some of the fascinating properties of word embeddings:
+
+1. Finding similar words based on their vector representations
+2. Performing word analogies (like the famous "king - man + woman = queen")
+3. Visualizing the relationships between words in vector space
+
+Word embeddings like Word2Vec, GloVe, and FastText laid the groundwork for deep learning in NLP by providing rich, learned representations of words that capture semantic meaning.
+
+The field of NLP continues to evolve rapidly, with new models and techniques constantly pushing the boundaries of what's possible. The current state-of-the-art is dominated by large language models based on the Transformer architecture, such as BERT, GPT, and T5, which we'll explore in more depth in future lessons.
+
+As we conclude our journey through the evolution of NLP, I hope you've gained an appreciation for how far we've come - from simple rule-based systems to sophisticated neural networks that can understand and generate human-like text. Each step in this evolution has brought us closer to the goal of truly natural language processing, and the journey is far from over.
+
+In our next section, we'll dive deeper into some of the current state-of-the-art models and techniques, exploring how they're pushing the boundaries of what's possible in NLP. Get ready to peek into the cutting edge of language AI!
+
+## 4.6 State-of-the-Art NLP Models: Pushing the Boundaries of Language AI
+
+We've come a long way in our NLP journey, from simple rule-based systems to sophisticated neural networks. Now, let's explore the models that are currently defining the state-of-the-art in NLP. These models are not just incrementally better than their predecessors; they represent a quantum leap in our ability to process and generate human language.
+
+### 4.6.1 The Transformer Revolution: Attention is All You Need
+
+The landscape of NLP was dramatically altered in 2017 with the introduction of the Transformer architecture in the paper "Attention is All You Need" by Vaswani et al. This architecture introduced a novel approach to sequence-to-sequence tasks, replacing recurrent layers with multi-headed self-attention mechanisms.
+
+#### Key Innovations of Transformers
+
+1. **Self-Attention**: Allows the model to weigh the importance of different words in the input when processing each word.
+2. **Parallelization**: Unlike RNNs, Transformers can process all input tokens simultaneously, greatly speeding up training.
+3. **Positional Encoding**: Allows the model to understand the order of words without recurrence.
+
+Let's implement a simple self-attention mechanism to get a feel for how Transformers work:
+
+```python
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class SelfAttention(nn.Module):
+    def __init__(self, embed_size, heads):
+        super(SelfAttention, self).__init__()
+        self.embed_size = embed_size
+        self.heads = heads
+        self.head_dim = embed_size // heads
+
+        assert (self.head_dim * heads == embed_size), "Embed size needs to be divisible by heads"
+
+        self.values = nn.Linear(self.head_dim, self.head_dim, bias=False)
+        self.keys = nn.Linear(self.head_dim, self.head_dim, bias=False)
+        self.queries = nn.Linear(self.head_dim, self.head_dim, bias=False)
+        self.fc_out = nn.Linear(heads * self.head_dim, embed_size)
+
+    def forward(self, values, keys, query, mask):
+        N = query.shape[0]
+        value_len, key_len, query_len = values.shape[1], keys.shape[1], query.shape[1]
+
+        # Split the embedding into self.heads pieces
+        values = values.reshape(N, value_len, self.heads, self.head_dim)
+        keys = keys.reshape(N, key_len, self.heads, self.head_dim)
+        query = query.reshape(N, query_len, self.heads, self.head_dim)
+
+        values = self.values(values)
+        keys = self.keys(keys)
+        queries = self.queries(query)
+
+        # Attention
+        energy = torch.einsum("nqhd,nkhd->nhqk", [queries, keys])
+        
+        if mask is not None:
+            energy = energy.masked_fill(mask == 0, float("-1e20"))
+
+        attention = torch.softmax(energy / (self.embed_size ** (1/2)), dim=3)
+
+        out = torch.einsum("nhql,nlhd->nqhd", [attention, values]).reshape(
+            N, query_len, self.heads * self.head_dim
+        )
+
+        out = self.fc_out(out)
+        return out
+
+# Example usage
+embed_size = 256
+heads = 8
+attention = SelfAttention(embed_size, heads)
+
+# Create random input tensors
+batch_size = 2
+seq_length = 10
+x = torch.randn(batch_size, seq_length, embed_size)
+
+# Create a mask (usually used to mask padding tokens)
+mask = torch.ones(batch_size, heads, seq_length, seq_length)
+
+output = attention(x, x, x, mask)
+print(f"Input shape: {x.shape}")
+print(f"Output shape: {output.shape}")
+```
+
+This code implements a basic self-attention mechanism, which is at the heart of Transformer models. While this is a simplified version, it captures the essence of how Transformers process sequences of data.
+
+### 4.6.2 BERT: Bidirectional Encoder Representations from Transformers
+
+BERT, introduced by Google in 2018, revolutionized NLP by introducing a new pretraining objective: Masked Language Modeling (MLM). This allows BERT to create deep bidirectional representations, capturing context from both directions.
+
+Let's use a pre-trained BERT model for a simple task: filling in masked words in a sentence.
+
+```python
+from transformers import BertTokenizer, BertForMaskedLM
+import torch
+
+# Load pre-trained model and tokenizer
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+model = BertForMaskedLM.from_pretrained('bert-base-uncased')
+
+def predict_masked_word(sentence):
+    # Tokenize input
+    input_ids = tokenizer.encode(sentence, return_tensors='pt')
+    
+    # Find the masked token
+    mask_token_index = torch.where(input_ids == tokenizer.mask_token_id)[1]
+
+    # Make prediction
+    with torch.no_grad():
+        outputs = model(input_ids)
+
+    last_hidden_state = outputs.logits
+    mask_token_logits = last_hidden_state[0, mask_token_index, :]
+    
+    # Get top 5 tokens
+    top_5_tokens = torch.topk(mask_token_logits, 5, dim=1).indices[0].tolist()
+    
+    # Convert token ids to words
+    for token in top_5_tokens:
+        print(tokenizer.decode([token]))
+
+# Example usage
+sentence = "The capital of France is [MASK]."
+print(f"Sentence: {sentence}")
+print("Top 5 predictions for the masked word:")
+predict_masked_word(sentence)
+
+sentence = "I enjoy eating [MASK] for breakfast."
+print(f"\nSentence: {sentence}")
+print("Top 5 predictions for the masked word:")
+predict_masked_word(sentence)
+```
+
+This code demonstrates BERT's ability to understand context and predict masked words. It's this capability that makes BERT so powerful for various NLP tasks.
+
+### 4.6.3 GPT (Generative Pre-trained Transformer): The Power of Language Generation
+
+While BERT excels at understanding language, the GPT series, developed by OpenAI, focuses on generating human-like text. GPT models are trained on a vast amount of text data and can generate coherent and contextually relevant text given a prompt.
+
+Let's use a pre-trained GPT-2 model to generate text:
+
+```python
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
+
+# Load pre-trained model and tokenizer
+model_name = "gpt2"
+tokenizer = GPT2Tokenizer.from_pretrained(model_name)
+model = GPT2LMHeadModel.from_pretrained(model_name)
+
+def generate_text(prompt, max_length=100):
+    # Encode the input and add the end of string token
+    input_ids = tokenizer.encode(prompt, return_tensors="pt")
+    
+    # Generate text
+    output = model.generate(
+        input_ids,
+        max_length=max_length,
+        num_return_sequences=1,
+        no_repeat_ngram_size=2,
+        top_k=50,
+        top_p=0.95,
+        temperature=0.7
+    )
+    
+    # Decode and return the output
+    return tokenizer.decode(output[0], skip_special_tokens=True)
+
+# Example usage
+prompts = [
+    "The future of artificial intelligence is",
+    "In a world where robots are common,",
+    "The key to solving climate change lies in"
+]
+
+for prompt in prompts:
+    generated_text = generate_text(prompt)
+    print(f"Prompt: {prompt}")
+    print(f"Generated text: {generated_text}\n")
+```
+
+This code showcases GPT-2's ability to generate coherent and contextually relevant text based on a given prompt. The larger GPT-3 model (and its successors) can perform even more impressive feats of text generation and task completion.
+
+### 4.6.4 T5: Text-to-Text Transfer Transformer
+
+T5, introduced by Google in 2019, takes a unique approach by framing all NLP tasks as text-to-text problems. This allows for a unified model that can handle multiple tasks.
+
+Let's use T5 for a couple of different tasks:
+
+```python
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+
+# Load pre-trained model and tokenizer
+model_name = "t5-small"
+tokenizer = T5Tokenizer.from_pretrained(model_name)
+model = T5ForConditionalGeneration.from_pretrained(model_name)
+
+def t5_generate(input_text, max_length=50):
+    input_ids = tokenizer(input_text, return_tensors="pt").input_ids
+
+    outputs = model.generate(input_ids, max_length=max_length)
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+# Example 1: Translation
+english_text = "translate English to German: The weather is nice today."
+german_translation = t5_generate(english_text)
+print(f"English: {english_text}")
+print(f"German: {german_translation}\n")
+
+# Example 2: Summarization
+text_to_summarize = "summarize: The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed from 1887 to 1889 as the entrance arch to the 1889 World's Fair, it was initially criticized by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognizable structures in the world."
+summary = t5_generate(text_to_summarize)
+print("Original text:")
+print(text_to_summarize)
+print("\nSummary:")
+print(summary)
+```
+
+This demonstrates T5's versatility in handling different NLP tasks within a single model.
+
+### 4.6.5 The Future of NLP: Challenges and Opportunities
+
+As impressive as these models are, they also present new challenges and opportunities:
+
+1. **Ethical Considerations**: Large language models can perpetuate biases present in their training data and can be used to generate misleading information.
+
+2. **Computational Resources**: Training and running these models requires significant computational power, raising questions about accessibility and environmental impact.
+
+3. **Few-Shot and Zero-Shot Learning**: Models like GPT-3 have shown impressive capabilities in learning new tasks with few or no examples, opening up new possibilities for adaptable AI.
+
+4. **Multimodal Models**: The future may lie in models that can process and generate multiple types of data, including text, images, and audio.
+
+5. **Interpretability**: As these models become more complex, understanding how they arrive at their outputs becomes increasingly challenging and important.
+
+As we conclude our exploration of state-of-the-art NLP models, I hope you're excited about the possibilities these technologies open up. We're living in a golden age of NLP, where machines are becoming increasingly adept at understanding and generating human language.
+
+In our next and final section, we'll recap what we've learned and look ahead to what the future might hold for NLP. We'll also discuss some practical considerations for applying these advanced techniques in real-world scenarios. Stay tuned!
+
+## 4.7 Recap and Future Directions: The Evolving Landscape of NLP
+
+We've covered a lot of ground in this lesson, from the basics of NLP tasks to the cutting-edge models that are pushing the boundaries of what's possible with language AI. Let's take a moment to recap the key points and then look ahead to what the future might hold for NLP.
+
+### 4.7.1 Key Takeaways
+
+1. **NLP Tasks**: We explored a wide range of NLP tasks, including:
+   - Classification (e.g., sentiment analysis, topic classification)
+   - Extraction (e.g., named entity recognition, relationship extraction)
+   - Generation (e.g., machine translation, text summarization, creative writing)
+
+2. **Evolution of NLP Techniques**:
+   - Rule-based systems: Early attempts at language processing using hand-crafted rules
+   - Statistical methods: Leveraging probability and large corpora of text
+   - Machine learning: Automatically learning patterns from data
+   - Deep learning: Using neural networks to capture complex language patterns
+
+3. **State-of-the-Art Models**:
+   - Transformer architecture: Revolutionary approach using self-attention mechanisms
+   - BERT: Bidirectional language understanding
+   - GPT: Powerful language generation capabilities
+   - T5: Unified approach to various NLP tasks
+
+### 4.7.2 Practical Considerations for Applying Advanced NLP
+
+As exciting as these advanced NLP techniques are, applying them in real-world scenarios comes with its own set of challenges. Here are some practical considerations to keep in mind:
+
+1. **Data Quality and Quantity**: State-of-the-art models often require large amounts of high-quality data. Ensure your data is clean, diverse, and representative of your target domain.
+
+2. **Computational Resources**: Training and running large language models can be computationally expensive. Consider using pre-trained models and fine-tuning them for your specific task to save resources.
+
+3. **Model Selection**: Choose the right model for your task. While large models like GPT-3 are impressive, smaller, task-specific models might be more appropriate for certain applications.
+
+4. **Ethical Considerations**: Be aware of potential biases in your models and data. Implement safeguards to prevent misuse of language generation capabilities.
+
+5. **Interpretability**: For many applications, especially in regulated industries, it's crucial to understand how your model arrives at its decisions. Consider using more interpretable models or employing explainable AI techniques.
+
+6. **Continuous Learning**: The field of NLP is evolving rapidly. Stay updated with the latest research and be prepared to adapt your approaches as new techniques emerge.
+
+### 4.7.3 Future Directions in NLP
+
+As we look to the future, several exciting trends are emerging in NLP:
+
+1. **Multimodal Learning**: Future NLP models may not be limited to text alone. We're seeing increasing interest in models that can process and generate multiple types of data, including text, images, and audio.
+
+2. **Few-Shot and Zero-Shot Learning**: Models that can learn new tasks with minimal examples are becoming increasingly powerful. This could lead to more adaptable and generalizable AI systems.
+
+3. **Smaller, More Efficient Models**: While the trend has been towards larger models, there's also research into creating smaller, more efficient models that can run on edge devices.
+
+4. **Multilingual and Cross-lingual Models**: As global communication increases, we're likely to see more powerful models that can work across multiple languages.
+
+5. **Ethical and Responsible AI**: There will be an increased focus on developing NLP systems that are fair, transparent, and respect user privacy.
+
+6. **Domain-Specific Applications**: We'll likely see more specialized NLP models tailored for specific industries like healthcare, finance, and legal.
+
+### 4.7.4 Hands-on: Building a Multi-task NLP Pipeline
+
+To tie everything together, let's create a simple multi-task NLP pipeline that combines several of the techniques we've learned. This pipeline will perform sentiment analysis, named entity recognition, and text summarization on a given piece of text.
+
+```python
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification, AutoModelForTokenClassification, AutoModelForSeq2SeqLM
+
+# Initialize the pipelines
+sentiment_analyzer = pipeline("sentiment-analysis")
+ner = pipeline("ner", grouped_entities=True)
+summarizer = pipeline("summarization")
+
+def analyze_text(text):
+    print("Original Text:")
+    print(text)
+    print("\n1. Sentiment Analysis:")
+    sentiment = sentiment_analyzer(text)[0]
+    print(f"Sentiment: {sentiment['label']} (Score: {sentiment['score']:.4f})")
+    
+    print("\n2. Named Entity Recognition:")
+    entities = ner(text)
+    for entity in entities:
+        print(f"{entity['entity_group']}: {entity['word']}")
+    
+    print("\n3. Text Summarization:")
+    summary = summarizer(text, max_length=100, min_length=30, do_sample=False)[0]['summary_text']
+    print(summary)
+
+# Example usage
+text = """
+The Eiffel Tower, located in Paris, France, is one of the most famous landmarks in the world. 
+Constructed in 1889, it was designed by the engineer Gustave Eiffel. Initially criticized for its design, 
+it has become a global cultural icon of France and attracts millions of visitors each year. 
+The tower stands 324 meters (1,063 ft) tall and offers breathtaking views of the city. 
+Despite its age, the Eiffel Tower remains an engineering marvel and a symbol of architectural innovation.
+"""
+
+analyze_text(text)
+```
+
+This pipeline demonstrates how we can combine multiple NLP tasks to gain comprehensive insights from a piece of text. It uses pre-trained models for each task, showcasing the power and flexibility of modern NLP techniques.
+
+### 4.7.5 Conclusion
+
+As we conclude this lesson, I hope you're excited about the possibilities that NLP opens up. From understanding and generating human language to extracting insights from vast amounts of text data, NLP is transforming how we interact with information and with each other.
+
+Remember, the field of NLP is rapidly evolving. What we've covered here is just the beginning. As you continue your journey in NLP, stay curious, keep experimenting, and don't be afraid to push the boundaries of what's possible with language AI.
+
+Whether you're interested in building chatbots, analyzing social media trends, developing writing assistance tools, or tackling complex language understanding problems, the skills and knowledge you've gained in this lesson will serve as a strong foundation.
+
+The future of NLP is bright, and you're now equipped to be a part of it. Happy coding, and may your NLP adventures be ever exciting and rewarding!
+
+# 5. Summary: Your NLP Adventure Recap
+
+Wow, what a journey we've been on! Let's take a moment to look back at the exciting terrain we've covered in our NLP adventure:
+
+## 5.1 The Big Picture
+
+We've seen how NLP is transforming the way we interact with technology and information. From virtual assistants that understand our voice commands to systems that can analyze thousands of customer reviews in seconds, NLP is everywhere!
+
+## 5.2 The NLP Toolkit
+
+We've explored a wide range of NLP tasks, each like a different superpower in our linguistic arsenal:
+
+- **Classification**: Teaching machines to sort text into categories faster than you can say "spam folder"
+- **Extraction**: Training AI to pull out key information from text like a pro detective
+- **Generation**: Empowering computers to create human-like text, from poetry to news articles
+
+## 5.3 The Evolution of NLP
+
+We time-traveled through the history of NLP, watching it grow from simple rule-based systems to sophisticated neural networks. It's been like watching a child grow into a linguistic genius!
+
+## 5.4 Cutting-Edge Models
+
+We've met the current superstars of the NLP world - models like BERT, GPT, and T5. These AI marvels are pushing the boundaries of what's possible with language processing.
+
+As we wrap up, remember: this is just the beginning of your NLP journey. The field is constantly evolving, and there's always more to learn and explore!
+>>>>>>> new-main
 
 print("\nWords similar to 'happy':")
 print(find_similar_words('happy'))
