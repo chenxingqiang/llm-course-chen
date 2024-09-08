@@ -941,9 +941,12 @@ graph TD
 
     style A fill:#f9f,stroke:#333,stroke-width:4px
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     style B,C,D,E,F,G fill:#fcf,stroke:#333,stroke-width:2px
 >>>>>>> new-main
+=======
+>>>>>>> c1fde6f (feat(md): features maimerd)
     classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
     class B1,B2,B3,B4,B5,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3 subTopic
 ```

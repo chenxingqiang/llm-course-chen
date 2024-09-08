@@ -703,10 +703,14 @@ graph LR
     style F fill:#fcf,stroke:#333,stroke-width:2px
     style G fill:#fcf,stroke:#333,stroke-width:2px
 <<<<<<< HEAD
+<<<<<<< HEAD
     style H fill:#fcf,stroke:#333,stroke-width:2px
 =======
      style H fill:#fcf,stroke:#333,stroke-width:2px
 >>>>>>> new-main
+=======
+    style H fill:#fcf,stroke:#333,stroke-width:2px
+>>>>>>> c1fde6f (feat(md): features maimerd)
 
     classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
     class I,J,K,L,M,N,O,P,Q,R,S,T,U,V subTopic
