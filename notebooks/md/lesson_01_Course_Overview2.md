@@ -662,7 +662,7 @@ Let's map out the ethical landscape of AGI development. It's like a treasure map
 ```mermaid
 
 graph LR
-    A(("Ethical Considerations<br/>in AGI"))
+    A(("Ethical Considerations in AGI"))
 
     B["Accountability"]
     C["Transparency"]
@@ -678,7 +678,7 @@ graph LR
     B --> J["Auditability"]
 
     C --> K["Explainable AI"]
-    C --> L["Open Source<br/>Development"]
+    C --> L["Open Source Development"]
 
     D --> M["Diverse Training Data"]
     D --> N["Algorithmic Fairness"]
@@ -687,13 +687,13 @@ graph LR
     E --> P["Informed Consent"]
 
     F --> Q["Reskilling Programs"]
-    F --> R["Universal Basic<br/>Income"]
+    F --> R["Universal Basic Income"]
 
     G --> S["Safety Measures"]
     G --> T["Long-term Planning"]
 
     H --> U["Value Learning"]
-    H --> V["Human-AI<br/>Collaboration"]
+    H --> V["Human-AI Collaboration"]
 
     style A fill:#f9f,stroke:#333,stroke-width:4px
     style B fill:#fcf,stroke:#333,stroke-width:2px
@@ -702,7 +702,7 @@ graph LR
     style E fill:#fcf,stroke:#333,stroke-width:2px
     style F fill:#fcf,stroke:#333,stroke-width:2px
     style G fill:#fcf,stroke:#333,stroke-width:2px
-     style H fill:#fcf,stroke:#333,stroke-width:2px
+    style H fill:#fcf,stroke:#333,stroke-width:2px
 
     classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
     class I,J,K,L,M,N,O,P,Q,R,S,T,U,V subTopic

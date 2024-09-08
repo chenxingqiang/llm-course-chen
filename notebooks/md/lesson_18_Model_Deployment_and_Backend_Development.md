@@ -262,14 +262,14 @@ As LLMs continue to grow in size and capability, the skills and knowledge covere
 
 ```mermaid
 graph LR
-    A(("Model Deployment &<br/>Backend Development"))
+    A(("Model Deployment & Backend Development"))
     
-    B["Deployment<br/>Strategies"]
-    C["Scalable<br/>Architectures"]
-    D["High-Performance<br/>Serving"]
-    E["Monitoring &<br/>Maintenance"]
-    F["Traffic<br/>Management"]
-    G["Security &<br/>Compliance"]
+    B["Deployment Strategies"]
+    C["Scalable Architectures"]
+    D["High-Performance Serving"]
+    E["Monitoring & Maintenance"]
+    F["Traffic Management"]
+    G["Security & Compliance"]
     
     A --> B & C & D & E & F & G
     

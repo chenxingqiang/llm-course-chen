@@ -179,12 +179,12 @@ As AI language models continue to advance, mastery of prompt engineering will re
 
 ```mermaid
 graph LR
-    A(("Advanced Prompt<br/>Engineering"))
+    A(("Advanced Prompt Engineering"))
     
     B["Foundations"]
-    C["Advanced<br/>Techniques"]
+    C["Advanced Techniques"]
     D["Optimization"]
-    E["Prompt<br/>Chaining"]
+    E["Prompt Chaining"]
     F["Ethics and Bias"]
     G["Evaluation"]
     

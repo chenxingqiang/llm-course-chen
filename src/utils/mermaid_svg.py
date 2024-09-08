@@ -2,72 +2,105 @@ import os
 import re
 import nbformat as nbf
 import datetime
+import base64
+
+
+from selenium.webdriver.support import expected_conditions as EC
 
 from mermaid_to_image import mermaid_to_image
 
 
+def mermaid_to_base64_image(mermaid_code, lesson_num, diagram_count):
+    try:
+        # Generate a file name
+        file_name = f"lesson_{lesson_num}_mermaid_{diagram_count}.svg"
+        output_file = os.path.join(output_path, f"lesson_{lesson_num}", file_name)
+
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
+        # Use mermaid_to_image function to generate SVG
+        if mermaid_to_image(mermaid_code, output_file, format="svg"):
+            # Read the SVG file content
+            with open(output_file, "rb") as f:
+                svg_content = f.read()
+
+            # Convert SVG content to base64
+            base64_image = base64.b64encode(svg_content).decode("utf-8")
+
+            return f"data:image/svg+xml;base64,{base64_image}", file_name
+        else:
+            raise Exception("Mermaid image generation failed")
+    except Exception as e:
+        print(f"Error generating Mermaid diagram: {e}")
+        return None, None
+
+
 def text_to_notebook(input_file, output_file, lesson_num):
-    # 读取输入文件
+    # Read the input file
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 创建一个新的notebook
+    # Create a new notebook
     nb = nbf.v4.new_notebook()
 
-    # 获取输出文件所在的目录
-    output_dir = os.path.dirname(output_file)
-
-    # 定义正则表达式来匹配代码块和非代码块部分
+    # Define regex pattern to match code blocks and non-code parts
     pattern = re.compile(r"```(.*?)\n(.*?)```", re.DOTALL)
     last_pos = 0
-    mermaid_count = 0  # 计数mermaid图表数量
+    mermaid_count = 0  # Count Mermaid diagrams
 
     for match in pattern.finditer(content):
-        # 处理代码块之前的Markdown部分
+        # Process Markdown part before the code block
         markdown_text = content[last_pos : match.start()].strip()
         if markdown_text:
             nb["cells"].append(nbf.v4.new_markdown_cell(markdown_text))
 
-        # 处理代码块部分
-        code_type = match.group(1).strip()  # 获取代码类型（例如 'python', 'mermaid'）
+        # Process code block part
+        code_type = match.group(1).strip()  # Get code type (e.g., 'python', 'mermaid')
         code_text = match.group(2).strip()
 
         if code_type.lower() == "python":
             nb["cells"].append(nbf.v4.new_code_cell(code_text))
         elif code_type.lower() == "mermaid":
             mermaid_count += 1
-            svg_file = os.path.join(
-                output_dir, f"lesson_{lesson_num}_mermaid_{mermaid_count}.svg"
+            base64_image, file_name = mermaid_to_base64_image(
+                code_text, lesson_num, mermaid_count
             )
 
-            if mermaid_to_image(code_text, svg_file, format="svg"):
-                img_ref = f"![Mermaid diagram](lesson_{lesson_num}_mermaid_{mermaid_count}.svg)"
+            if base64_image:
+                img_ref = (
+                    f'<img src="{base64_image}" alt="Mermaid diagram {mermaid_count}">'
+                )
                 nb["cells"].append(nbf.v4.new_markdown_cell(img_ref))
+                print(f"Mermaid diagram saved as: {file_name}")
             else:
-                # 如果图片生成失败，将 Mermaid 代码作为普通的代码块插入
+                # If image generation fails, insert Mermaid code as a regular code block
                 nb["cells"].append(
                     nbf.v4.new_markdown_cell(f"```mermaid\n{code_text}\n```")
                 )
+                print(
+                    f"Failed to generate Mermaid diagram {mermaid_count}, inserted as code block"
+                )
         else:
-            # 如果不是Python代码或Mermaid代码块，可以将其作为普通的Markdown代码块
+            # For non-Python and non-Mermaid code blocks, insert as regular Markdown code blocks
             nb["cells"].append(
                 nbf.v4.new_markdown_cell(f"```{code_type}\n{code_text}\n```")
             )
 
-        # 更新last_pos到当前匹配位置的末尾
+        # Update last_pos to the end of the current match
         last_pos = match.end()
 
-    # 处理文件结尾剩余的Markdown部分
+    # Process remaining Markdown at the end of the file
     remaining_markdown = content[last_pos:].strip()
     if remaining_markdown:
         nb["cells"].append(nbf.v4.new_markdown_cell(remaining_markdown))
 
-    # 写入notebook文件
+    # Write the notebook file
     with open(output_file, "w", encoding="utf-8") as f:
         nbf.write(nb, f)
 
 
-# 主程序
+# Main program
 input_files = [
     "lesson_00_Course_Overview.md",
     "lesson_01_Course_Overview2.md",
@@ -85,31 +118,26 @@ input_files = [
 ]
 
 input_path = "/Users/xingqiangchen/TASK/llm-course-chen/notebooks/md/"
-# 设置路径
 output_base_path = "/Users/xingqiangchen/TASK/llm-course-chen/notebooks/"
-timestamp = datetime.datetime.now().strftime(
-    "ipynb-svg-%Y%m%d%H%M"
-)  # 生成时间戳，如 ipynb-2024082205
+timestamp = datetime.datetime.now().strftime("ipynb-svg-%Y%m%d%H%M")
 output_path = os.path.join(output_base_path, timestamp)
 
-# 如果不存在该路径，则创建它
+# Create the output path if it doesn't exist
 if not os.path.exists(output_path):
     os.makedirs(output_path)
 
 for name in input_files:
-    # 创建特定课程文件夹
+    # Create specific lesson folder
     lesson_num = name.split("_")[1]
     lesson_folder = os.path.join(output_path, f"lesson_{lesson_num}")
-
     if not os.path.exists(lesson_folder):
         os.makedirs(lesson_folder)
 
-    # 拼接输入文件的路径
+    # Construct input file path
     input_file = os.path.join(input_path, name)
-
-    # 将输出文件的扩展名改为 .ipynb 并保存在课程子文件夹中
+    # Change output file extension to .ipynb and save in the lesson subfolder
     output_file = os.path.join(lesson_folder, name.replace(".md", ".ipynb"))
 
-    # 将文本转换为笔记本并生成Mermaid图表
+    # Convert text to notebook and generate Mermaid diagrams
     text_to_notebook(input_file, output_file, lesson_num)
     print(f"Notebook has been created: {output_file}")
