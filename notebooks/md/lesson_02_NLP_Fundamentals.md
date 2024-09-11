@@ -96,21 +96,7 @@ Before we delve into specific tasks, let's take a moment to understand the big p
 
 Each of these task types plays a crucial role in processing and understanding natural language. Often, they work together in complex NLP systems, much like instruments in an orchestra creating a symphony of language understanding.
 
-<<<<<<< HEAD
-##  Classification Tasks: Teaching Machines to Categorize
 
-Let's start with classification tasks. These are some of the most common and practical applications of NLP.
-
-### Sentiment Analysis: Decoding the Emotions in Text
-=======
-## 4.2 Classification Tasks: Teaching Machines to Categorize
-
-Let's start with classification tasks. These are some of the most common and practical applications of NLP.
-
-### 4.2.1 Sentiment Analysis: Decoding the Emotions in Text
->>>>>>> new-main
-
-Imagine you're scrolling through product reviews online. Wouldn't it be great if you could instantly know whether each review is positive, negative, or neutral? That's exactly what sentiment analysis does!
 
 #### A Real-World Sentiment Analysis Example: Customer Feedback Classifier
 
@@ -166,13 +152,7 @@ In this example, we're using the VADER (Valence Aware Dictionary and sEntiment R
 
 When you run this code, you'll see a visualization of the sentiment scores for each piece of feedback, along with a detailed breakdown of the scores and categories. This kind of analysis can be incredibly useful for businesses to quickly gauge customer satisfaction and identify areas for improvement.
 
-<<<<<<< HEAD
-###  Topic Classification: Organizing Text into Themes
-=======
-### 4.2.2 Topic Classification: Organizing Text into Themes
->>>>>>> new-main
 
-Now, let's move on to another important classification task: topic classification. This is like having a super-efficient librarian who can instantly categorize books into different genres or subjects.
 
 #### Hands-on Topic Classification: News Article Categorizer
 
@@ -231,20 +211,13 @@ As you can see, classification tasks in NLP are powerful tools for organizing an
 
 In the next section, we'll explore extraction tasks, where we'll learn how to pull specific pieces of information out of text. Get ready to put on your detective hat!
 
-<<<<<<< HEAD
+
+
 ## Extraction Tasks: Mining Gold from Text
 
 Now that we've explored classification, let's dive into extraction tasks. These are like having a super-smart assistant who can quickly pull out specific information from a sea of text. It's an essential skill in the NLP toolkit, with applications ranging from summarizing documents to powering question-answering systems.
 
 ###  Named Entity Recognition (NER): Spotting the VIPs in Your Text
-=======
-## 4.3 Extraction Tasks: Mining Gold from Text
-
-Now that we've explored classification, let's dive into extraction tasks. These are like having a super-smart assistant who can quickly pull out specific information from a sea of text. It's an essential skill in the NLP toolkit, with applications ranging from summarizing documents to powering question-answering systems.
-
-### 4.3.1 Named Entity Recognition (NER): Spotting the VIPs in Your Text
->>>>>>> new-main
-
 Named Entity Recognition is all about identifying and classifying key elements in text into predefined categories such as person names, organizations, locations, dates, and more. It's like having a spotlight that automatically highlights these important pieces of information.
 
 #### Hands-on NER: Building a Smart News Analyzer
@@ -305,12 +278,6 @@ spaCy's NER model can recognize a wide range of entity types, including:
 - MONEY: Monetary values, including unit
 
 This kind of extraction can be incredibly useful for automatically summarizing news articles, tracking mentions of specific entities across large datasets, or building more complex systems like question-answering bots.
-
-<<<<<<< HEAD
-###  Relationship Extraction: Connecting the Dots
-=======
-### 4.3.2 Relationship Extraction: Connecting the Dots
->>>>>>> new-main
 
 While NER helps us identify important entities, relationship extraction takes it a step further by understanding how these entities are connected to each other. It's like drawing lines between the dots to reveal the bigger picture.
 
@@ -400,21 +367,11 @@ Extraction tasks like NER and relationship extraction are fundamental to many hi
 
 In the next section, we'll explore the exciting world of text generation tasks, where we teach machines not just to understand language, but to produce it. Get ready to see some AI creativity in action!
 
-<<<<<<< HEAD
+
+
 ##  Generation Tasks: Teaching Machines to Write
 
-Welcome to the most creative part of our NLP journey! In generation tasks, we're not just analyzing existing text; we're teaching machines to produce new text. This is where NLP starts to feel a bit magical – like teaching a computer to be a writer, translator, or even a conversationalist.
-
-### Machine Translation: Breaking Down Language Barriers
-=======
-## 4.4 Generation Tasks: Teaching Machines to Write
-
-Welcome to the most creative part of our NLP journey! In generation tasks, we're not just analyzing existing text; we're teaching machines to produce new text. This is where NLP starts to feel a bit magical – like teaching a computer to be a writer, translator, or even a conversationalist.
-
-### 4.4.1 Machine Translation: Breaking Down Language Barriers
->>>>>>> new-main
-
-Machine translation is one of the most impactful applications of NLP. It's like having a universal translator from science fiction, allowing us to communicate across language barriers.
+Welcome to the most creative part of our NLP journey! In generation tasks, we're not just analyzing existing text; we're teaching machines to produce new text. This is where NLP starts to feel a bit magical – like teaching a computer to be a writer, translator, or even a conversationalist. Machine translation is one of the most impactful applications of NLP. It's like having a universal translator from science fiction, allowing us to communicate across language barriers.
 
 #### Hands-on Machine Translation: Building a Simple Translator
 
@@ -457,12 +414,6 @@ for sentence in english_sentences:
 This code uses a pre-trained model to translate English sentences to French. When you run it, you'll see the original English sentences along with their French translations.
 
 The model we're using here is based on the Transformer architecture, which has revolutionized machine translation (and many other NLP tasks) in recent years. It's able to capture complex relationships between words and phrases, leading to more accurate and natural-sounding translations.
-
-<<<<<<< HEAD
-### Text Summarization: Distilling the Essence of Documents
-=======
-### 4.4.2 Text Summarization: Distilling the Essence of Documents
->>>>>>> new-main
 
 Text summarization is like having a super-efficient assistant who can read long documents and give you the key points in a fraction of the time. It's incredibly useful in our information-rich world where we often need to quickly grasp the main ideas of large amounts of text.
 
@@ -534,12 +485,9 @@ When you run this code, you'll see the original article followed by a summary co
 
 While this method is relatively simple, it can be surprisingly effective for many types of documents. More advanced summarization techniques, particularly those based on deep learning, can generate even more concise and coherent summaries, and can even produce abstractive summaries (summaries that include phrases not found verbatim in the original text).
 
-<<<<<<< HEAD
-###  Text Generation: Unleashing AI Creativity
-=======
-### 4.4.3 Text Generation: Unleashing AI Creativity
->>>>>>> new-main
 
+
+###  Text Generation: Unleashing AI Creativity
 Now, let's venture into one of the most exciting areas of NLP: open-ended text generation. This is where we teach machines to write original text, from completing sentences to generating entire articles or stories.
 
 #### Creative AI: Building a Poetry Generator
@@ -606,20 +554,13 @@ As we wrap up our exploration of NLP tasks, from classification to extraction to
 
 In our next section, we'll take a step back and look at the evolution of NLP techniques that have made these tasks possible, tracing the journey from early rule-based systems to the cutting-edge deep learning models of today. Get ready for a fascinating trip through the history of NLP!
 
-<<<<<<< HEAD
+
+
 ##  The Evolution of NLP: From Rule-Based Systems to Deep Learning
 
 As we've seen, NLP can accomplish some pretty amazing feats. But how did we get here? Let's take a trip through time to understand the evolution of NLP techniques. This journey will help you appreciate the current state of the art and give you insights into where the field might be heading.
 
 ###  Rule-Based Systems: The Pioneers of NLP (1950s-1980s)
-=======
-## 4.5 The Evolution of NLP: From Rule-Based Systems to Deep Learning
-
-As we've seen, NLP can accomplish some pretty amazing feats. But how did we get here? Let's take a trip through time to understand the evolution of NLP techniques. This journey will help you appreciate the current state of the art and give you insights into where the field might be heading.
-
-### 4.5.1 Rule-Based Systems: The Pioneers of NLP (1950s-1980s)
->>>>>>> new-main
-
 We're going to start our journey in the early days of computing. Imagine trying to teach a computer to understand language using nothing but a set of hand-crafted rules. That's exactly what the pioneers of NLP did!
 
 #### The ELIZA Effect: When Rules Fooled Humans
@@ -677,12 +618,6 @@ Rule-based systems like ELIZA were groundbreaking for their time, but they had s
 3. They couldn't easily adapt to new domains or languages.
 
 Despite these limitations, rule-based systems laid the foundation for NLP and are still used in some applications today, particularly where the language domain is narrow and well-defined.
-
-<<<<<<< HEAD
-###  Statistical Methods: Bringing Probability into the Mix (1980s-2000s)
-=======
-### 4.5.2 Statistical Methods: Bringing Probability into the Mix (1980s-2000s)
->>>>>>> new-main
 
 As computers became more powerful and larger text corpora became available, researchers began to explore statistical approaches to NLP. Instead of relying solely on hand-crafted rules, these methods use probability and statistics to learn patterns from data.
 
@@ -758,12 +693,6 @@ However, they also had limitations:
 
 Statistical methods dominated NLP for many years and are still used in various applications today. However, they've largely been superseded by machine learning approaches, especially deep learning, which we'll explore next.
 
-<<<<<<< HEAD
-###  Machine Learning: Teaching Computers to Learn Language (2000s-2010s)
-=======
-### 4.5.3 Machine Learning: Teaching Computers to Learn Language (2000s-2010s)
->>>>>>> new-main
-
 As we moved into the 21st century, machine learning techniques started to gain prominence in NLP. These methods could automatically learn to make decisions based on features extracted from text, often outperforming both rule-based and purely statistical approaches.
 
 #### Naive Bayes: A Simple but Effective Classifier
@@ -832,12 +761,6 @@ Machine learning approaches like Naive Bayes, Support Vector Machines (SVM), and
 3. They often generalized better to unseen data than previous approaches.
 
 However, these methods still relied heavily on feature engineering - the process of manually designing and selecting the most relevant features from text. This would change with the advent of deep learning.
-
-<<<<<<< HEAD
-### 4 Deep Learning: The Neural Revolution (2010s-present)
-=======
-### 4.5.4 Deep Learning: The Neural Revolution (2010s-present)
->>>>>>> new-main
 
 The most recent and perhaps most dramatic shift in NLP has been the rise of deep learning. Neural network models, especially those based on the Transformer architecture, have set new state-of-the-art benchmarks on virtually every NLP task.
 
@@ -1298,18 +1221,8 @@ We time-traveled through the history of NLP, watching it grow from simple rule-b
 We've met the current superstars of the NLP world - models like BERT, GPT, and T5. These AI marvels are pushing the boundaries of what's possible with language processing.
 
 As we wrap up, remember: this is just the beginning of your NLP journey. The field is constantly evolving, and there's always more to learn and explore!
->>>>>>> new-main
-
-print("\nWords similar to 'happy':")
-print(find_similar_words('happy'))
-
-# Perform word analogy
-print("\nWord analogy: man is to king as woman is to...")
-result = word_analogy('man', 'king', 'woman')
-if result:
-    print(f"{result[0]}: {result[1]}")
-
 # Visualize word relationships
+
 def plot_words(words):
     vectors = [model[word] for word in words if word in model]
     if len(vectors) != len(words):

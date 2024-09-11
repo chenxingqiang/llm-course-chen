@@ -1,4 +1,4 @@
-# Navigating the AI Revolution: LLMs and AGI in the Second Information Age
+# Navigating the AI Revolution:  LLMs and AGI in the Second Information Age
 
 ```mermaid
 gantt
@@ -97,7 +97,7 @@ Buckle up! We're about to explore five key ideas that'll help you understand the
 5. The Big Questions: Navigating the Ethical Maze of AGI Development
    With great power comes great responsibility. We'll tackle the thorny ethical issues head-on.
 
-- # Diving Deep: The Nitty-Gritty of AI's Next Big Leap
+# Diving Deep: The Nitty-Gritty of AI's Next Big Leap
 
 ## The Second Information Revolution: AGI and LLMs as Game Changers
 
@@ -305,8 +305,6 @@ As we imagine how AGI might remix our world, here are some brain-teasers to chew
 4. New Economic Models: Could we see entirely new forms of social organization or economic systems emerge in response to these changes? Maybe something we haven't even thought of yet!
 
 As we dive deeper into LLMs and AGI technologies in this course, keep these bigger picture questions in mind. The technical stuff is exciting, but understanding its impact on society is just as crucial. After all, you're not just learning about AI – you're preparing to shape the future!
-
-## LLMs: The Building Blocks of AGI
 
 ### LLMs: The Swiss Army Knives of AI
 
@@ -702,16 +700,7 @@ graph LR
     style E fill:#fcf,stroke:#333,stroke-width:2px
     style F fill:#fcf,stroke:#333,stroke-width:2px
     style G fill:#fcf,stroke:#333,stroke-width:2px
-<<<<<<< HEAD
-<<<<<<< HEAD
     style H fill:#fcf,stroke:#333,stroke-width:2px
-=======
-     style H fill:#fcf,stroke:#333,stroke-width:2px
->>>>>>> new-main
-=======
-    style H fill:#fcf,stroke:#333,stroke-width:2px
->>>>>>> c1fde6f (feat(md): features maimerd)
-
     classDef subTopic fill:#eff,stroke:#333,stroke-width:1px
     class I,J,K,L,M,N,O,P,Q,R,S,T,U,V subTopic
 ```
