@@ -1,5 +1,5 @@
 
-# 1. Course Title: Advanced Prompt Engineering - Mastering ChatGPT Interactions
+# 1. Course Title: Designing input and output formats for chatbot with context
 
 ```mermaid
 gantt

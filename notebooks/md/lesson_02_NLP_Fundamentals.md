@@ -1,4 +1,3 @@
-
 # Course Title: Comprehensive NLP Fundamentals
 
 ```mermaid
@@ -153,7 +152,6 @@ for entity in entities:
     print(f"{entity['entity_group']}: {entity['word']}")
 ```
 
-
 ### 3. Text Generation: The AI Storyteller
 
 Text generation is where NLP gets creative. It's about producing human-like text based on some input or prompt.
@@ -170,7 +168,6 @@ prompt = "In the year 2050, artificial intelligence"
 generated_text = generator(prompt, max_length=50, num_return_sequences=1)
 print(generated_text[0]['generated_text'])
 ```
-
 
 ### 4. Question Answering: The AI Librarian
 
@@ -212,7 +209,6 @@ print(f"French: {french_translation[0]['translation_text']}")
 As we progress through this course, we'll dive deeper into each of these tasks, exploring advanced techniques and state-of-the-art models. Remember, the beauty of NLP lies in how these tasks can be combined and applied to solve real-world problems. Whether you're building a chatbot, analyzing customer feedback, or creating a language learning app, understanding these fundamental NLP tasks is your first step towards becoming an NLP wizard!
 
 Next up, we'll explore the challenges that make NLP such an exciting and complex field. Ready to unravel the mysteries of language? Let's go!
-
 
 ## 1.3 The NLP Obstacle Course: Challenges That Keep Us on Our Toes
 
