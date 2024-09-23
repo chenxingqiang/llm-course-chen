@@ -1,4 +1,4 @@
-# Course Title: Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
+# Lesson 03: Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
 
 ```mermaid
 gantt
@@ -28,7 +28,6 @@ gantt
     lesson 9  :l9, after l8, 1d
     lesson 10 :l10, after l9, 1d
 ```
-
 
 Welcome, future AI innovators! Today, we're diving deep into the fascinating world of Large Language Models (LLMs). We'll trace their exciting evolution, explore the revolutionary Transformer architecture, and uncover the key features that make these AI marvels tick. This journey will reveal how each breakthrough laid the foundation for the next, culminating in the powerful models we have today.
 
@@ -154,7 +153,6 @@ The rapid evolution of LLMs was driven by a convergence of several factors:
 Each of these factors built upon the others. More computing power and data made it possible to train larger models, which drove architectural innovations, which in turn demanded even more computing power and data. This virtuous cycle propelled the field forward at an unprecedented rate.
 
 In the next part of our lesson, we'll dive deep into the Transformer architecture that underpins these modern LLMs. We'll explore why it was such a revolutionary development and how it enables the impressive capabilities of today's language models.
-
 
 Certainly! I'll continue with the next part of the lesson, focusing on the Transformer architecture and its impact on LLMs. I'll maintain the same approach of explaining the cause-and-effect relationships and the progression of ideas.
 

@@ -1,5 +1,5 @@
 
-# 1.Course Title: Comprehensive Course Overview
+# Lesson 01: Comprehensive Course Overview
 
 ```mermaid
 gantt

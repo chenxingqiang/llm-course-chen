@@ -1,5 +1,5 @@
 
-# Course Title: Comprehensive LLM Development Fundamentals
+# Lesson 04: Comprehensive LLM Development Fundamentals
 
 ```mermaid
 gantt

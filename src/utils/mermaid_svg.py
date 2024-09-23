@@ -101,21 +101,36 @@ def text_to_notebook(input_file, output_file, lesson_num):
 
 
 # Main program
+# input_files = [
+#     "lesson_00_Course_Overview.md",
+#     "lesson_01_Course_Overview2.md",
+#     "lesson_02_NLP_Fundamentals.md",
+#     "lesson_03_Basic_knowledge_and_architectural_characteristics_of_LLM.md",
+#     "lesson_04_LLM_Development_Fundamentals.md",
+#     "lesson_05_Introduction_and_Setup_of_the_Experimental_Environment.md",
+#     "lesson_12_Model_Inference_and_Function_calling.md",
+#     "lesson_13_Prompt_engineering_ChatGPT_Prompt_Engineering.md",
+#     "lesson_14_Model_Quantization_Techniques.md",
+#     "lesson_17_Designing_Input_and_Output_Formats_for_Chatbot_with_Context.md",
+#     "lesson_18_Model_Deployment_and_Backend_Development.md",
+#     "lesson_19_Frontend_Web_Page_Debugging.md",
+#     "lesson_20_System_Testing_and_Deployment.md",
+# ]
+
 input_files = [
-    "lesson_00_Course_Overview.md",
-    "lesson_01_Course_Overview2.md",
-    "lesson_02_NLP_Fundamentals.md",
-    "lesson_03_Basic_knowledge_and_architectural_characteristics_of_LLM.md",
-    "lesson_04_LLM_Development_Fundamentals.md",
-    "lesson_05_Introduction_and_Setup_of_the_Experimental_Environment.md",
-    "lesson_12_Model_Inference_and_Function_calling.md",
-    "lesson_13_Prompt_engineering_ChatGPT_Prompt_Engineering.md",
-    "lesson_14_Model_Quantization_Techniques.md",
-    "lesson_17_Designing_Input_and_Output_Formats_for_Chatbot_with_Context.md",
-    "lesson_18_Model_Deployment_and_Backend_Development.md",
-    "lesson_19_Frontend_Web_Page_Debugging.md",
-    "lesson_20_System_Testing_and_Deployment.md",
-]
+        "lesson_1.md",
+        "lesson_2.md",
+        "lesson_3.md",
+        "lesson_4.md",
+        "lesson_5.md",
+        "lesson_12.md",
+        "lesson_13.md",
+        "lesson_14.md",
+        "lesson_17.md",
+        "lesson_18.md",
+        "lesson_19.md",
+        "lesson_20.md",
+    ]
 
 input_path = "/Users/xingqiangchen/TASK/llm-course-chen/notebooks/md/"
 output_base_path = "/Users/xingqiangchen/TASK/llm-course-chen/notebooks/"

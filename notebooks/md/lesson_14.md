@@ -1,5 +1,34 @@
 # Model Quantization Techniques: A Comprehensive Guide
 
+```mermaid
+gantt
+    title LLM Course Timeline
+    dateFormat X
+    axisFormat %d
+    section Course Content
+    Famous SOTA LLM models and JAIS model              :a10, 0, 1d
+    Methods and Metrics for Model Evaluation           :a11, after a10, 1d
+    Model Inference and Function calling               :a12, after a11, 1d
+    Prompt engineering - ChatGPT Prompt Engineering    :a13, after a12, 1d
+    Model Quantization Techniques                      :active,a14, after a13, 1d
+    Introduction to Chatbot Project                    :a15, after a14, 1d
+    Test Dataset Collection and Model Evaluation       :a16, after a15, 1d
+    Designing input and output formats for chatbot with context :a17, after a16, 1d
+    Model Deployment and Backend Development           :a18, after a17, 1d
+    Frontend web page debugging                        :a19, after a18, 1d
+    section Lessons
+    lesson 10 :l10, 0, 1d
+    lesson 11 :l11, after l10, 1d
+    lesson 12 :l12, after l11, 1d
+    lesson 13 :l13, after l12, 1d
+    lesson 14 :active,l14, after l13, 1d
+    lesson 15 :l15, after l14, 1d
+    lesson 16 :l16, after l15, 1d
+    lesson 17 :l17, after l16, 1d
+    lesson 18 :l18, after l17, 1d
+    lesson 19 :l19, after l18, 1d
+```
+
 ## 1. Introduction
 
 In the rapidly evolving landscape of artificial intelligence and deep learning, the deployment of large, complex models on resource-constrained devices has become a significant challenge. Model quantization emerges as a crucial technique to address this issue, enabling efficient inference without sacrificing too much accuracy. This comprehensive guide delves into the intricacies of model quantization, exploring its foundations, various techniques, and practical implementations across different deep learning frameworks and hardware platforms.

@@ -133,7 +133,6 @@ email = "CLICK HERE for a limited offer to buy now and get free money!"
 print(f"Is spam? {simple_spam_detector(email)}")
 ```
 
-
 ### 2. Token Classification: Word-Level Detectives
 
 Token classification involves labeling individual words (or tokens) in a sentence. It's like giving each word a name tag at a language party!
@@ -205,7 +204,6 @@ print(f"English: {english_text}")
 print(f"French: {french_translation[0]['translation_text']}")
 ```
 
-
 As we progress through this course, we'll dive deeper into each of these tasks, exploring advanced techniques and state-of-the-art models. Remember, the beauty of NLP lies in how these tasks can be combined and applied to solve real-world problems. Whether you're building a chatbot, analyzing customer feedback, or creating a language learning app, understanding these fundamental NLP tasks is your first step towards becoming an NLP wizard!
 
 Next up, we'll explore the challenges that make NLP such an exciting and complex field. Ready to unravel the mysteries of language? Let's go!
@@ -233,7 +231,6 @@ def ambiguity_example(sentence):
 ambiguity_example("I need to run to the bank to deposit some money before it closes.")
 ```
 
-
 ### 2. Context is King
 
 Understanding often requires broader context. A single word or phrase can mean completely different things depending on the situation.
@@ -247,7 +244,6 @@ def context_matters(sentence, context):
 context_matters("That's just great!", "You just won the lottery")
 context_matters("That's just great!", "Your car broke down on the highway")
 ```
-
 
 ### 3. Language: The Ever-Changing Beast
 
@@ -275,7 +271,6 @@ def language_evolution():
 language_evolution()
 ```
 
-
 ### 4. The Sarcasm Struggle
 
 Detecting sarcasm is hard enough for humans, let alone machines! It requires understanding context, tone, and often cultural nuances.
@@ -289,7 +284,6 @@ def sarcasm_detector(text, is_sarcastic):
 sarcasm_detector("What a great day!", False)  # Genuine statement
 sarcasm_detector("What a great day!", True)   # Sarcastic statement (maybe it's raining)
 ```
-
 
 These challenges are what make NLP such an exciting field. As we tackle them, we push the boundaries of AI and deepen our understanding of human language.
 
@@ -334,14 +328,11 @@ for text in texts:
     print(f"Sentiment: {result['label']}, Score: {result['score']:.4f}\n")
 ```
 
-
 This simple example showcases how Transformer models can understand and analyze sentiment in diverse sentences, handling complex language with ease.
 
 As we delve deeper into Transformers, we'll explore different architectures like BERT, GPT, and T5, each with its own strengths and applications. We'll see how these models tackle the challenges we discussed earlier and open up new possibilities in NLP.
 
 Stay tuned as we unpack the inner workings of Transformers and learn how to harness their power for a wide range of NLP tasks. The future of language AI is here, and it's incredibly exciting!
-
-
 
 ## 2. Transformer Architectures: The Swiss Army Knife of NLP
 
@@ -395,7 +386,6 @@ for entity in entities:
     print(f"{entity['word']}: {entity['entity']}")
 ```
 
-
 Here, BERT accurately identifies and classifies named entities in the sentence, showcasing its understanding of context and language structure.
 
 ### 2.2 Decoder Models: The Creative Writers
@@ -424,7 +414,6 @@ generated_text = tokenizer.decode(output[0], skip_special_tokens=True)
 
 print(generated_text)
 ```
-
 
 This example shows GPT-2's ability to generate coherent and creative text based on a simple prompt.
 
@@ -460,7 +449,6 @@ outputs = model.generate(inputs["input_ids"], max_length=150, min_length=40, len
 summary = tokenizer.decode(outputs[0], skip_special_tokens=True)
 print("Summary:", summary)
 ```
-
 
 This example demonstrates T5's ability to understand and condense information, producing a concise summary of the input text.
 
@@ -541,7 +529,6 @@ This example demonstrates how we can take a pre-trained BERT model and fine-tune
 
 As we continue our journey into the world of Transformers and NLP, we'll explore more advanced techniques, dive deeper into the architecture of these models, and learn how to apply them to real-world problems. The possibilities are endless, and the future of NLP is incredibly exciting!
 
-
 ## 3. Transformers in Action: Real-World NLP Applications
 
 Now that we've got a handle on the different types of Transformer architectures, let's see how they're being used to solve real-world problems. We'll look at some exciting applications and provide code snippets to demonstrate their capabilities.
@@ -735,7 +722,6 @@ As we continue to push the boundaries of what's possible with Transformer models
 
 In our next section, we'll explore advanced techniques for fine-tuning Transformer models and dive into some cutting-edge research in the field. Stay tuned!
 
-
 ## 3. Transformers in Action: Real-World NLP Applications
 
 Now that we've got a handle on the different types of Transformer architectures, let's see how they're being used to solve real-world problems. We'll look at some exciting applications and provide code snippets to demonstrate their capabilities.
@@ -928,7 +914,6 @@ This example demonstrates a simple approach to anonymizing sensitive information
 As we continue to push the boundaries of what's possible with Transformer models and NLP, it's crucial to keep these ethical considerations in mind. Responsible development and deployment of NLP technologies will be key to harnessing their full potential while minimizing negative impacts.
 
 In our next section, we'll explore advanced techniques for fine-tuning Transformer models and dive into some cutting-edge research in the field. Stay tuned!
-
 
 ## 5. Conclusion: The Transformative Power of NLP and the Road Ahead
 

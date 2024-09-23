@@ -2,12 +2,32 @@
 # Lesson 4: Unveiling the Art of Large Language Model Development
 
 ```mermaid
-graph TD
-    A[1. Advanced Tokenization] --> B[2. Prompt Engineering]
-    B --> C[3. Data Preparation]
-    C --> D[4. Practical Applications]
-    D --> E[5. Future Directions]
-
+gantt
+    title LLM Course Timeline
+    dateFormat X
+    axisFormat %d
+    section Course Content
+    Course Overview                                    :a1, 0, 1d
+    NLP Fundamentals                                   :a2, after a1, 1d
+    Basic knowledge and architectural characteristics of LLM :a3, after a2, 1d
+    LLM Development Fundamentals                       :active,a4, after a3, 1d
+    Introduction and Setup of the Experimental Environment :a5, after a4, 1d
+    The concept of the tokenizer and common types      :a6, after a5, 1d
+    Text data preprocessing and preparation            :a7, after a6, 1d
+    LLM training - Fine-tuning                         :a8, after a7, 1d
+    LLM training - Reward Modeling and Proximal Policy Optimization :a9, after a8, 1d
+    Famous SOTA LLM models and JAIS model              :a10, after a9, 1d
+    section Lessons
+    lesson 1  :l1, 0, 1d
+    lesson 2  :l2, after l1, 1d
+    lesson 3  :l3, after l2, 1d
+    lesson 4  :active,l4, after l3, 1d
+    lesson 5  :l5, after l4, 1d
+    lesson 6  :l6, after l5, 1d
+    lesson 7  :l7, after l6, 1d
+    lesson 8  :l8, after l7, 1d
+    lesson 9  :l9, after l8, 1d
+    lesson 10 :l10, after l9, 1d
 ```
 
 Welcome, future AI innovators! Today, we're diving deep into the fascinating world of Large Language Model (LLM) development. We'll explore the critical components that breathe life into these linguistic marvels, from tokenization to data preparation. Buckle up for an exciting journey through the landscape of LLM creation!
@@ -197,7 +217,6 @@ In conclusion, mastering the arts of advanced tokenization, prompt engineering, 
 As you continue your journey into LLM development, remember that it requires both technical precision and creative intuition. Experiment with these techniques, push the boundaries of what's possible, and you might just create the next breakthrough in AI language understanding!
 
 The future of AI is limited only by our imagination and our ability to harness the power of language. So go forth, intrepid AI developers, and shape the linguistic future of tomorrow!
-
 
 ## Conclusion: Forging the Future of Language AI
 
