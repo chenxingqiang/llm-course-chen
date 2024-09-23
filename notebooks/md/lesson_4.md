@@ -1,5 +1,5 @@
 
-# Lesson 4: Unveiling the Art of Large Language Model Development
+# Lesson 04: Unveiling the Art of Large Language Model Development
 
 ```mermaid
 gantt
@@ -32,7 +32,7 @@ gantt
 
 Welcome, future AI innovators! Today, we're diving deep into the fascinating world of Large Language Model (LLM) development. We'll explore the critical components that breathe life into these linguistic marvels, from tokenization to data preparation. Buckle up for an exciting journey through the landscape of LLM creation!
 
-## 1. The Alchemist's Secret: Advanced Tokenization
+## The Alchemist's Secret: Advanced Tokenization
 
 Tokenization is the fundamental process of transforming raw text into the bite-sized pieces that feed our language models. It's like breaking down complex compounds into their elemental forms - a crucial first step in the alchemy of language understanding.
 
@@ -70,7 +70,7 @@ tokenization_showcase(multilingual_text)
 
 This code demonstrates how these tokenizers handle a multilingual sentence, showcasing their ability to process diverse scripts and languages effectively.
 
-## 2. The Art of Whispered Instructions: Prompt Engineering
+## The Art of Whispered Instructions: Prompt Engineering
 
 With our text broken down into tokens, we now turn to the subtle art of prompt engineering. This is where we guide our models to perform specific tasks with carefully crafted instructions.
 
@@ -117,7 +117,7 @@ print(few_shot_wizardry(examples, new_input))
 
 This example showcases how LLMs can classify complex topics without prior training and attempt translations with just a couple of examples.
 
-## 3. Data Alchemy: Preparing the Raw Material
+## Data Alchemy: Preparing the Raw Material
 
 Even the most advanced AI is only as good as the data it's trained on. In this section, we'll explore the art of data preparation - the process of refining our textual data into high-quality training material.
 
@@ -170,7 +170,7 @@ print(f"After cleaning:\n{cleaned_text}")
 
 This TextCleaner transforms messy web content into clean, structured text suitable for training language models.
 
-## 4. Practical Applications
+## Practical Applications
 
 Now that we've covered the fundamental techniques, let's consider some practical applications of LLM development:
 
@@ -182,7 +182,7 @@ Now that we've covered the fundamental techniques, let's consider some practical
 
 Each of these applications leverages the power of LLMs in unique ways, showcasing the versatility of these models.
 
-## 5. Future Directions in LLM Development
+## Future Directions in LLM Development
 
 As we look to the future, several exciting trends are emerging in LLM development:
 
@@ -192,7 +192,7 @@ As we look to the future, several exciting trends are emerging in LLM developmen
 4. Ethical AI Development: Focusing on reducing bias and improving fairness in language models
 
 ```mermaid
-graph TD
+graph LR
     A[Future of LLMs] --> B[Multimodal Integration]
     A --> C[Efficient Architectures]
     A --> D[Advanced Learning Paradigms]
@@ -218,7 +218,7 @@ As you continue your journey into LLM development, remember that it requires bot
 
 The future of AI is limited only by our imagination and our ability to harness the power of language. So go forth, intrepid AI developers, and shape the linguistic future of tomorrow!
 
-## Conclusion: Forging the Future of Language AI
+## Summary: Forging the Future of Language AI
 
 As we wrap up our journey through the fundamentals of Large Language Model development, let's take a moment to reflect on the incredible potential these technologies hold. We've explored the alchemy of tokenization, the art of prompt engineering, and the crucial process of data preparation. Each of these elements plays a vital role in creating AI systems that can understand and generate human-like text with unprecedented accuracy and fluency.
 

@@ -1,4 +1,4 @@
-# Lesson 03: Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
+# Lesson 03 Comprehensive Basic Knowledge and Architectural Characteristics of LLMs
 
 ```mermaid
 gantt
@@ -154,10 +154,6 @@ Each of these factors built upon the others. More computing power and data made 
 
 In the next part of our lesson, we'll dive deep into the Transformer architecture that underpins these modern LLMs. We'll explore why it was such a revolutionary development and how it enables the impressive capabilities of today's language models.
 
-Certainly! I'll continue with the next part of the lesson, focusing on the Transformer architecture and its impact on LLMs. I'll maintain the same approach of explaining the cause-and-effect relationships and the progression of ideas.
-
-Part 2: The Transformer Architecture - A Revolution in NLP
-
 ## The Transformer Architecture: Breaking Down the Game-Changer
 
 In 2017, a groundbreaking paper titled "Attention is All You Need" introduced the Transformer architecture. This innovation addressed several limitations of previous models and set the stage for the explosive growth in LLM capabilities. Let's break down why the Transformer was such a revolutionary development and how it works.
@@ -308,10 +304,6 @@ The introduction of the Transformer architecture had far-reaching consequences:
 
 The Transformer architecture laid the foundation for models like BERT, GPT, and T5, which have pushed the boundaries of what's possible in NLP. In the next part, we'll explore how these models built upon the Transformer to achieve their impressive capabilities.
 
-Certainly, I'll continue with the next part of the lesson, focusing on how the Transformer architecture led to the development of modern LLMs. I'll include formulas where necessary but keep them to a minimum.
-
-Part 3: From Transformers to Modern LLMs
-
 ## The Rise of Pre-trained Language Models
 
 The Transformer architecture paved the way for a new paradigm in NLP: large-scale pre-training followed by task-specific fine-tuning. This approach led to the development of models that could understand and generate human-like text with unprecedented accuracy. Let's explore the key models that defined this era.
@@ -399,7 +391,7 @@ As these models evolved, certain architectural characteristics emerged as crucia
 Let's compare some popular LLMs:
 
 ```mermaid
-graph TD
+graph LR
     A[LLM Architectures] --> B[BERT]
     A --> C[GPT-3]
     A --> D[T5]
@@ -432,9 +424,6 @@ This scaling law has led to the observation of emergent abilities in very large 
 In the next part, we'll explore the challenges and future directions of LLMs, including ethical considerations and potential future developments.
 
 The future of LLMs is marked by several exciting developments:
-Certainly. Let's continue with the final part of our lesson, focusing on the challenges, ethical considerations, and future directions of Large Language Models.
-
-Part 4: Challenges, Ethics, and Future Directions of LLMs
 
 ## The Double-Edged Sword: Challenges and Ethical Considerations
 
@@ -539,7 +528,7 @@ As the impact of LLMs grows, so does the focus on developing these technologies 
 3. **Privacy-Preserving Machine Learning**: Techniques like federated learning to train models while preserving data privacy.
 4. **Interpretable AI**: Developing methods to make model decisions more transparent and explainable.
 
-## Conclusion: The Ongoing LLM Revolution
+## Summary: The Ongoing LLM Revolution
 
 As we conclude our journey through the world of Large Language Models, it's clear that we're in the midst of an ongoing revolution in AI and NLP. From the foundational innovations of word embeddings to the current state-of-the-art models capable of human-like text generation, the field has progressed at an astonishing pace.
 

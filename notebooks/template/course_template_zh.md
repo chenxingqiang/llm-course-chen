@@ -26,7 +26,7 @@ XXX（总， 这是一门 纯理论/案例介绍/实验操作 课，经过本次
 
 4.1.2 Case: XXX
 
-4.1.3 Code: XXX
+4.1.3   XXX
 
 **4.1.4 Reflection of the Case/Code/Concept: XXX（总，应用场景，应用价值，应用边界）**
 
@@ -60,7 +60,7 @@ XXX（总， 这是一门 纯理论/案例介绍/实验操作 课，经过本次
 
   explanation of the figure:XXX
 
-4.2.3 Code: XXX
+4.2.3   XXX
 
 4.2.4 Reflection of the Case/Code/Concept: XXX（总）
 

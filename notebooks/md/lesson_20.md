@@ -1,4 +1,4 @@
-# Lesson 20: System Testing and Deployment for AI-Powered Chatbot
+# Lesson 20 System Testing and Deployment for AI-Powered Chatbot
 
 ```mermaid
 gantt
@@ -29,15 +29,15 @@ gantt
     lesson 25 :l25, after l24, 1d
 ```
 
-## 1. Introduction
+## Introduction
 
 After completing the frontend development and debugging of our AI-powered chatbot, it's crucial to thoroughly test the entire system and deploy it to a production environment. This lesson will guide you through the process of system testing, identifying and fixing potential issues, and deploying your chatbot to ensure it's ready for real-world use.
 
-## 2. System Testing
+## System Testing
 
 System testing involves evaluating the complete, integrated chatbot system to ensure it meets specified requirements and functions correctly as a whole.
 
-### 2.1 Test Plan Development
+### Test Plan Development
 
 Create a comprehensive test plan that covers:
 
@@ -76,7 +76,7 @@ Example test plan structure:
    5.3 Check for potential vulnerabilities (e.g., XSS, CSRF)
 ```
 
-### 2.2 Automated Testing
+### Automated Testing
 
 Implement automated tests to streamline the testing process:
 
@@ -102,7 +102,7 @@ describe('Chatbot UI', () => {
 });
 ```
 
-### 2.3 Manual Testing
+### Manual Testing
 
 Conduct thorough manual testing to catch issues that automated tests might miss:
 
@@ -110,11 +110,11 @@ Conduct thorough manual testing to catch issues that automated tests might miss:
 2. Test edge cases and unexpected inputs
 3. Verify the chatbot's responses for accuracy and relevance
 
-## 3. Identifying and Fixing Issues
+## Identifying and Fixing Issues
 
 During testing, you'll likely encounter issues that need to be addressed before deployment.
 
-### 3.1 Issue Tracking
+### Issue Tracking
 
 Use an issue tracking system (e.g., JIRA, GitHub Issues) to log and manage identified problems:
 
@@ -129,7 +129,7 @@ Expected: Response within 2 seconds
 Actual: Response takes 5-7 seconds
 ```
 
-### 3.2 Debugging and Fixing
+### Debugging and Fixing
 
 Address identified issues systematically:
 
@@ -155,11 +155,11 @@ async function getChatbotResponse(query) {
 }
 ```
 
-## 4. Deployment
+## Deployment
 
 Once testing is complete and issues are resolved, it's time to deploy the chatbot to a production environment.
 
-### 4.1 Deployment Checklist
+### Deployment Checklist
 
 Create a deployment checklist to ensure all necessary steps are completed:
 
@@ -175,7 +175,7 @@ Create a deployment checklist to ensure all necessary steps are completed:
 9. [ ] Prepare rollback plan
 ```
 
-### 4.2 Deployment Process
+### Deployment Process
 
 Follow these steps to deploy your chatbot:
 
@@ -211,7 +211,7 @@ services:
       - POSTGRES_DB=chatbot
 ```
 
-### 4.3 Monitoring and Maintenance
+### Monitoring and Maintenance
 
 Set up monitoring tools to track the chatbot's performance and usage in production:
 
@@ -239,17 +239,17 @@ services:
       - prometheus
 ```
 
-## 5. Conclusion
+## Summary Part 1
 
 System testing and deployment are critical steps in bringing your AI-powered chatbot to life. By following a structured approach to testing, issue resolution, and deployment, you can ensure your chatbot performs reliably and efficiently in a production environment.
 
 Remember to continuously monitor and maintain your deployed chatbot, gathering user feedback and performance metrics to inform future improvements and updates.
 
-# Advanced System Testing and Deployment Strategies for AI-Powered Chatbot
+## Advanced System Testing and Deployment Strategies for AI-Powered Chatbot
 
-## 6. Advanced Testing Techniques
+## Advanced Testing Techniques
 
-### 6.1 Load Testing
+### Load Testing
 
 Load testing is crucial to ensure your chatbot can handle high volumes of concurrent users without performance degradation.
 
@@ -323,7 +323,7 @@ Example JMeter test plan for a chatbot API:
 
 This test plan simulates 100 concurrent users making 10 requests each to your chatbot API.
 
-### 6.2 A/B Testing
+### A/B Testing
 
 A/B testing allows you to compare different versions of your chatbot to determine which performs better.
 
@@ -368,9 +368,9 @@ if __name__ == '__main__':
 
 This setup randomly serves two different versions of the chatbot and logs interactions for later analysis.
 
-## 7. Advanced Deployment Strategies
+## Advanced Deployment Strategies
 
-### 7.1 Blue-Green Deployment
+### Blue-Green Deployment
 
 Blue-green deployment involves maintaining two identical production environments, allowing you to switch between them for zero-downtime updates.
 
@@ -419,7 +419,7 @@ http {
 }
 ```
 
-### 7.2 Canary Releases
+### Canary Releases
 
 Canary releases involve gradually rolling out changes to a small subset of users before deploying to the entire user base.
 
@@ -447,9 +447,9 @@ spec:
 
 This configuration routes 90% of traffic to version 1 and 10% to version 2 of your chatbot.
 
-## 8. Continuous Monitoring and Improvement
+## Continuous Monitoring and Improvement
 
-### 8.1 Implementing Logging and Tracing
+### Implementing Logging and Tracing
 
 Use a centralized logging system to track events and errors across your chatbot system.
 
@@ -496,7 +496,7 @@ output {
 }
 ```
 
-### 8.2 Performance Optimization
+### Performance Optimization
 
 Continuously monitor and optimize your chatbot's performance based on usage patterns and user feedback.
 
@@ -529,7 +529,7 @@ if (cluster.isMaster) {
 
 This setup uses Node.js clustering to take advantage of multi-core systems, improving the chatbot's ability to handle concurrent requests.
 
-## 9. Conclusion
+## Summary Part 2
 
 Advanced testing and deployment strategies are crucial for ensuring the reliability, performance, and continuous improvement of your AI-powered chatbot. By implementing techniques such as load testing, A/B testing, and sophisticated deployment methods like blue-green and canary releases, you can minimize risks and optimize your chatbot's performance in real-world conditions.
 

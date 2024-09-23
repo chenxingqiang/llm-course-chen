@@ -1,4 +1,4 @@
-# Designing Input and Output Formats for Chatbots with Context
+# Lesson 17 Designing Input and Output Formats for Chatbots with Context
 
 ```mermaid
 gantt
@@ -31,7 +31,7 @@ gantt
 
 In the rapidly evolving field of artificial intelligence, chatbots have become a crucial interface for human-machine interaction. However, creating a truly intelligent, context-aware chatbot is no small feat. One of the key challenges lies in designing appropriate input and output formats to ensure the bot accurately understands user intent and provides relevant, helpful responses. This lesson delves into the intricacies of designing effective input and output formats for context-aware chatbots.
 
-## 1. Understanding the Importance of Context in Chatbot Interactions
+## Understanding the Importance of Context in Chatbot Interactions
 
 Context is an indispensable element in human conversations, and it's equally crucial for chatbots. Without context, a bot's responses can seem disjointed, irrelevant, or even confusing. Consider the following exchange:
 
@@ -40,17 +40,17 @@ Bot: I'm sorry, but I need more information to answer your question. What item a
 
 In this example, the bot fails to understand what "it" refers to due to a lack of necessary contextual information. To improve such situations, we need to design input and output formats that capture and utilize context effectively.
 
-## 2. Designing Flexible Input Formats
+## Designing Flexible Input Formats
 
 When designing input formats, we need to consider several key aspects:
 
-### 2.1 Structured vs. Unstructured Input
+### Structured vs. Unstructured Input
 
 - Structured input: Predefined format, easy to parse but may limit user expression
 - Unstructured input: Free-form text, more natural but harder to parse
 - Hybrid approach: Combining benefits of both, e.g., free-text input with optional structured elements
 
-### 2.2 Intent Recognition and Entity Extraction
+### Intent Recognition and Entity Extraction
 
 An effective input format should help the system identify user intents and extract key entities. For example:
 
@@ -75,7 +75,7 @@ print(f"Intent: {user_input.intent}")
 print(f"Entities: {user_input.entities}")
 ```
 
-### 2.3 Contextual Integration
+### Contextual Integration
 
 The input format should include or link to relevant contextual information:
 
@@ -100,11 +100,11 @@ contextual_input = ContextualInput("I want the same as last time", "user123", 16
 contextual_input.parse()
 ```
 
-## 3. Developing Robust Output Formats
+## Developing Robust Output Formats
 
 Output format design is equally important, as it determines how users receive and understand the bot's responses.
 
-### 3.1 Structured Responses
+### Structured Responses
 
 Design a flexible response structure that can accommodate different types of content:
 
@@ -139,7 +139,7 @@ response.add_image("https://example.com/pizza_image.jpg")
 print(response.to_dict())
 ```
 
-### 3.2 Context-Aware Response Generation
+### Context-Aware Response Generation
 
 The output format should be able to adapt based on conversation history and user preferences:
 
@@ -162,11 +162,11 @@ response.personalize()
 print(response.text)  # Output: "Hola Alice, Su pedido ha sido confirmado."
 ```
 
-## 4. Implementing Effective Context Management
+## Implementing Effective Context Management
 
 To maintain conversation coherence and personalization, we need to implement a robust context management system.
 
-### 4.1 Conversation State Tracking
+### Conversation State Tracking
 
 ```python
 class ConversationManager:
@@ -209,7 +209,7 @@ current_context = conv_manager.get_context()
 print(current_context)
 ```
 
-### 4.2 Long-Term User Profiling
+### Long-Term User Profiling
 
 In addition to immediate conversation context, maintaining long-term user profiles is crucial:
 
@@ -252,11 +252,11 @@ By implementing these input and output formats and context management strategies
 
 In the next section, we'll explore how to evaluate and optimize these designs, as well as how to handle multi-intent queries and error scenarios. We'll also discuss how to apply these concepts to real-world chatbot projects, ensuring they can adapt to different scenarios and requirements.
 
-## 5. Evaluating and Optimizing Chatbot I/O Formats
+## Evaluating and Optimizing Chatbot I/O Formats
 
 Designing effective input and output formats is an iterative process that requires continuous evaluation and optimization. Let's explore some strategies for assessing and improving your chatbot's I/O design.
 
-### 5.1 Quantitative Metrics
+### Quantitative Metrics
 
 To objectively measure the performance of your I/O formats, consider tracking the following metrics:
 
@@ -298,7 +298,7 @@ evaluator.evaluate_interaction(user_input, bot_response, "ORDER_PIZZA", True)
 print(evaluator.get_metrics())
 ```
 
-### 5.2 Qualitative Analysis
+### Qualitative Analysis
 
 While quantitative metrics are important, they don't tell the whole story. Qualitative analysis is crucial for understanding the nuances of your chatbot's performance:
 
@@ -333,11 +333,11 @@ for convo in flagged:
     print(convo['conversation'])
 ```
 
-## 6. Handling Complex Scenarios
+## Handling Complex Scenarios
 
 As you refine your chatbot's I/O formats, you'll need to address more complex scenarios to create a truly robust system.
 
-### 6.1 Multi-Intent Queries
+### Multi-Intent Queries
 
 Users often express multiple intents in a single message. Your input format should be capable of handling these scenarios:
 
@@ -361,7 +361,7 @@ print(f"All intents: {multi_intent_input.intents}")
 print(f"Primary intent: {multi_intent_input.get_primary_intent()}")
 ```
 
-### 6.2 Handling Ambiguity and Clarification
+### Handling Ambiguity and Clarification
 
 When user input is ambiguous, your chatbot should be able to ask for clarification. Implement a clarification mechanism in your I/O format:
 
@@ -384,7 +384,7 @@ clarification = ClarificationResponse(
 print(clarification.to_dict())
 ```
 
-### 6.3 Error Handling and Graceful Degradation
+### Error Handling and Graceful Degradation
 
 Design your I/O formats to handle errors gracefully and provide helpful feedback to users:
 
@@ -410,7 +410,7 @@ error_response = ErrorResponse(
 print(error_response.to_dict())
 ```
 
-## 7. Putting It All Together: A Comprehensive Chatbot I/O System
+## Putting It All Together: A Comprehensive Chatbot I/O System
 
 Now that we've covered various aspects of designing input and output formats for context-aware chatbots, let's bring it all together in a more comprehensive example:
 

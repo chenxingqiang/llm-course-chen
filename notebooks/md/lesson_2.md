@@ -1,5 +1,5 @@
 
-# Lesson 1: Unveiling the Magic of Natural Language Processing
+# Lesson 02 Unveiling the Magic of Natural Language Processing
 
 ```mermaid
 gantt
@@ -30,7 +30,7 @@ gantt
     lesson 10 :l10, after l9, 1d
 ```
 
-## 1. Introduction: The Language Revolution in AI
+## Introduction: The Language Revolution in AI
 
 Imagine a world where machines understand our jokes, write poetry, and translate languages in real-time. Sounds like science fiction? Well, welcome to the fascinating realm of Natural Language Processing (NLP)!
 
@@ -41,7 +41,7 @@ But what exactly is NLP, and why should you care? Let's embark on this exciting 
 At its core, Natural Language Processing is the art of teaching computers to understand, interpret, and generate human language. It's like giving machines a crash course in becoming multilingual, context-savvy communicators. NLP is the bridge that connects our messy, nuanced human language with the precise, logical world of computer code.
 
 ```mermaid
-graph TD
+graph LR
     A[Artificial Intelligence] --> B[Machine Learning]
     B --> C[Deep Learning]
     C --> D[Natural Language Processing]
@@ -70,7 +70,7 @@ Now, you might be wondering, "Okay, but why should I care about NLP?" Great ques
 
 By understanding NLP, you're not just learning about a technology; you're glimpsing the future of human-machine interaction. It's a future where language barriers crumble, information becomes instantly accessible, and our devices truly understand us.
 
-## 2. Core NLP Tasks: The Building Blocks of Language Understanding
+## Core NLP Tasks: The Building Blocks of Language Understanding
 
 Now that we've got a bird's-eye view of NLP, let's zoom in on the specific tasks that make up this exciting field. Think of these tasks as the different tools in an NLP engineer's toolkit – each designed for a specific language-related job.
 
@@ -101,7 +101,7 @@ graph LR
 
 Let's break down each of these tasks and see how they work in practice:
 
-### 2.1 Text Classification: Sorting the Digital Library
+### Text Classification: Sorting the Digital Library
 
 Text classification is all about categorizing text into predefined groups. It's like having a super-efficient librarian who can instantly sort books into genres. One of the most common applications of text classification is sentiment analysis.
 
@@ -129,7 +129,7 @@ for text in texts:
 
 Run this code, and you'll see how the model classifies each sentence's sentiment. It's not just understanding the words, but grasping the overall emotional context – pretty impressive for a machine, right?
 
-### 2.2 Named Entity Recognition (NER): Spotting the VIPs in Text
+### Named Entity Recognition (NER): Spotting the VIPs in Text
 
 Named Entity Recognition is like giving your AI a highlighter to mark important names, places, and things in a text. It's crucial for information extraction and understanding context. Imagine how useful this is for a search engine trying to understand the key elements of a webpage!
 
@@ -148,7 +148,7 @@ for entity in entities:
 
 Run this code, and you'll see how the model identifies and categorizes key entities in the sentence. This ability to pick out and classify specific elements in text is fundamental to many more complex NLP tasks.
 
-### 2.3 Machine Translation: Breaking Down Language Barriers
+### Machine Translation: Breaking Down Language Barriers
 
 Machine translation is perhaps one of the most visible and impactful applications of NLP. It's taking us closer to a world where language barriers are a thing of the past. The progress in this field has been nothing short of revolutionary, moving from word-by-word translation to understanding context and nuance.
 
@@ -166,7 +166,7 @@ print(f"French: {french_translation[0]['translation_text']}")
 
 This code translates an English sentence to French. But remember, modern translation systems are doing much more than simple word substitution – they're understanding context, idioms, and even cultural nuances to produce more accurate and natural-sounding translations.
 
-### 2.4 Text Generation: The AI Storyteller
+### Text Generation: The AI Storyteller
 
 Text generation is where NLP gets really creative. It's about producing human-like text based on some input or prompt. This technology is behind AI writing assistants, chatbots, and even systems that can write stories or poems.
 
@@ -183,7 +183,7 @@ print(generated_text[0]['generated_text'])
 
 Run this a few times, and you'll get different continuations of the prompt. It's like giving an AI writer the beginning of a story and letting it run wild with its imagination!
 
-### 2.5 Question Answering: Your AI Research Assistant
+### Question Answering: Your AI Research Assistant
 
 Question answering systems are designed to automatically answer questions posed in natural language. It's like having a super-smart assistant who's read everything and can instantly find and synthesize information to answer your questions.
 
@@ -205,11 +205,11 @@ This example shows how a question answering system can extract relevant informat
 
 As we progress through this course, we'll dive deeper into each of these tasks, exploring advanced techniques and state-of-the-art models. Remember, the beauty of NLP lies in how these tasks can be combined and applied to solve real-world problems. Whether you're building a chatbot, analyzing customer feedback, or creating a language learning app, understanding these fundamental NLP tasks is your first step towards becoming an NLP wizard!
 
-## 3. The NLP Challenge: Navigating the Complexities of Human Language
+## The NLP Challenge: Navigating the Complexities of Human Language
 
 As exciting as NLP is, it's not all smooth sailing. Language is complex, nuanced, and often downright tricky – even for us humans! Let's explore some of the hurdles that make NLP such a fascinating and challenging field.
 
-### 3.1 The "Wait, What?" Factor (Ambiguity)
+### The "Wait, What?" Factor (Ambiguity)
 
 One of the biggest challenges in NLP is dealing with ambiguity. Words and phrases can have multiple meanings, and context is key. It's like trying to solve a puzzle where the pieces keep changing shape!
 
@@ -232,7 +232,7 @@ ambiguity_example("I need to run to the bank to deposit some money before it clo
 
 Run this code, and you'll see how even simple words like "run" and "bank" can have multiple meanings. For humans, the context makes it clear, but teaching machines to understand this context is a significant challenge in NLP.
 
-### 3.2 Context is King
+### Context is King
 
 Understanding often requires broader context. A single word or phrase can mean completely different things depending on the situation. This is why modern NLP models are designed to consider wider context, not just individual words.
 
@@ -250,7 +250,7 @@ context_matters("That's just great!", "Your car broke down on the highway")
 
 The same phrase can convey excitement or sarcasm depending on the context. Teaching machines to pick up on these subtle cues is a major focus of advanced NLP research.
 
-### 3.3 The Sarcasm Struggle
+### The Sarcasm Struggle
 
 Speaking of sarcasm, it's one of the toughest nuts to crack in NLP. Detecting sarcasm is hard enough for humans, let alone machines! It requires understanding context, tone, and often cultural nuances.
 
@@ -266,7 +266,7 @@ sarcasm_detector("What a great day!", True)   # Sarcastic statement (maybe it's 
 
 Sarcasm detection remains an active area of research in NLP, involving not just understanding words, but grasping subtle cues, context, and even cultural knowledge.
 
-### 3.4 The Ever-Changing Nature of Language
+### The Ever-Changing Nature of Language
 
 Languages evolve constantly. New words emerge, meanings shift, and what was trendy yesterday might be outdated today. This poses a significant challenge for NLP systems, which need to keep up with these changes.
 
@@ -296,12 +296,12 @@ This example illustrates how word meanings can change over time. NLP systems nee
 
 These challenges are what make NLP such an exciting field. As we tackle them, we push the boundaries of AI and deepen our understanding of human language. Each challenge overcome brings us closer to machines that can truly understand and communicate in human language.
 
-## 4. Enter the Transformers: The Game-Changers of NLP
+## Enter the Transformers: The Game-Changers of NLP
 
 Now that we've seen the challenges, let's talk about one of the most revolutionary architectures in NLP: Transformers. Introduced in 2017, Transformers have, well, transformed the field of NLP!
 
 ```mermaid
-graph TD
+graph LR
     A[Input] --> B[Embedding Layer]
     B --> C[Self-Attention]
     C --> D[Feed Forward Neural Network]
@@ -318,7 +318,7 @@ graph TD
 
 ```
 
-### 4.1 What Makes Transformers Special?
+### What Makes Transformers Special?
 
 1. **Parallel Processing**: Unlike earlier models that processed words one at a time, Transformers can process all words in a sentence simultaneously. It's like having a team of linguists working on different parts of a sentence at the same time!
 
@@ -341,7 +341,7 @@ texts = [
 ]
 
 for text in texts:
-    result = classifier(text)[0]Certainly! Let's continue with our exploration of Transformers and their impact on NLP.
+    result = classifier(text)[0]
 
     print(f"Text: {text}")
     print(f"Sentiment: {result['label']}, Score: {result['score']:.4f}\n")
@@ -349,7 +349,7 @@ for text in texts:
 
 This simple example showcases how Transformer models can understand and analyze sentiment in diverse sentences, handling complex language with ease. The model not only classifies the sentiment but also provides a confidence score, demonstrating its ability to gauge the intensity of the sentiment.
 
-### 4.2 Transformer Architectures: The Swiss Army Knife of NLP
+### Transformer Architectures: The Swiss Army Knife of NLP
 
 Transformers come in various flavors, each designed for specific types of NLP tasks. Let's explore the main types:
 
@@ -450,7 +450,7 @@ print("Summary:", summary)
 
 This example demonstrates T5's ability to understand and condense information, producing a concise summary of the input text. The model not only extracts key information but also rephrases it, showing a deep understanding of the content.
 
-### 4.3 The Power of Transfer Learning
+### The Power of Transfer Learning
 
 One of the most exciting aspects of Transformer models is their ability to benefit from transfer learning. This means we can take a pre-trained model and fine-tune it for specific tasks with relatively little data.
 
@@ -525,11 +525,11 @@ print(f"Sentiment: {'Positive' if prediction == 1 else 'Negative'}")
 
 This example demonstrates how we can take a pre-trained BERT model and fine-tune it for a specific task (sentiment analysis) with just a small amount of task-specific data. This ability to leverage pre-trained knowledge and adapt it to new tasks is a game-changer in NLP, allowing for high-performance models even with limited domain-specific data.
 
-## 5. Transformers in Action: Real-World NLP Applications
+## Transformers in Action: Real-World NLP Applications
 
 Now that we've explored the architecture and capabilities of Transformers, let's see how they're being used to solve real-world problems. We'll look at some exciting applications and provide code snippets to demonstrate their capabilities.
 
-### 5.1 Multilingual Machine Translation
+### Multilingual Machine Translation
 
 One of the most impactful applications of Transformers is in breaking down language barriers. Let's use the MarianMT model to translate between multiple languages:
 
@@ -559,7 +559,7 @@ print(f"German to Spanish: {de_es}")
 
 This example showcases how Transformer models can be chained together to perform multi-hop translations, enabling communication across multiple language barriers. This technology is revolutionizing global communication, making it possible for people to understand content in languages they don't speak.
 
-### 5.2 Question Answering Systems
+### Question Answering Systems
 
 Transformer models excel at understanding context and extracting relevant information. Let's build a simple question-answering system using a BERT model:
 
@@ -590,7 +590,7 @@ for question in questions:
 
 This example demonstrates how Transformers can understand context and answer questions based on the provided information. This capability is crucial for building intelligent assistants, information retrieval systems, and educational tools.
 
-### 5.3 Text Summarization for News Articles
+### Text Summarization for News Articles
 
 In the age of information overload, automatic summarization is becoming increasingly important. Let's use a T5 model to summarize a news article:
 
@@ -622,11 +622,11 @@ print("Summary:", summary)
 
 This application shows how Transformers can distill the key information from longer texts, potentially revolutionizing how we consume news and information. Such technology could help combat information overload by providing concise, accurate summaries of lengthy articles or reports.
 
-## 6. Ethical Considerations in Modern NLP
+## Ethical Considerations in Modern NLP
 
 As we explore the capabilities of Transformer models, it's crucial to be aware of the challenges and ethical considerations that come with this powerful technology. The rapid advancement of NLP brings with it a responsibility to consider its broader impacts on society.
 
-### 6.1 Bias in Language Models
+### Bias in Language Models
 
 Transformer models, trained on vast amounts of internet text, can inadvertently learn and amplify societal biases. This is a critical issue as these models increasingly influence decision-making processes and shape information access.
 
@@ -653,7 +653,7 @@ for sentence in sentences:
 
 Run this code and observe the gender biases that might appear in the model's predictions. It's crucial to be aware of these biases and work on mitigating them in real-world applications. Unchecked biases could lead to discriminatory outcomes in areas like job recommendations, loan approvals, or criminal justice risk assessments.
 
-### 6.2 Environmental Impact of Large Language Models
+### Environmental Impact of Large Language Models
 
 Training large Transformer models requires significant computational resources, which can have a substantial environmental impact. As NLP practitioners, we need to consider the trade-offs between model performance and environmental sustainability.
 
@@ -668,9 +668,9 @@ def estimate_carbon_emissions(training_time_hours, gpu_count, gpu_type="V100"):
     }
     
     total_energy = training_time_hours * gpu_count * power_consumption[gpu_type] / 1000  # kWh
-    carbon_intensity = 475  # gCO2eq/kWh (global average)
+    carbon_intensity = 475  # g CO2eq/kWh (global average)
     carbon_emissions = total_energy * carbon_intensity / 1000  # kgCO2eq
-    
+
     return carbon_emissions
 
 # Estimate for training a large language model
@@ -684,7 +684,7 @@ print(f"Equivalent to {emissions/215:.2f} flights from New York to San Francisco
 
 This simple calculation highlights the potential environmental impact of training large language models and emphasizes the need for more efficient training methods and greener computing infrastructure.
 
-### 6.3 Privacy Concerns and Data Protection
+### Privacy Concerns and Data Protection
 
 As NLP models become more powerful, concerns about privacy and data protection grow. Models trained on large datasets might inadvertently memorize and reproduce sensitive information. It's crucial to implement safeguards and adhere to data protection regulations.
 
@@ -721,11 +721,11 @@ This example demonstrates a simple approach to anonymizing sensitive information
 
 As we continue to push the boundaries of what's possible with Transformer models and NLP, it's crucial to keep these ethical considerations in mind. Responsible development and deployment of NLP technologies will be key to harnessing their full potential while minimizing negative impacts.
 
-## 7. Conclusion: The Transformative Power of NLP and the Road Ahead
+## Summary: The Transformative Power of NLP and the Road Ahead
 
 As we've journeyed through the fascinating world of Natural Language Processing and Transformer architectures, we've seen how these technologies are reshaping our interaction with language and information. Let's recap our key learnings and look towards the exciting future of NLP.
 
-### 7.1 Key Takeaways
+### Key Takeaways
 
 1. **NLP's Versatility**: We've explored how NLP tackles a wide range of tasks, from sentiment analysis and named entity recognition to machine translation and text generation. The applications are as diverse as language itself.
 
@@ -735,7 +735,7 @@ As we've journeyed through the fascinating world of Natural Language Processing 
 
 4. **Ethical Considerations**: We've highlighted the importance of addressing biases, environmental impacts, and privacy concerns as we develop and deploy NLP technologies.
 
-### 7.2 The Road Ahead
+### The Road Ahead
 
 As we look to the future of NLP, several exciting trends and challenges emerge:
 
@@ -749,7 +749,7 @@ As we look to the future of NLP, several exciting trends and challenges emerge:
 
 5. **Ethical AI and Fairness**: Continued efforts to mitigate biases and ensure fairness in NLP models will be crucial for responsible AI development.
 
-### 7.3 Your NLP Journey
+### Your NLP Journey
 
 As you continue your journey in NLP, remember that the field is rapidly evolving. Stay curious, keep experimenting, and always consider the broader implications of the technology you're working with. Here are some steps to keep your skills sharp:
 
@@ -797,7 +797,7 @@ As we conclude this lesson, take a moment to reflect on the incredible progress 
 The future of NLP is bright, and you're now part of this exciting journey. Keep learning, keep experimenting, and most importantly, keep asking questions. The next breakthrough in NLP could come from you!
 
 ```mermaid
-graph TD
+graph LR
     A[NLP Journey] --> B[Foundations]
     A --> C[Advanced Techniques]
     A --> D[Applications]

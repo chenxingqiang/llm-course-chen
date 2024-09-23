@@ -1,5 +1,5 @@
 
-# Lesson 04: Comprehensive LLM Development Fundamentals
+# Lesson 04 Comprehensive LLM Development Fundamentals
 
 ```mermaid
 gantt
@@ -29,8 +29,6 @@ gantt
     lesson 9  :l9, after l8, 1d
     lesson 10 :l10, after l9, 1d
 ```
-
-# Unveiling the Art of Large Language Model Development: From Tokenization to Data Alchemy
 
 Welcome, intrepid explorers of the AI frontier! Today, we embark on a thrilling journey into the heart of Large Language Model (LLM) development. Whether you're a seasoned machine learning virtuoso or a curious novice, this lesson will unlock the secrets that power these linguistic marvels. Fasten your seatbelts, for we're about to traverse the landscape of advanced tokenization, clever prompting, and data sorcery!
 

@@ -1,5 +1,5 @@
 
-# Lesson 12: Advanced Model Inference and Function Calling
+# Lesson 12 Advanced Model Inference and Function Calling
 
 ```mermaid
 gantt
@@ -30,17 +30,15 @@ gantt
     lesson 17 :l17, after l16, 1d
 ```
 
-## 1. Introduction
+## Introduction
 
 In this lesson, we delve into advanced techniques for model inference and function calling, exploring the spectrum from local deployment to cloud-based services and specialized models. This knowledge is crucial for leveraging the full potential of Large Language Models (LLMs) in various applications.
 
-## 2. Local Model Deployment with PyTorch and Hugging Face
-
-### 2.1 Explanation
+## Local Model Deployment with PyTorch and Hugging Face
 
 Local model deployment offers control and customization but requires careful resource management. PyTorch and Hugging Face's Transformers library provide powerful tools for working with LLMs locally.
 
-### 2.2 Code Example: Advanced Local Model Usage
+### Advanced Local Model Usage
 
 ```python
 import torch
@@ -62,7 +60,7 @@ class AdvancedLocalModel:
     def fine_tune(self, train_file, output_dir, num_train_epochs=3):
         dataset = TextDataset(tokenizer=self.tokenizer, file_path=train_file, block_size=128)
         data_collator = DataCollatorForLanguageModeling(tokenizer=self.tokenizer, mlm=False)
-        
+
         training_args = TrainingArguments(
             output_dir=output_dir,
             overwrite_output_dir=True,
@@ -71,14 +69,14 @@ class AdvancedLocalModel:
             save_steps=10_000,
             save_total_limit=2,
         )
-        
+
         trainer = Trainer(
             model=self.model,
             args=training_args,
             data_collator=data_collator,
             train_dataset=dataset,
         )
-        
+
         trainer.train()
         self.model = trainer.model
         self.tokenizer.save_pretrained(output_dir)
@@ -96,13 +94,11 @@ print(f"Generated text: {generated_text}")
 
 This code demonstrates loading, using, and fine-tuning a local model, as well as estimating its size for resource management.
 
-## 3. Advanced GPU Resource Management
-
-### 3.1 Explanation
+## Advanced GPU Resource Management
 
 Efficient GPU resource management is crucial for optimal performance when working with large models locally. This involves techniques for memory optimization and dynamic resource allocation.
 
-### 3.2 Code Example: GPU Resource Manager
+### GPU Resource Manager
 
 ```python
 import torch
@@ -164,13 +160,11 @@ print(f"Optimal batch size for gpt2: {optimal_batch_size}")
 
 This class demonstrates advanced GPU resource management techniques, including model loading/unloading and batch size optimization.
 
-## 4. Leveraging Cloud-Based LLM Services
-
-### 4.1 Explanation
+## Leveraging Cloud-Based LLM Services
 
 Cloud-based LLM services, like the OpenAI API, offer access to powerful models without the need for local resources. Effective use requires understanding API integration, prompt engineering, and resource management.
 
-### 4.2 Code Example: Advanced OpenAI API Integration
+### Advanced OpenAI API Integration
 
 ```python
 import openai
@@ -201,7 +195,7 @@ class AdvancedOpenAIClient:
             "max_tokens": max_tokens,
             "temperature": temperature,
         }
-        
+
         async with self.session.post(url, headers=headers, json=data) as response:
             if response.status == 200:
                 result = await response.json()
@@ -232,13 +226,11 @@ if __name__ == "__main__":
 
 This example demonstrates advanced usage of the OpenAI API, including asynchronous requests and batch processing.
 
-## 5. Exploring Specialized Models: JAIS
-
-### 5.1 Explanation
+## Exploring Specialized Models: JAIS
 
 Specialized models like JAIS (Juelich AI Supercomputer) focus on specific domains, offering advantages in tasks like scientific text analysis. Understanding their capabilities is crucial for domain-specific applications.
 
-### 5.2 Code Example: JAIS Model Usage
+### JAIS Model Usage
 
 ```python
 import torch
@@ -277,13 +269,11 @@ print(f"Summary: {summary}")
 
 This example demonstrates how to use a specialized model like JAIS for scientific text analysis tasks.
 
-## 6. Implementing Custom Function Calling
-
-### 6.1 Explanation
+## Implementing Custom Function Calling
 
 Custom function calling allows LLMs to interact with external systems, expanding their capabilities beyond text generation. This involves defining functions, parsing LLM outputs, and executing external actions.
 
-### 6.2 Code Example: Custom Function Calling System
+### Custom Function Calling System
 
 ```python
 import json
@@ -357,13 +347,11 @@ print(f"Assistant: {response}")
 
 This example demonstrates a custom function calling system that allows an AI assistant to perform tasks like scheduling appointments and checking weather.
 
-## 7. Comparative Analysis
-
-### 7.1 Explanation
+## Comparative Analysis
 
 Understanding the strengths and weaknesses of different inference approaches is crucial for choosing the right solution for a given application. This involves comparing local models, cloud-based services, and specialized models across various dimensions.
 
-### 7.2 Code Example: Comparative Analysis Framework
+### Comparative Analysis Framework
 
 ```python
 import time
@@ -429,7 +417,7 @@ class ModelComparisonFramework:
             task_type = result["task_type"]
             if task_type not in analysis["task_type_performance"]:
                 analysis["task_type_performance"][task_type] = {"local": 0, "cloud": 0, "specialized": 0}
-            
+
             for model_type in ["local", "cloud", "specialized"]:
                 analysis["average_times"][model_type] += result[model_type]["time"]
                 analysis["task_type_performance"][task_type][model_type] += result[model_type]["time"]
@@ -486,7 +474,7 @@ for task_type, performance in analysis["task_type_performance"].items():
 
 This comprehensive framework allows for direct comparison of local, cloud-based, and specialized models across various task types, providing insights into their relative strengths and performance characteristics.
 
-## 8. Conclusion
+## Summary
 
 In this lesson, we've explored advanced techniques for model inference and function calling, covering a wide range of approaches from local deployment to cloud-based services and specialized models. Key takeaways include:
 
@@ -499,7 +487,7 @@ In this lesson, we've explored advanced techniques for model inference and funct
 
 As the field of AI continues to evolve, the ability to effectively implement and combine these various approaches will be crucial for developing sophisticated, efficient, and powerful AI applications.
 
-## 9. Further Reading and Resources
+## Further Reading and Resources
 
 To deepen your understanding of the topics covered in this lesson, consider exploring the following resources:
 
@@ -509,7 +497,7 @@ To deepen your understanding of the topics covered in this lesson, consider expl
 4. OpenAI API documentation: <https://beta.openai.com/docs/>
 5. "Designing Machine Learning Systems" by Chip Huyen
 
-## 10. Homework Assignments
+## Homework Assignments
 
 1. Implement a local model using PyTorch and Hugging Face for sentiment analysis. Optimize its performance and analyze its resource usage on different hardware configurations.
 

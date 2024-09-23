@@ -1,4 +1,4 @@
-# Course Title: Comprehensive NLP Fundamentals
+# Lesson 02 Comprehensive NLP Fundamentals
 
 ```mermaid
 gantt
@@ -29,7 +29,7 @@ gantt
     lesson 10 :l10, after l9, 1d
 ```
 
-## 1. NLP: Decoding the Language of Humans and Machines
+## NLP: Decoding the Language of Humans and Machines
 
 Ever chatted with Siri, used Google Translate, or marveled at how your email knows which messages are spam? Welcome to the fascinating world of Natural Language Processing (NLP)! But what exactly is NLP, and why should you care? Let's dive in!
 
@@ -208,7 +208,7 @@ As we progress through this course, we'll dive deeper into each of these tasks, 
 
 Next up, we'll explore the challenges that make NLP such an exciting and complex field. Ready to unravel the mysteries of language? Let's go!
 
-## 1.3 The NLP Obstacle Course: Challenges That Keep Us on Our Toes
+## 3 The NLP Obstacle Course: Challenges That Keep Us on Our Toes
 
 As exciting as NLP is, it's not all smooth sailing. Language is complex, nuanced, and often downright tricky – even for us humans! Let's explore some of the hurdles that make NLP such a fascinating and challenging field.
 
@@ -287,7 +287,7 @@ sarcasm_detector("What a great day!", True)   # Sarcastic statement (maybe it's 
 
 These challenges are what make NLP such an exciting field. As we tackle them, we push the boundaries of AI and deepen our understanding of human language.
 
-## 2. Enter the Transformers: The Game-Changers of NLP
+## Enter the Transformers: The Game-Changers of NLP
 
 Now that we've seen the challenges, let's talk about one of the most revolutionary architectures in NLP: Transformers. Introduced in 2017, Transformers have, well, transformed the field of NLP!
 
@@ -334,7 +334,7 @@ As we delve deeper into Transformers, we'll explore different architectures like
 
 Stay tuned as we unpack the inner workings of Transformers and learn how to harness their power for a wide range of NLP tasks. The future of language AI is here, and it's incredibly exciting!
 
-## 2. Transformer Architectures: The Swiss Army Knife of NLP
+## Transformer Architectures: The Swiss Army Knife of NLP
 
 Now that we've introduced Transformers, let's explore the different types of Transformer architectures and how they're revolutionizing various NLP tasks.
 
@@ -363,7 +363,7 @@ graph LR
     D2 -.-> J[Summarization]
 ```
 
-### 2.1 Encoder Models: The Understanding Experts
+### Encoder Models: The Understanding Experts
 
 Encoder models, like BERT (Bidirectional Encoder Representations from Transformers), excel at understanding and representing input text. They're the go-to choice for tasks that require deep language comprehension.
 
@@ -388,7 +388,7 @@ for entity in entities:
 
 Here, BERT accurately identifies and classifies named entities in the sentence, showcasing its understanding of context and language structure.
 
-### 2.2 Decoder Models: The Creative Writers
+### Decoder Models: The Creative Writers
 
 Decoder models, like GPT (Generative Pre-trained Transformer), are the rockstars of text generation. They can complete prompts, write stories, and even code!
 
@@ -417,7 +417,7 @@ print(generated_text)
 
 This example shows GPT-2's ability to generate coherent and creative text based on a simple prompt.
 
-### 2.3 Encoder-Decoder Models: The Multilingual Maestros
+### Encoder-Decoder Models: The Multilingual Maestros
 
 Encoder-Decoder models, like T5 (Text-to-Text Transfer Transformer), combine the strengths of both encoders and decoders. They're versatile powerhouses capable of handling a wide range of NLP tasks.
 
@@ -529,11 +529,11 @@ This example demonstrates how we can take a pre-trained BERT model and fine-tune
 
 As we continue our journey into the world of Transformers and NLP, we'll explore more advanced techniques, dive deeper into the architecture of these models, and learn how to apply them to real-world problems. The possibilities are endless, and the future of NLP is incredibly exciting!
 
-## 3. Transformers in Action: Real-World NLP Applications
+## Transformers in Action: Real-World NLP Applications
 
 Now that we've got a handle on the different types of Transformer architectures, let's see how they're being used to solve real-world problems. We'll look at some exciting applications and provide code snippets to demonstrate their capabilities.
 
-### 3.1 Multilingual Machine Translation
+### Multilingual Machine Translation
 
 One of the most impactful applications of Transformers is in breaking down language barriers. Let's use the MarianMT model to translate between multiple languages:
 
@@ -563,7 +563,7 @@ print(f"German to Spanish: {de_es}")
 
 This example showcases how Transformer models can be chained together to perform multi-hop translations, enabling communication across multiple language barriers.
 
-### 3.2 Question Answering Systems
+### Question Answering Systems
 
 Transformer models excel at understanding context and extracting relevant information. Let's build a simple question-answering system using a BERT model:
 
@@ -594,7 +594,7 @@ for question in questions:
 
 This example demonstrates how Transformers can understand context and answer questions based on the provided information, a crucial capability for building intelligent assistants and information retrieval systems.
 
-### 3.3 Text Summarization for News Articles
+### Text Summarization for News Articles
 
 In the age of information overload, automatic summarization is becoming increasingly important. Let's use a T5 model to summarize a news article:
 
@@ -626,11 +626,11 @@ print("Summary:", summary)
 
 This application shows how Transformers can distill the key information from longer texts, potentially revolutionizing how we consume news and information.
 
-## 4. Challenges and Ethical Considerations in Modern NLP
+## Challenges and Ethical Considerations in Modern NLP
 
 As we explore the capabilities of Transformer models, it's crucial to be aware of the challenges and ethical considerations that come with this powerful technology.
 
-### 4.1 Bias in Language Models
+### Bias in Language Models
 
 Transformer models, trained on vast amounts of internet text, can inadvertently learn and amplify societal biases. Let's examine a simple example:
 
@@ -655,7 +655,7 @@ for sentence in sentences:
 
 Run this code and observe the gender biases that might appear in the model's predictions. It's crucial to be aware of these biases and work on mitigating them in real-world applications.
 
-### 4.2 Environmental Impact of Large Language Models
+### Environmental Impact of Large Language Models
 
 Training large Transformer models requires significant computational resources, which can have a substantial environmental impact. As NLP practitioners, we need to consider the trade-offs between model performance and environmental sustainability.
 
@@ -684,7 +684,7 @@ print(f"Equivalent to {emissions/215:.2f} flights from New York to San Francisco
 
 This simple calculation highlights the potential environmental impact of training large language models and emphasizes the need for more efficient training methods and greener computing infrastructure.
 
-### 4.3 Privacy Concerns and Data Protection
+### Privacy Concerns and Data Protection
 
 As NLP models become more powerful, concerns about privacy and data protection grow. Models trained on large datasets might inadvertently memorize and reproduce sensitive information. It's crucial to implement safeguards and adhere to data protection regulations.
 
@@ -722,204 +722,11 @@ As we continue to push the boundaries of what's possible with Transformer models
 
 In our next section, we'll explore advanced techniques for fine-tuning Transformer models and dive into some cutting-edge research in the field. Stay tuned!
 
-## 3. Transformers in Action: Real-World NLP Applications
-
-Now that we've got a handle on the different types of Transformer architectures, let's see how they're being used to solve real-world problems. We'll look at some exciting applications and provide code snippets to demonstrate their capabilities.
-
-### 3.1 Multilingual Machine Translation
-
-One of the most impactful applications of Transformers is in breaking down language barriers. Let's use the MarianMT model to translate between multiple languages:
-
-```python
-from transformers import MarianMTModel, MarianTokenizer
-
-def translate(text, model_name):
-    model = MarianMTModel.from_pretrained(model_name)
-    tokenizer = MarianTokenizer.from_pretrained(model_name)
-
-    inputs = tokenizer(text, return_tensors="pt")
-    outputs = model.generate(**inputs)
-    return tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-# Translate English to French
-en_fr = translate("AI is transforming the world.", "Helsinki-NLP/opus-mt-en-fr")
-print(f"English to French: {en_fr}")
-
-# Translate French to German
-fr_de = translate(en_fr, "Helsinki-NLP/opus-mt-fr-de")
-print(f"French to German: {fr_de}")
-
-# Translate German to Spanish
-de_es = translate(fr_de, "Helsinki-NLP/opus-mt-de-es")
-print(f"German to Spanish: {de_es}")
-```
-
-This example showcases how Transformer models can be chained together to perform multi-hop translations, enabling communication across multiple language barriers.
-
-### 3.2 Question Answering Systems
-
-Transformer models excel at understanding context and extracting relevant information. Let's build a simple question-answering system using a BERT model:
-
-```python
-from transformers import pipeline
-
-qa_model = pipeline("question-answering")
-
-context = """
-Transformer models, introduced in 2017, have revolutionized natural language processing.
-These models use self-attention mechanisms to process input sequences in parallel,
-allowing for more efficient training on large datasets. Transformers have achieved
-state-of-the-art performance on a wide range of NLP tasks.
-"""
-
-questions = [
-    "When were Transformer models introduced?",
-    "What mechanism do Transformers use?",
-    "What has been the impact of Transformers on NLP?"
-]
-
-for question in questions:
-    answer = qa_model(question=question, context=context)
-    print(f"Q: {question}")
-    print(f"A: {answer['answer']}")
-    print(f"Confidence: {answer['score']:.4f}\n")
-```
-
-This example demonstrates how Transformers can understand context and answer questions based on the provided information, a crucial capability for building intelligent assistants and information retrieval systems.
-
-### 3.3 Text Summarization for News Articles
-
-In the age of information overload, automatic summarization is becoming increasingly important. Let's use a T5 model to summarize a news article:
-
-```python
-from transformers import T5ForConditionalGeneration, T5Tokenizer
-
-model = T5ForConditionalGeneration.from_pretrained("t5-small")
-tokenizer = T5Tokenizer.from_pretrained("t5-small")
-
-article = """
-NASA's Perseverance rover has made a groundbreaking discovery on Mars, 
-detecting organic molecules that could be signs of ancient microbial life. 
-The rover, which landed on the Red Planet in February 2021, has been exploring 
-the Jezero Crater, an area believed to have once contained a river delta. 
-Using its sophisticated suite of scientific instruments, Perseverance analyzed 
-rock samples and found complex organic molecules. While these molecules can be 
-produced by non-biological processes, they are also the building blocks of life 
-as we know it. This discovery adds to the growing body of evidence suggesting 
-that Mars may have once harbored life, potentially billions of years ago when 
-the planet had a thicker atmosphere and liquid water on its surface.
-"""
-
-inputs = tokenizer("summarize: " + article, return_tensors="pt", max_length=512, truncation=True)
-summary_ids = model.generate(inputs["input_ids"], max_length=150, min_length=40, length_penalty=2.0, num_beams=4, early_stopping=True)
-
-summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-print("Summary:", summary)
-```
-
-This application shows how Transformers can distill the key information from longer texts, potentially revolutionizing how we consume news and information.
-
-## 4. Challenges and Ethical Considerations in Modern NLP
-
-As we explore the capabilities of Transformer models, it's crucial to be aware of the challenges and ethical considerations that come with this powerful technology.
-
-### 4.1 Bias in Language Models
-
-Transformer models, trained on vast amounts of internet text, can inadvertently learn and amplify societal biases. Let's examine a simple example:
-
-```python
-from transformers import pipeline
-
-unmasker = pipeline('fill-mask', model='bert-base-uncased')
-
-sentences = [
-    "The doctor said [MASK] would be back with the test results soon.",
-    "The nurse told me [MASK] would be administering the medication.",
-    "The CEO announced [MASK] new strategy for the company."
-]
-
-for sentence in sentences:
-    results = unmasker(sentence)
-    print(f"Sentence: {sentence}")
-    for result in results[:3]:
-        print(f"  {result['token_str']}: {result['score']:.4f}")
-    print()
-```
-
-Run this code and observe the gender biases that might appear in the model's predictions. It's crucial to be aware of these biases and work on mitigating them in real-world applications.
-
-### 4.2 Environmental Impact of Large Language Models
-
-Training large Transformer models requires significant computational resources, which can have a substantial environmental impact. As NLP practitioners, we need to consider the trade-offs between model performance and environmental sustainability.
-
-```python
-def estimate_carbon_emissions(training_time_hours, gpu_count, gpu_type="V100"):
-    # Rough estimate based on https://mlco2.github.io/impact/
-    power_consumption = {
-        "V100": 300,  # Watts
-        "A100": 400   # Watts
-    }
-    
-    total_energy = training_time_hours * gpu_count * power_consumption[gpu_type] / 1000  # kWh
-    carbon_intensity = 475  # gCO2eq/kWh (global average)
-    carbon_emissions = total_energy * carbon_intensity / 1000  # kgCO2eq
-    
-    return carbon_emissions
-
-# Estimate for training a large language model
-training_time = 720  # 30 days
-gpu_count = 64
-emissions = estimate_carbon_emissions(training_time, gpu_count)
-
-print(f"Estimated carbon emissions: {emissions:.2f} kgCO2eq")
-print(f"Equivalent to {emissions/215:.2f} flights from New York to San Francisco")
-```
-
-This simple calculation highlights the potential environmental impact of training large language models and emphasizes the need for more efficient training methods and greener computing infrastructure.
-
-### 4.3 Privacy Concerns and Data Protection
-
-As NLP models become more powerful, concerns about privacy and data protection grow. Models trained on large datasets might inadvertently memorize and reproduce sensitive information. It's crucial to implement safeguards and adhere to data protection regulations.
-
-```python
-import re
-
-def anonymize_text(text):
-    # Simple regex patterns for demonstration purposes
-    patterns = {
-        'email': r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',
-        'phone': r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b',
-        'ssn': r'\b\d{3}-\d{2}-\d{4}\b'
-    }
-    
-    for key, pattern in patterns.items():
-        text = re.sub(pattern, f'[{key.upper()}]', text)
-    
-    return text
-
-sample_text = """
-John Doe's email is johndoe@example.com and his phone number is 123-456-7890.
-His SSN is 123-45-6789.
-"""
-
-anonymized_text = anonymize_text(sample_text)
-print("Original text:")
-print(sample_text)
-print("\nAnonymized text:")
-print(anonymized_text)
-```
-
-This example demonstrates a simple approach to anonymizing sensitive information in text data, an important step in protecting privacy when working with large language models.
-
-As we continue to push the boundaries of what's possible with Transformer models and NLP, it's crucial to keep these ethical considerations in mind. Responsible development and deployment of NLP technologies will be key to harnessing their full potential while minimizing negative impacts.
-
-In our next section, we'll explore advanced techniques for fine-tuning Transformer models and dive into some cutting-edge research in the field. Stay tuned!
-
-## 5. Conclusion: The Transformative Power of NLP and the Road Ahead
+## Summary: The Transformative Power of NLP and the Road Ahead
 
 As we've journeyed through the fascinating world of Natural Language Processing and Transformer architectures, we've seen how these technologies are reshaping our interaction with language and information. Let's recap our key learnings and look towards the exciting future of NLP.
 
-### 5.1 Key Takeaways
+### Key Takeaways
 
 1. **NLP's Versatility**: We've explored how NLP tackles a wide range of tasks, from sentiment analysis and named entity recognition to machine translation and text generation. The applications are as diverse as language itself.
 
@@ -929,7 +736,7 @@ As we've journeyed through the fascinating world of Natural Language Processing 
 
 4. **Ethical Considerations**: We've highlighted the importance of addressing biases, environmental impacts, and privacy concerns as we develop and deploy NLP technologies.
 
-### 5.2 The Road Ahead
+### The Road Ahead
 
 As we look to the future of NLP, several exciting trends and challenges emerge:
 
@@ -943,7 +750,7 @@ As we look to the future of NLP, several exciting trends and challenges emerge:
 
 5. **Ethical AI and Fairness**: Continued efforts to mitigate biases and ensure fairness in NLP models will be crucial for responsible AI development.
 
-### 5.3 Your NLP Journey
+### Your NLP Journey
 
 As you continue your journey in NLP, remember that the field is rapidly evolving. Stay curious, keep experimenting, and always consider the broader implications of the technology you're working with. Here are some steps to keep your skills sharp:
 

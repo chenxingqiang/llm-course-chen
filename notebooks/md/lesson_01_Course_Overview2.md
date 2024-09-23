@@ -1,4 +1,4 @@
-# Lesson 01: Navigating the AI Revolution:  LLMs and AGI in the Second Information Age
+# Lesson 01 Navigating the AI Revolution: LLMs and AGI in the Second Information Age
 
 ```mermaid
 gantt
@@ -62,7 +62,7 @@ By the end of this course, you'll have both the theoretical knowledge and hands-
 
 So, are you ready to be part of the AI revolution? Let's dive in!
 
-# Your AI Adventure Checklist: What You'll Learn
+## Your AI Adventure Checklist: What You'll Learn
 
 By the time we wrap up this exciting journey, you'll be able to:
 
@@ -78,7 +78,7 @@ By the time we wrap up this exciting journey, you'll be able to:
 
 6. Put on your philosopher's hat and critically assess the ethical implications and societal changes that AGI development might bring about. Heavy stuff, but someone's got to think about it!
 
-# Your AI Adventure Map: What We'll Cover
+## Your AI Adventure Map: What We'll Cover
 
 Buckle up! We're about to explore five key ideas that'll help you understand the game-changing potential of AGI and LLMs:
 
@@ -97,7 +97,7 @@ Buckle up! We're about to explore five key ideas that'll help you understand the
 5. The Big Questions: Navigating the Ethical Maze of AGI Development
    With great power comes great responsibility. We'll tackle the thorny ethical issues head-on.
 
-# Diving Deep: The Nitty-Gritty of AI's Next Big Leap
+## Diving Deep: The Nitty-Gritty of AI's Next Big Leap
 
 ## The Second Information Revolution: AGI and LLMs as Game Changers
 
@@ -148,7 +148,7 @@ Buckle up! We're about to explore five key ideas that'll help you understand the
 ### From Steam Engines to Thinking Machines: A Visual Journey
 
 ```mermaid
-graph TD
+graph LR
     A["First Industrial Revolution"]
     B[Mechanization]
     C["Steam Power"]
@@ -187,7 +187,7 @@ Let's take a journey through time with this nifty diagram. It's like a family tr
 - Now, we're entering the Second Information Revolution, powered by LLMs and the promise of AGI.
 - The final stop? The Technological Singularity - a hypothetical future point where AI becomes so advanced it leads to unimaginable changes in human civilization. Buckle up!
 
-### Food for Thought: The Big Questions
+: The Big Questions
 
 As we stand on the brink of this new era, there's a lot to wrap our heads around. Here are some brain-teasers to get you thinking:
 
@@ -292,7 +292,7 @@ This graph gives us a hypothetical peek into how wealth distribution might chang
 
 Remember, this is just one possible scenario. The actual outcome will depend on how we manage the transition to an AGI-driven economy. It's a reminder that we need to be proactive in shaping our AI future!
 
-### Food for Thought: Navigating the AGI Economy
+: Navigating the AGI Economy
 
 As we imagine how AGI might remix our world, here are some brain-teasers to chew on:
 
@@ -454,7 +454,7 @@ This diagram shows us how the current superpowers of LLMs (on the right) line up
 
 It's like LLMs are the talented rookies showing flashes of greatness, while AGI is the all-star player we're hoping they'll become. We're not there yet, but every day we're getting closer!
 
-### Food for Thought: The LLM Puzzle
+: The LLM Puzzle
 
 As we've seen, LLMs are pretty amazing, but they're not quite at AGI level yet. Here are some brain-teasers to get you thinking about the future of AI:
 
@@ -723,8 +723,6 @@ As we continue our journey into the world of LLMs and AGI, keep these ethical co
 
 In our next sessions, we'll dive deeper into the nuts and bolts of LLM technology. But always keep in mind the bigger picture - the ethical implications of what we're creating. After all, with great AI power comes great responsibility!
 
-# Wrapping It Up: Your AI Adventure Begins Here
-
 ## The Big Picture: What We've Covered
 
 Wow, what a ride! We've zoomed through the landscape of Large Language Models (LLMs) and Artificial General Intelligence (AGI), exploring how these technologies are reshaping our world. Let's recap the highlights of our journey:
@@ -752,7 +750,7 @@ Key takeaways:
 As we wrap up this whirlwind tour of the AI landscape, here's a visual guide to help you navigate your ongoing AI adventure:
 
 ```mermaid
-graph TD
+graph LR
     A[Start Your AI Journey] --> B[Learn the Basics]
     B --> C[Explore LLM Capabilities]
     C --> D[Understand AGI Implications]
@@ -784,7 +782,7 @@ As we move forward in this course, we'll be diving deeper into the technical asp
 
 So, are you ready to continue this AI adventure? Strap in, keep your mind open, and let's explore the fascinating world of LLMs and AGI together. The future is AI, and you're going to help build it!
 
-# Your AI Challenge: Homework Time
+## Your AI Challenge: Homework Time
 
 Ready to put your newfound AI knowledge to the test? Here are some brain-teasers to keep you busy:
 
@@ -808,7 +806,7 @@ Ready to put your newfound AI knowledge to the test? Here are some brain-teasers
 
 Remember, there are no right or wrong answers here - we're exploring uncharted territory! The goal is to think critically, be creative, and start grappling with the complex realities of our AI-driven future. Happy exploring!
 
-# AI Wisdom: Your Reading List
+## AI Wisdom: Your Reading List
 
 Want to dive deeper into the world of AI? Here's your curated reading list, featuring some of the brightest minds in the field:
 

@@ -1,5 +1,5 @@
 
-# 1. Course Title: Designing input and output formats for chatbot with context
+# Lesson 17 Designing input and output formats for chatbot with context
 
 ```mermaid
 gantt
@@ -30,7 +30,7 @@ gantt
     lesson 22 :l22, after l21, 1d
 ```
 
-# 2. Learning Objectives
+## Learning Objectives
 
 By the end of this comprehensive lesson, students will be able to:
 
@@ -46,7 +46,7 @@ By the end of this comprehensive lesson, students will be able to:
 
 6. Evaluate and iterate on prompts using quantitative and qualitative metrics
 
-# 3. Overview
+## Overview
 
 This in-depth lesson covers six key concepts, providing a comprehensive exploration of advanced prompt engineering:
 
@@ -62,11 +62,7 @@ This in-depth lesson covers six key concepts, providing a comprehensive explorat
 
 6. Evaluation and Iteration of Prompt Engineering Strategies
 
-# 4. Detailed Content
-
-## 4.1 Concept 1: Foundations of Prompt Engineering: Principles and Best Practices
-
-### 4.1.1 Explanation
+## Foundations of Prompt Engineering: Principles and Best Practices
 
 Prompt engineering is the art and science of designing inputs to AI language models to elicit desired outputs. It involves understanding the model's capabilities, limitations, and behavior to craft prompts that effectively guide the model's responses [1].
 
@@ -77,11 +73,11 @@ Key principles include:
 - Structuring prompts for optimal comprehension
 - Balancing between guidance and open-endedness
 
-### 4.1.2 Case Study: Improving Customer Service Chatbot Responses
+### Improving Customer Service Chatbot Responses
 
 Imagine you're tasked with improving a customer service chatbot for an e-commerce platform. The current prompts are leading to generic and sometimes irrelevant responses. Your goal is to redesign the prompts to provide more accurate and helpful information to customers.
 
-### 4.1.3 Code: Prompt Engineering Framework
+### Prompt Engineering Framework
 
 ```python
 import openai
@@ -146,8 +142,6 @@ print("\nGenerated Response:")
 print(response)
 ```
 
-### 4.1.4 Reflection
-
 Effective prompt engineering is foundational to successful interactions with AI language models. It requires a deep understanding of both the model's capabilities and the specific requirements of the task at hand.
 
 Consider the following questions:
@@ -156,13 +150,11 @@ Consider the following questions:
 2. What are the potential challenges in crafting prompts for complex or nuanced tasks?
 3. How might the principles of prompt engineering evolve as language models become more advanced?
 
-## 4.2 Concept 2: Advanced Prompt Crafting Techniques for Diverse Applications
+## Advanced Prompt Crafting Techniques for Diverse Applications
 
 [Continue with detailed explanations, examples, and code for the remaining concepts...]
 
-# 5. Summary
-
-## 5.1 Conclusion
+## Summary
 
 This lesson has explored the intricate art and science of advanced prompt engineering, a crucial skill in the era of powerful language models like ChatGPT. We've delved into the foundations of effective prompt design, advanced techniques for diverse applications, optimization strategies, ethical considerations, and evaluation methods.
 
@@ -175,7 +167,7 @@ Key takeaways include:
 
 As AI language models continue to advance, mastery of prompt engineering will remain a critical skill for developers, researchers, and AI practitioners seeking to harness the full potential of these powerful tools.
 
-## 5.2 Mind Maps
+## 2 Mind Maps
 
 ```mermaid
 graph LR
@@ -226,7 +218,7 @@ graph LR
     class B1,B2,B3,C1,C2,C3,D1,D2,D3,E1,E2,E3,F1,F2,F3,G1,G2,G3 subTopic
 ```
 
-# 6. Homework
+## Homework
 
 1. Design a set of prompts for a virtual assistant that can help users with personal finance management. Include prompts for budgeting advice, investment suggestions, and debt management strategies. Implement these prompts using the OpenAI API and evaluate their effectiveness.
 
@@ -240,7 +232,7 @@ graph LR
 
 6. Develop a comprehensive evaluation rubric for assessing the quality of AI-generated responses in an educational context. Use this rubric to evaluate a set of prompts designed for explaining complex scientific concepts to students at different educational levels.
 
-# 7. Reference and Citation
+## Reference and Citation
 
 [1] Liu, P., et al. (2021). Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing. arXiv preprint arXiv:2107.13586.
 

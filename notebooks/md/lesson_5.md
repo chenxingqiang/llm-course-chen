@@ -1,5 +1,5 @@
 
-# Lesson 5: Setting Up Your LLM Experimental Environment
+# Lesson 5 Setting Up Your LLM Experimental Environment
 
 ```mermaid
 gantt
@@ -30,12 +30,12 @@ gantt
     lesson 10 :l10, after l9, 1d
 ```
 
-## 1. Introduction: The Foundation of LLM Development
+## Introduction: The Foundation of LLM Development
 
 Large Language Models (LLMs) have revolutionized natural language processing, but their development requires a carefully crafted environment. This lesson will guide you through setting up a robust LLM experimental environment, which is crucial for efficient development, training, and evaluation of these powerful models.
 
 ```mermaid
-graph TD
+graph LR
     A[1. Introduction] --> B[2. Essential Components]
     B --> C[3. Environment Setup]
     C --> D[4. Model Management]
@@ -45,7 +45,7 @@ graph TD
 
 ```
 
-## 2. Essential Components of an LLM Environment
+## Essential Components of an LLM Environment
 
 Before we begin the setup process, it's important to understand the key components that make up an effective LLM development environment. Each component plays a specific role in supporting the development process:
 
@@ -60,15 +60,15 @@ Before we begin the setup process, it's important to understand the key componen
 
 These components work together to create a cohesive environment. The operating system provides the foundation, upon which we install Python and CUDA for GPU support. PyTorch and Transformers form the core of our deep learning toolkit, while Jupyter Lab offers an interactive development interface. Git and Docker ensure version control and environment reproducibility, respectively.
 
-## 3. Environment Setup: Step-by-Step Guide
+## Environment Setup: Step-by-Step Guide
 
 Now that we understand the components, let's set up our environment. We'll go through this process step-by-step, explaining the purpose of each command:
 
-### 3.1 Operating System Installation
+### Operating System Installation
 
 Start by installing Ubuntu 20.04 LTS. This provides a stable and widely supported base for our development environment.
 
-### 3.2 System Updates and Essential Packages
+### System Updates and Essential Packages
 
 Update the system and install necessary packages:
 
@@ -80,7 +80,7 @@ sudo apt install -y python3-dev python3-pip
 
 These commands ensure your system is up-to-date and has the essential build tools and Python development packages.
 
-### 3.3 CUDA Installation
+### CUDA Installation
 
 Install CUDA to enable GPU acceleration:
 
@@ -91,7 +91,7 @@ sudo sh cuda_11.2.0_460.27.04_linux.run --silent --toolkit
 
 This step is crucial for leveraging GPU power in training large language models.
 
-### 3.4 Python Environment Setup
+### Python Environment Setup
 
 Create a Python virtual environment for LLM development:
 
@@ -103,7 +103,7 @@ pip install --upgrade pip
 
 Virtual environments help manage dependencies for different projects, preventing conflicts.
 
-### 3.5 Installing PyTorch and Transformers
+### Installing PyTorch and Transformers
 
 With the Python environment ready, install PyTorch and the Transformers library:
 
@@ -114,7 +114,7 @@ pip install transformers datasets
 
 These libraries form the core of our LLM development toolkit.
 
-### 3.6 Jupyter Lab Setup
+### Jupyter Lab Setup
 
 Install and configure Jupyter Lab for interactive development:
 
@@ -128,7 +128,7 @@ echo "c.NotebookApp.port = 8888" >> ~/.jupyter/jupyter_notebook_config.py
 
 Jupyter Lab provides an interactive interface for experimenting with models and visualizing results.
 
-### 3.7 Git and Docker Installation
+### Git and Docker Installation
 
 Finally, install Git for version control and Docker for containerization:
 
@@ -141,7 +141,7 @@ sudo usermod -aG docker $USER
 
 These tools support collaborative development and ensure environment reproducibility.
 
-## 4. Model Management: Efficient Storage and Retrieval
+## Model Management: Efficient Storage and Retrieval
 
 With our environment set up, we need an efficient way to manage our models. Let's create a Python class for this purpose:
 
@@ -179,11 +179,11 @@ loaded_model, loaded_tokenizer = manager.load_model("my_bert_model")
 
 This `ModelManager` class provides methods for saving and loading models, ensuring consistent storage and easy retrieval.
 
-## 5. Troubleshooting: Common Issues and Solutions
+## Troubleshooting: Common Issues and Solutions
 
 Even with a careful setup, issues can arise. Here are some common problems and their solutions:
 
-### 5.1 CUDA Issues
+### CUDA Issues
 
 If you encounter CUDA-related errors, verify CUDA installation:
 
@@ -199,7 +199,7 @@ def check_cuda():
 check_cuda()
 ```
 
-### 5.2 Memory Management
+### Memory Management
 
 For out-of-memory errors, use gradient accumulation:
 
@@ -210,7 +210,7 @@ def train_with_gradient_accumulation(model, dataloader, optimizer, accumulation_
         outputs = model(**batch)
         loss = outputs.loss / accumulation_steps
         loss.backward()
-        
+
         if (i + 1) % accumulation_steps == 0:
             optimizer.step()
             optimizer.zero_grad()
@@ -218,11 +218,11 @@ def train_with_gradient_accumulation(model, dataloader, optimizer, accumulation_
 
 This technique allows training with larger batch sizes by accumulating gradients over multiple forward passes.
 
-## 6. Performance Optimization: Maximizing Efficiency
+## Performance Optimization: Maximizing Efficiency
 
 To get the most out of our setup, we can implement several optimization techniques:
 
-### 6.1 Mixed Precision Training
+### Mixed Precision Training
 
 Use mixed precision to speed up training and reduce memory usage:
 
@@ -242,7 +242,7 @@ def train_step(model, batch, optimizer):
     optimizer.zero_grad()
 ```
 
-### 6.2 Efficient Data Loading
+### Efficient Data Loading
 
 Optimize data loading to reduce I/O bottlenecks:
 
@@ -255,7 +255,7 @@ def create_efficient_dataloader(dataset, batch_size=32):
 
 These optimizations can significantly reduce training time and resource usage.
 
-## 7. Conclusion: Leveraging Your LLM Environment
+## Summary: Leveraging Your LLM Environment
 
 Congratulations! You've now set up a comprehensive environment for LLM development. This setup provides you with the tools to:
 
@@ -274,11 +274,11 @@ Your next steps should include:
 
 With this robust environment and your growing expertise, you're well-equipped to contribute to the exciting world of large language models. Happy coding, and may your models learn deeply and generalize well!
 
-## 8. Practical Applications of Your LLM Environment
+## Practical Applications of Your LLM Environment
 
 Now that you have a fully functional LLM experimental environment, let's explore some practical applications and projects you can undertake. These will help you gain hands-on experience and deepen your understanding of LLM development.
 
-### 8.1 Fine-tuning Pre-trained Models
+### Fine-tuning Pre-trained Models
 
 One of the most common tasks in LLM development is fine-tuning pre-trained models for specific tasks. Let's walk through an example of fine-tuning BERT for sentiment analysis:
 
@@ -323,7 +323,7 @@ trainer.train()
 
 This example demonstrates how to use your environment to fine-tune BERT for sentiment analysis on the IMDB dataset. You can adapt this code for other tasks and models.
 
-### 8.2 Creating a Question-Answering System
+### Creating a Question-Answering System
 
 Another exciting application is building a question-answering system. Here's how you can use a pre-trained model for this task:
 
@@ -350,11 +350,11 @@ print(f"Confidence: {answer['score']:.4f}")
 
 This script uses a pre-trained model to answer questions based on a given context, showcasing how your LLM environment can be used for practical NLP tasks.
 
-## 9. Advanced Techniques and Future Directions
+## Advanced Techniques and Future Directions
 
 As you become more comfortable with your LLM environment, you can start exploring more advanced techniques and cutting-edge developments in the field.
 
-### 9.1 Few-Shot Learning
+### Few-Shot Learning
 
 Few-shot learning is an exciting area where LLMs excel. Here's an example of how you might implement few-shot learning using GPT-3:
 
@@ -391,7 +391,7 @@ print(f"Translation: {result}")
 
 This example demonstrates how to use few-shot learning for a translation task, but the technique can be applied to various NLP problems.
 
-### 9.2 Exploring Model Interpretability
+### Exploring Model Interpretability
 
 As LLMs become more complex, understanding their decision-making process becomes crucial. Here's an example of using the LIME (Local Interpretable Model-agnostic Explanations) library to interpret model predictions:
 
@@ -424,7 +424,7 @@ for feature, importance in exp.as_list():
 
 This script demonstrates how to use LIME to interpret the predictions of a sentiment analysis model, providing insights into which words or phrases most influenced the model's decision.
 
-## 10. Staying Current in the Field
+## Staying Current in the Field
 
 The field of LLM development is rapidly evolving. To stay current:
 
@@ -433,7 +433,7 @@ The field of LLM development is rapidly evolving. To stay current:
 3. Participate in NLP conferences and workshops, even virtually.
 4. Contribute to open-source projects to gain experience and stay abreast of new techniques.
 
-## Conclusion
+## Summary
 
 Your LLM experimental environment is now not just set up, but ready for advanced applications and cutting-edge research. From fine-tuning pre-trained models to exploring few-shot learning and model interpretability, you have the tools to push the boundaries of what's possible with language models.
 

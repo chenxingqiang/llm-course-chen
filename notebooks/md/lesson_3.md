@@ -1,5 +1,5 @@
 
-# Lesson 03: Basic Knowledge and Architectural Characteristics of Large Language Models
+# Lesson 03 Basic Knowledge and Architectural Characteristics of Large Language Models
 
 ```mermaid
 gantt
@@ -42,7 +42,7 @@ By the end of this comprehensive lesson, you'll be able to:
 
 Let's embark on this exciting journey into the heart of modern AI!
 
-## 1. The Evolution of Large Language Models: A Technological Odyssey
+## The Evolution of Large Language Models: A Technological Odyssey
 
 Our story begins in the early days of Natural Language Processing (NLP) and charts the rapid, almost explosive development of LLMs over the past decade. Each step in this evolution solved problems from the previous stage, while also opening new possibilities and challenges.
 
@@ -152,7 +152,7 @@ The rapid evolution of LLMs was driven by a convergence of several factors:
 
 Each of these factors built upon the others. More computing power and data made it possible to train larger models, which drove architectural innovations, which in turn demanded even more computing power and data. This virtuous cycle propelled the field forward at an unprecedented rate.
 
-## 2. The Transformer Architecture: Breaking Down the Game-Changer
+## The Transformer Architecture: Breaking Down the Game-Changer
 
 In 2017, a groundbreaking paper titled "Attention is All You Need" introduced the Transformer architecture. This innovation addressed several limitations of previous models and set the stage for the explosive growth in LLM capabilities. Let's break down why the Transformer was such a revolutionary development and how it works.
 
@@ -302,7 +302,7 @@ The introduction of the Transformer architecture had far-reaching consequences:
 
 The Transformer architecture laid the foundation for models like BERT, GPT, and T5, which have pushed the boundaries of what's possible in NLP.
 
-## 3. Architectural Characteristics of Modern LLMs
+## Architectural Characteristics of Modern LLMs
 
 As LLMs evolved, certain architectural characteristics emerged as crucial for their performance:
 
@@ -315,7 +315,7 @@ As LLMs evolved, certain architectural characteristics emerged as crucial for th
 Let's compare some popular LLMs:
 
 ```mermaid
-graph TD
+graph LR
     A[LLM Architectures] --> B[BERT]
     A --> C[GPT-3]
     A --> D[T5]
@@ -380,7 +380,7 @@ plt.show()
 
 This plot illustrates the general trend of improved performance with increased model size, though it's important to note that in practice, the relationship is more complex and task-dependent.
 
-## 4. Challenges and Ethical Considerations
+## Challenges and Ethical Considerations
 
 As LLMs have grown in capability and prominence, they've also brought to light significant challenges and ethical concerns. Understanding these issues is crucial for responsible development and deployment of AI technologies.
 
@@ -447,7 +447,7 @@ LLMs trained on vast amounts of internet data raise concerns about privacy and d
 
 As LLMs grow more complex, understanding why they make certain decisions becomes increasingly challenging. This "black box" nature can be problematic in critical applications where explainability is crucial.
 
-## 5. Future Directions: The Road Ahead for LLMs
+## Future Directions: The Road Ahead for LLMs
 
 Despite these challenges, the field of LLMs continues to evolve rapidly. Here are some exciting directions for future research and development:
 
@@ -469,7 +469,7 @@ Remember, the field of LLMs is interdisciplinary, drawing from computer science,
 
 The future of AI and NLP is bright, and with your knowledge and creativity, you can be part of shaping that future. Keep learning, stay curious, and always strive to develop AI technologies that benefit humanity as a whole.
 
-## Conclusion: The Ongoing LLM Revolution
+## Summary: The Ongoing LLM Revolution
 
 As we conclude our journey through the world of Large Language Models, it's evident that we're in the midst of an ongoing revolution in AI and Natural Language Processing. From the foundational innovations of word embeddings to the current state-of-the-art models capable of human-like text generation, the field has progressed at an astonishing pace.
 
@@ -504,7 +504,7 @@ The future of LLMs is exciting and full of potential. Some areas to watch includ
 4. **Ethical AI**: Continued focus on developing fair, unbiased, and socially beneficial AI systems.
 
 ```mermaid
-graph TD
+graph LR
     A[Future of LLMs] --> B[Technical Advancements]
     A --> C[Ethical Considerations]
     A --> D[Applications]

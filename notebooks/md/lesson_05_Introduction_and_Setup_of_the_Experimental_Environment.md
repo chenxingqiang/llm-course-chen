@@ -1,4 +1,4 @@
-# Course Title: Comprehensive Setup of the LLM Experimental Environment
+# Lesson 05 Comprehensive Setup of the LLM Experimental Environment
 
 ```mermaid
 gantt
@@ -28,8 +28,6 @@ gantt
     lesson 9  :l9, after l8, 1d
     lesson 10 :l10, after l9, 1d
 ```
-
-# Setting Up Your LLM Playground: A Comprehensive Guide
 
 Hey there, future AI wizard! Ready to dive into the exciting world of Large Language Models (LLMs)? Great! Today, we're going to set up your very own LLM playground. It's like building a high-tech sandbox where you can create, train, and play with AI models that understand and generate human-like text. Exciting, right? Let's get started!
 
@@ -63,7 +61,7 @@ Here's what we've got in our AI chef's toolkit:
 
 Now, let's see how all these ingredients work together!
 
-### Case Study: Cooking Up a Multi-Course AI Meal
+### Cooking Up a Multi-Course AI Meal
 
 Imagine you're tasked with creating an AI-powered writing assistant that can help with various tasks: generating creative stories, summarizing long articles, and even translating between languages. Our LLM kitchen is perfectly equipped to handle this multi-course AI meal!
 
@@ -107,8 +105,6 @@ if __name__ == "__main__":
 ```
 
 When you run this script, it's like doing a quick check of your kitchen before starting a big cooking session. You'll see if all your tools are up to date and ready to go!
-
-### Food for Thought
 
 Now that we've taken stock of our AI kitchen, let's ponder a few things:
 
@@ -251,8 +247,6 @@ print("\n🎉 If you see output from all of these, your AI kitchen is ready to g
 
 This script is like taking a small bite of each dish to make sure it tastes right. If you see output from PyTorch, Transformers, and Jupyter without any errors, your AI kitchen is all set up and ready for some serious cooking!
 
-### Food for Thought
-
 Now that we've set up our AI kitchen, let's ponder a few things:
 
 1. How might this setup process need to change for different types of LLM projects or hardware configurations?
@@ -373,8 +367,6 @@ When you run this code, you'll see how our AI Fridge works:
 
 This system makes it easy to work with multiple models without cluttering up our AI kitchen!
 
-### Food for Thought
-
 Now that we've set up our AI Fridge, let's chew on a few thoughts:
 
 1. How might this storage system need to adapt for truly massive language models that might not fit in memory all at once?
@@ -486,43 +478,6 @@ This `AIKitchenTroubleshooter` class is like having a master chef inspect every 
 3. Your AI pantry (GPU memory)
 4. Your AI storage (disk space)
 5. And even does a taste test (model loading)
-
-### Running Our Kitchen Inspection
-
-When you run this code, you'll get a comprehensive report on the state of your AI kitchen. It might look something like this:
-
-```
-🧑‍🍳 Welcome to the AI Kitchen Inspection! Let's make sure everything's ship-shape.
-🔥 Checking our AI stove (CUDA/GPU):
-  ✅ CUDA is available. We're cooking with gas! Version: 11.2
-  🍳 We're using a NVIDIA GeForce RTX 3080 for our cooking.
-  🔢 Number of AI burners available: 1
-
-🧊 Checking our AI fridge (System Memory):
-  🥛 Total milk in the carton: 32.00 GB
-  🍺 Available refreshments: 24.56 GB
-  🍖 Memory currently in use: 7.44 GB
-  📊 Fridge fullness: 23.25%
-
-🍽️ Checking our AI pantry (GPU Memory):
-  🥘 AI Cooking Pot 0:
-    🫕 Total capacity: 10240 MB
-    🥣 Currently cooking: 1234 MB
-    🍲 Available space: 9006 MB
-    📊 Pot fullness: 12.05%
-
-🗄️ Checking our AI storage (Disk Space):
-  📦 Total storage containers: 512.11 GB
-  📥 Containers in use: 125.68 GB
-  📤 Empty containers: 386.43 GB
-
-🍴 Taste-testing our AI dish (Model Loading Test) for bert-base-uncased:
-  😋 Delicious! Successfully loaded model and tokenizer for bert-base-uncased
-```
-
-This report gives you a clear picture of your AI kitchen's health, making it easier to spot and fix any issues.
-
-### Food for Thought
 
 Now that we've got our AI Kitchen First Aid Kit, let's chew on a few thoughts:
 
@@ -677,8 +632,6 @@ When you run this code, you'll see how our turbocharged AI kitchen performs. It 
 ```
 
 This turbocharged setup can significantly speed up your training process, allowing you to cook up more sophisticated AI models in less time.
-
-### Food for Thought
 
 Now that we've turbocharged our AI kitchen, let's chew on a few thoughts:
 
@@ -838,8 +791,6 @@ When you run this code, you'll see how our AI Bistro facilitates collaborative w
 
 This setup allows multiple AI chefs to work together seamlessly, keeping track of experiments, code changes, and model versions.
 
-### Food for Thought
-
 As we wrap up our AI Bistro setup, let's chew on a few final thoughts:
 
 1. How might we adapt this collaborative workflow for very large language models that don't fit easily into traditional version control systems?
@@ -854,7 +805,7 @@ Remember, like any good kitchen, your AI development environment will need regul
 
 Happy coding, and may your models always converge! 🚀👨‍🍳🤖
 
-# Conclusion: Your LLM Playground is Ready for Action
+## Summary: Your LLM Playground is Ready for Action
 
 Wow, what a journey we've been on! From setting up our AI kitchen to turning it into a collaborative bistro, we've covered a lot of ground. Let's take a moment to savor what we've learned and see how all these pieces fit together.
 
